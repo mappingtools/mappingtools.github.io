@@ -115,7 +115,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'docs',
+          path: 'content',
           routeBasePath: '/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
