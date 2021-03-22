@@ -12,7 +12,7 @@ It currently runs on only Windows operating systems.
 
 ### Windows {#windows}
 
-Mapping Tools can be downloaded from the [downloads page](../../download).
+Mapping Tools can be downloaded from the [downloads page](/download).
 
 ### Mac {#mac}
 
