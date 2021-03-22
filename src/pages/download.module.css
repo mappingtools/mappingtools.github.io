@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.autodetect {
+  opacity: 0.65;
+}
+
+.cardTitle {
+  text-align: center;
+}
+
+.dlCol {
+  margin: var(--ifm-spacing-vertical) 0;
+}
+
+.downloadOption {
+  --ifm-color-gray-900: var(--ifm-color-primary);
+  padding: 1rem 0;
+  border-color: transparent;
+}
