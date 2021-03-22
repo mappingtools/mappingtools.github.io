@@ -187,7 +187,11 @@ const Download: React.FC = () => {
       <div className={clsx("container padding-vert--lg", styles.content)}>
         <h1>Download</h1>
         <h4 className={styles.autodetect}>
-          [Auto Detected: {os.os}] is {!os.supported && 'not yet'} supported
+          {os ? (
+            `[Auto Detected: ${os.os}] is ${!os.supported && 'not yet'} supported`
+          ) : (
+            `Detecting OS...`
+          )}
         </h4>
         <div className={clsx("container", styles.downloadsContainer)}>
           <div className="row">
