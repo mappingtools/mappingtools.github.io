@@ -177,7 +177,7 @@ const Download: React.FC = () => {
 
   useEffect(() => {
     setOs(getOs());
-  });
+  }, []);
 
   return (
     <Layout
@@ -187,10 +187,14 @@ const Download: React.FC = () => {
       <div className={clsx("container padding-vert--lg", styles.content)}>
         <h1>Download</h1>
         <h4 className={styles.autodetect}>
-          {os ? (
-            `[Auto Detected: ${os.os}] is ${!os.supported && 'not yet'} supported`
-          ) : (
+          {os===null ? (
             `Detecting OS...`
+          ) : (
+            os.os === undefined ? (
+              `Cannot identify OS`
+            ) : (
+              `[Auto Detected: ${os.os}] is ${os.supported ? '' : 'not yet'} supported`
+            )
           )}
         </h4>
         <div className={clsx("container", styles.downloadsContainer)}>
