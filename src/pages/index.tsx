@@ -9,6 +9,9 @@ import styles from './index.module.css';
 
 import FadeIn from '../components/FadeIn';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+
 interface FeatureProps {
   imageUrl: string,
   title: string,
@@ -124,7 +127,7 @@ const Home: React.FC = () => {
                 )}
                 to={useBaseUrl('download/')}
               >
-                Download
+                <FontAwesomeIcon icon={faDownload} />&nbsp;Download
               </Link>
             </div>
           </div>
