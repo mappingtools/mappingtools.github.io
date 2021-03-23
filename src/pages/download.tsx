@@ -7,7 +7,6 @@ import styles from './download.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAndroid, faApple, faAppStoreIos, faGithub, faLinux, faWindows, } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDownload, faFileArchive } from '@fortawesome/free-solid-svg-icons';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const OS_SUPPORT = Object.freeze({
   macos: {
