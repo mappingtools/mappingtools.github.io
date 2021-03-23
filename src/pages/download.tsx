@@ -213,7 +213,7 @@ const Download: React.FC = () => {
                         key={j}
                         className={clsx(
                           'button button--block button--secondary button--outline',
-                          !supported && 'disabled',
+                          !supported && clsx('disabled', styles.disabled),
                           styles.downloadOption
                         )}
                         onClick={item.onClick}
