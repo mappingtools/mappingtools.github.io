@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { createRef, useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 
 import styles from './changelog.module.css';
 
-const num_releases = 10;
+const numReleases = 10;
 
 const Changelog: React.FC = () => {
   const [data, setData] = useState(null);
-  const [open, setOpen] = useState(-1);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`https://api.github.com/repos/OliBomby/Mapping_Tools/releases?per_page=${num_releases}`, {
+      const response = await fetch(`https://api.github.com/repos/OliBomby/Mapping_Tools/releases?per_page=${numReleases}`, {
         method: 'GET',
       });
 
@@ -31,6 +30,27 @@ const Changelog: React.FC = () => {
     fetchData();
   }, []);
 
+  const [active, setActive] = useState(null);
+  const [collapseHeights, setCollapseHeights] = useState(new Array(numReleases).fill(undefined));
+  const collapseRefs: any = useRef(Array.from({length: numReleases}, _ => createRef())).current;
+
+  const onClick = (i) => (() => {
+    const clickedActive = active === i;
+    
+    if(active !== null) {
+      collapseHeights[active] = undefined;
+    }
+    if(!clickedActive) {
+      if(collapseRefs[i]?.current) {
+        const {marginTop, marginBottom} = window.getComputedStyle(collapseRefs[i].current);
+        collapseHeights[i] = `calc(${collapseRefs[i].current.offsetHeight}px + ${marginTop} + ${marginBottom})`;
+      }
+    }
+    
+    setCollapseHeights(collapseHeights);
+    setActive(clickedActive ? null : i);
+  });
+
   return (
     <Layout
       title="Changelog"
@@ -44,15 +64,21 @@ const Changelog: React.FC = () => {
                 {data && data.map(({tag, date, author, description}, i) => (
                   <li
                     key={i}
-                    className={clsx("card menu__list-item", open!==i && "menu__list-item--collapsed")}
-                    onClick={() => setOpen(open===i ? -1 : i)}
+                    className={clsx("card menu__list-item", active!==i && "menu__list-item--collapsed")}
+                    onClick={onClick(i)}
                   >
                     <div className={clsx("menu__link menu__link--sublist", styles.release)}>
                       <div>{tag}</div>
                       <div>{date}</div>
                     </div>
-                    <ul className="menu__list">
-                      <li className="menu__list-item">
+                    <ul
+                      className="menu__list"
+                      style={{height: collapseHeights[i]}}
+                    >
+                      <li
+                        className="menu__list-item"
+                        ref={collapseRefs[i]}
+                      >
                         <div className={styles.releaseBody} dangerouslySetInnerHTML={{__html: description}} />
                         <hr className={styles.hr} />
                         by {author}
