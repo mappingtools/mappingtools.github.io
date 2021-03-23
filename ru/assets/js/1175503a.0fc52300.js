@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{73:function(o){o.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Mapping Tools Discord","permalink":"/ru/blog/0"}]}')}}]);
