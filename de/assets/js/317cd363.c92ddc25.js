@@ -1,0 +1,1 @@
+(self.webpackChunkmt_website=self.webpackChunkmt_website||[]).push([[768],{3198:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/de/blog/tags","slug":"discord","name":"discord","count":1,"permalink":"/de/blog/tags/discord"}')}}]);
