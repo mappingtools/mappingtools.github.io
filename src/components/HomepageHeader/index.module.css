@@ -1,0 +1,23 @@
+.heroBanner {
+  height: calc(100vh - var(--ifm-navbar-height));
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonsContainer {
+  justify-content: center;
+  gap: 2rem;
+}
+  
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.downloadButton {
+  --ifm-button-background-color: var(--ifm-font-color-base-inverse);
+  border-color: var(--ifm-font-color-base-inverse);
+}

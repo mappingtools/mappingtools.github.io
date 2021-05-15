@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Tools": {
+    "message": "Tools",
+    "description": "The label for category Tools in sidebar docsSidebar"
+  },
+  "sidebar.contributeSidebar.category.Mapping Tools - Client": {
+    "message": "Mapping Tools - Client",
+    "description": "The label for category Mapping Tools - Client in sidebar contributeSidebar"
+  },
+  "sidebar.contributeSidebar.category.Website": {
+    "message": "Website",
+    "description": "The label for category Website in sidebar contributeSidebar"
+  }
+}

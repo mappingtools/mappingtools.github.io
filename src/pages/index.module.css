@@ -4,39 +4,3 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-.heroBanner {
-  height: calc(100vh - var(--ifm-navbar-height));
-  padding: 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.buttonsContainer {
-  justify-content: center;
-  gap: 2rem;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.downloadButton {
-  --ifm-button-background-color: var(--ifm-font-color-base-inverse);
-  border-color: var(--ifm-font-color-base-inverse);
-}
-
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.featureImage {
-  height: 200px;
-  width: 200px;
-}

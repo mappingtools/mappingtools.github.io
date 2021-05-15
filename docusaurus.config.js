@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Mapping Tools',
-  tagline: 'utilities for osu! mapping',
+  tagline: 'Utilities for osu! mapping',
   url: 'https://mappingtools.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -10,6 +10,9 @@ module.exports = {
   organizationName: 'mappingtools', // Usually your GitHub org/user name.
   projectName: 'mappingtools.github.io', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: "dark"
+    },
     image: 'img/logo.png',
     announcementBar: {
       id: 'discord_announcement', // Any value that will identify this message.
@@ -31,13 +34,13 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
+          to: 'docs',
+          activeBasePath: 'docs/documentation',
           label: 'Documentation',
           position: 'left',
         },
         {
-          to: 'faq/',
+          to: 'faq',
           label: 'FAQ',
           position: 'left',
         },
@@ -50,6 +53,12 @@ module.exports = {
           to: 'blog',
           label: 'Blog',
           position: 'left'
+        },
+        {
+          to: 'docs/contribute',
+          activeBasePath: 'docs/contribute',
+          label: 'Contribute',
+          position: 'right',
         },
         {
           type: 'localeDropdown',
@@ -65,7 +74,7 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'getting-started/',
+              to: 'docs/documentation/getting-started',
             },
             {
               label: 'Documentation',
@@ -83,22 +92,35 @@ module.exports = {
             {
               label: 'Discord',
               href: 'https://discord.gg/YfjKN2yjQV',
-            },
-            {
-              label: 'Rabbit Hole',
-              href: 'https://discord.gg/JhP964H',
-            },
+            }
           ],
         },
         {
-          title: 'Contributing',
+          title: 'Contribute',
           items: [
             {
-              label: 'Contributing',
-              to: 'contributing/',
+              label: 'Overview',
+              to: 'docs/contribute/',
             },
+            {
+              label: 'Client',
+              to: 'docs/contribute/Client/contribute-mt-intro',
+            },
+            {
+              label: 'Website',
+              to: 'docs/contribute/Website/contribute-web-intro',
+            }
           ],
         },
+        {
+          title: "Support us",
+          items: [
+            {
+              label: "Patreon",
+              to: "https://www.patreon.com/OliBomby"
+            }
+          ]
+        }
       ],
       logo: {
         alt: 'Mapping Tools Logo',
@@ -115,8 +137,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'content',
-          routeBasePath: '/',
+          path: 'docs',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
           sidebarPath: require.resolve('./sidebars.js'),
@@ -140,6 +161,7 @@ module.exports = {
       'en',
       'zh-Hans',
       'ru',
+      "de"
     ],
     localeConfigs: {
       'en': {
@@ -151,6 +173,9 @@ module.exports = {
       'ru': {
         label: 'Русский',
       },
+      "de": {
+        label: "Deutsch"
+      }
     }
   },
 };
