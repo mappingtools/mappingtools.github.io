@@ -1,23 +1,67 @@
+.span b {
+  color: var(--ifm-color-primary);
+}
+
 .heroBanner {
   height: calc(100vh - var(--ifm-navbar-height));
-  padding: 0;
-  text-align: center;
-  position: relative;
+  padding: 0 20px;
   overflow: hidden;
+  text-align: center;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-heading-color);
 }
 
 .buttonsContainer {
-  justify-content: center;
+  margin-top: 50px;
   gap: 2rem;
-}
-  
-.buttons {
-  display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.introButton {
+  font-size: 1.7rem;
+  padding: 15px;
+  width: 222px;
 }
   
 .downloadButton {
-  --ifm-button-background-color: var(--ifm-font-color-base-inverse);
-  border-color: var(--ifm-font-color-base-inverse);
+  font-size: 1.7rem;
+  padding: 15px;
+  width: 222px;
+}
+
+.logo {
+  display: none;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.tagLine {
+  font-size: 30px;
+}
+
+@media (min-width: 930px) {
+  .heroBanner {
+    text-align: start;
+    padding: 0 100px;
+  }
+
+  .buttonsContainer {
+    justify-content: left;
+    margin-top: 90px;
+    margin-left: 5px;
+    gap: 80px;
+  }
+
+  .tagLine {
+    font-size: 65px;
+  }
+
+  .logo {
+    display: block;
+    padding: 0 30px 20px;
+    width: 250px;
+    float: right;
+  }
 }
