@@ -35,7 +35,7 @@ module.exports = {
         },
         {
           to: 'docs',
-          activeBasePath: 'docs/documentation',
+          activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
         },
@@ -55,10 +55,11 @@ module.exports = {
           position: 'left'
         },
         {
-          to: 'docs/contribute',
-          activeBasePath: 'docs/contribute',
-          label: 'Contribute',
+          href: 'https://github.com/olibomby/mapping_tools',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+          position: "right"
         },
         {
           type: 'localeDropdown',
@@ -74,11 +75,11 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/documentation/getting-started',
+              to: 'docs/getting-started',
             },
             {
               label: 'Documentation',
-              to: 'docs/'
+              to: 'docs'
             },
             {
               label: 'Download',
@@ -100,15 +101,23 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: 'docs/contribute/',
+              to: 'docs/Mapping-Tools/contribute',
             },
             {
-              label: 'Client',
-              to: 'docs/contribute/Client/contribute-mt-intro',
+              label: 'Mapping Tools ',
+              to: 'https://github.com/OliBomby/Mapping_Tools',
             },
             {
-              label: 'Website',
-              to: 'docs/contribute/Website/contribute-web-intro',
+              label: 'Mapping Tools Core',
+              to: 'https://github.com/OliBomby/Mapping_Tools_Core',
+            },
+            {
+              label: 'Mapping Tools Web',
+              to: 'https://github.com/misakura-rin/mapping-tools-web',
+            },
+            {
+              label: 'Mapping Tools Website',
+              to: 'https://github.com/mappingtools/mappingtools.github.io',
             }
           ],
         },
