@@ -6,9 +6,13 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import Link from "@docusaurus/Link";
 
+import { config } from "@fortawesome/fontawesome-svg-core"
+config.autoAddCss = false
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import styles from "./index.module.css";
 
 const HomepageFeature = () => {
