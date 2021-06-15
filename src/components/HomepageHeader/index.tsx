@@ -24,7 +24,7 @@ const HomepageFeature = () => {
           <div className={styles.buttons}>
             <Link
               className="button button--outline button--secondary button--lg"
-              to={useBaseUrl('docs/documentation/getting-started')}
+              to={useBaseUrl('docs/')}
             >
               Get Started
             </Link>
