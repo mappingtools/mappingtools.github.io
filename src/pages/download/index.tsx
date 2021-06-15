@@ -80,6 +80,11 @@ const cards = [
         icon: faDownload,
         text: "Installer",
         onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x64.exe"),
+      },
+      {
+        icon: faFileArchive,
+        text: "Portable",
+        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/release_x64.zip"),
       }
     ]
   },
@@ -92,6 +97,11 @@ const cards = [
         icon: faDownload,
         text: "Installer",
         onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x86.exe"),
+      },
+      {
+        icon: faFileArchive,
+        text: "Portable",
+        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/release.zip"),
       }
     ]
   },
@@ -102,6 +112,11 @@ const cards = [
     items: [
       {
         icon: faDownload,
+        onClick: () => { },
+      },
+      {
+        icon: faFileArchive,
+        text: "Portable",
         onClick: () => { },
       }
     ],
