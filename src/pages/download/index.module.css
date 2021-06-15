@@ -7,7 +7,7 @@
 .cardCurrentOs {
   box-sizing: border-box;
   height: 7.9rem;
-  border: 3px solid white;
+  border: 3px solid var(--ifm-code-color);
 }
 
 .autodetect {
@@ -28,7 +28,6 @@
 }
 
 .downloadOption {
-  --ifm-color-gray-900: var(--ifm-color-primary);
   padding: 1rem 0;
   border-color: transparent;
 }
