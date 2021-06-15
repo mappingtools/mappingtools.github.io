@@ -33,7 +33,7 @@ const OS_SUPPORT = Object.freeze({
       name: "Win32",
       supported: true
     },
-    winx64: {
+    win64: {
       name: "Win64",
       supported: true
     },
@@ -73,7 +73,7 @@ const OS_SUPPORT = Object.freeze({
 const cards = [
   {
     label: 'Windows x64',
-    os: OS_SUPPORT.windows.winx64,
+    os: OS_SUPPORT.windows.win64,
     icon: faWindows,
     items: [
       {
@@ -123,7 +123,7 @@ const cards = [
   }
 ];
 
-const getOs = () => {
+const getOs = () => {  
   const userAgent = window.navigator.userAgent;
   const platform = window.navigator.platform;
 
@@ -188,7 +188,7 @@ const Download: React.FC = () => {
           <div className="row">
             {cards.map(({ label, icon, os, items }, i) => (
               <div key={i} className={clsx('col col--4', styles.dlCol)}>
-                <div className={clsx("card", styles.customCard, currentOs === os ? styles.cardCurrentOs : "")}>
+                <div className={clsx("card", styles.customCard, currentOs === os ? styles.cardCurrentOs : styles.cardNotCurrentOs)}>
                   <div className="card__header">
                     <h3 className={clsx(!os.supported && styles.disabledText, styles.cardTitle)}>
                       <FontAwesomeIcon icon={icon} />

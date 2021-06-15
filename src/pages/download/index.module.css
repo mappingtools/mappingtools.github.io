@@ -5,9 +5,11 @@
 }
 
 .cardCurrentOs {
-  box-sizing: border-box;
-  height: 7.9rem;
   border: 3px solid var(--ifm-code-color);
+}
+
+.cardNotCurrentOs {
+  border: 3px solid var(--ifm-card-background-color);
 }
 
 .customCard {
