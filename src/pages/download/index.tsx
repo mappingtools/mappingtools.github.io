@@ -173,28 +173,23 @@ const Download: React.FC = () => {
           <div className="row">
             {cards.map(({ label, icon, os, items }, i) => (
               <div key={i} className={clsx('col col--4', styles.dlCol)}>
-                <div className={clsx("card", currentOs === os ? styles.cardCurrentOs : "")}>
+                <div className={clsx("card", styles.customCard, currentOs === os ? styles.cardCurrentOs : "")}>
                   <div className="card__header">
-                    <h3 className={styles.cardTitle}>
+                    <h3 className={clsx(!os.supported && styles.disabledText, styles.cardTitle)}>
                       <FontAwesomeIcon icon={icon} />
                       &nbsp; {label}
                     </h3>
                   </div>
                   <div className="card__body">
-                    {items.map((item, j) => (
-                      <button
-                        key={j}
-                        className={clsx(
-                          'button button--block button--secondary button--outline',
-                          !os.supported && clsx('disabled', styles.disabled),
-                          styles.downloadOption
-                        )}
-                        onClick={item.onClick}
-                      >
-                        <FontAwesomeIcon icon={item.icon} />
-                        <span className={clsx(styles.itemText)}>{item.text}</span>
-                      </button>
-                    ))}
+                    {!os.supported
+                      ? <p className={clsx(styles.comingSoon)}>Coming soon!</p>
+                      : items.map((item, j) => (
+                          <button key={j} className={clsx('button button--block button--secondary button--outline', !os.supported && clsx('disabled', styles.disabled), styles.downloadOption)} onClick={item.onClick}>
+                            <FontAwesomeIcon icon={item.icon} />
+                            <span className={clsx(styles.itemText)}>{item.text}</span>
+                          </button>
+                      ))
+                    }
                   </div>
                 </div>
               </div>

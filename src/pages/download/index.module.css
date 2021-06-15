@@ -10,6 +10,10 @@
   border: 3px solid var(--ifm-code-color);
 }
 
+.customCard {
+  min-height: 7.9rem;
+}
+
 .autodetect {
   opacity: 0.65;
   margin-top: 2rem;
@@ -36,6 +40,16 @@
   border-color: green;
 }
 
+.disabledText {
+  opacity: 0.25;
+}
+
 .disabled > * {
   opacity: 0.25;
+}
+
+.comingSoon {
+  text-align: center;
+  opacity: 0.50;
+  margin-top: 10px;
 }
