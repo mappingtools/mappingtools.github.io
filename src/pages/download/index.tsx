@@ -35,7 +35,7 @@ const OS_SUPPORT = Object.freeze({
     },
     winx64: {
       name: "Win64",
-      supported: false
+      supported: true
     },
     win: {
       name: "Windows",
@@ -79,7 +79,7 @@ const cards = [
       {
         icon: faDownload,
         text: "Installer",
-        onClick: () => window.open("https://github.com/Olibomby/Mapping_Tools/releases/latest/download/mapping-tools-installer.exe"),
+        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x64.exe"),
       }
     ]
   },
@@ -91,7 +91,7 @@ const cards = [
       {
         icon: faDownload,
         text: "Installer",
-        onClick: () => window.open("https://github.com/Olibomby/Mapping_Tools/releases/latest/download/mapping-tools-installer.exe"),
+        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x86.exe"),
       }
     ]
   },
