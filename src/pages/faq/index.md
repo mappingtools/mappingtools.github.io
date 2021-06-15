@@ -1,6 +1,6 @@
 ---
 title: FAQ
-author: aehrea
+author: OliBomby, aehrea
 ---
 
 # FAQ
@@ -36,5 +36,3 @@ It could be that the wrong version of .NET got installed. You need to install .N
 ## I have a question not on this list or I found a bug.
 
 Ask a question in the mapping-tools-techsupport channel in the [Discord](https://discord.gg/YfjKN2yjQV), ask me directly on Discord (OliBomby#3573), or make a new issue on [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).
-
-## TODO
