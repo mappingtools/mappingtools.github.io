@@ -10,6 +10,10 @@ import { faAndroid, faApple, faAppStoreIos, faGithub, faLinux, faWindows, } from
 import { faCode, faDownload, faFileArchive } from '@fortawesome/free-solid-svg-icons';
 
 const OS_SUPPORT = Object.freeze({
+  undefined: {
+    name: "undefined",
+    supported: false
+  },
   macos: {
     macintosh: {
       name: "Macintosh",
@@ -123,26 +127,35 @@ const cards = [
   }
 ];
 
-const getOs = () => {  
+const getOs = () => {
   const userAgent = window.navigator.userAgent;
+
+  const winX64Pattern = /\b(x86_x64|x86-64|Win64|x64;|amd64|WOW64|x64_x64)\b/gi;
+
+  if (winX64Pattern.test(userAgent)) {
+    return OS_SUPPORT.windows.win64;
+  }
+
   const platform = window.navigator.platform;
 
   const windowsPlatforms = Object.keys(OS_SUPPORT.windows);
-  const macPlatforms = Object.keys(OS_SUPPORT.macos);
-  const iosPlatforms = Object.keys(OS_SUPPORT.ios);
 
   for (let i = 0; i < windowsPlatforms.length; i++) {
     const os = OS_SUPPORT.windows[windowsPlatforms[i]];
     if (os.name === platform) return os;
   }
 
+  const macPlatforms = Object.keys(OS_SUPPORT.macos);
+
   for (let i = 0; i < macPlatforms.length; i++) {
-    const os: { name: string, supported: boolean } = OS_SUPPORT.macos[macPlatforms[i]];
+    const os = OS_SUPPORT.macos[macPlatforms[i]];
     if (os.name === platform) return os;
   }
 
+  const iosPlatforms = Object.keys(OS_SUPPORT.ios);
+
   for (let i = 0; i < iosPlatforms.length; i++) {
-    const os: { name: string, supported: boolean } = OS_SUPPORT.ios[iosPlatforms[i]];
+    const os = OS_SUPPORT.ios[iosPlatforms[i]];
     if (os.name === platform) return os;
   }
 
@@ -154,10 +167,7 @@ const getOs = () => {
     return OS_SUPPORT.linux
   }
 
-  return {
-    name: "undefined",
-    supported: false
-  };
+  return OS_SUPPORT.undefined;
 };
 
 function DetectOs(props) {
@@ -199,10 +209,10 @@ const Download: React.FC = () => {
                     {!os.supported
                       ? <p className={clsx(styles.comingSoon)}>Coming soon!</p>
                       : items.map((item, j) => (
-                          <button key={j} className={clsx('button button--block button--secondary button--outline', !os.supported && clsx('disabled', styles.disabled), styles.downloadOption)} onClick={item.onClick}>
-                            <FontAwesomeIcon icon={item.icon} />
-                            <span className={clsx(styles.itemText)}>{item.text}</span>
-                          </button>
+                        <button key={j} className={clsx('button button--block button--secondary button--outline', !os.supported && clsx('disabled', styles.disabled), styles.downloadOption)} onClick={item.onClick}>
+                          <FontAwesomeIcon icon={item.icon} />
+                          <span className={clsx(styles.itemText)}>{item.text}</span>
+                        </button>
                       ))
                     }
                   </div>
