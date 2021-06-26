@@ -2,61 +2,47 @@
 title: "Installation"
 author: "aehrea"
 id: installation
+description: How to install Mapping Tools.
+keywords:
+  - docs
+  - mapping tools
 ---
 
-## Installation {#installation}
+Mapping Tools currently **only runs on Windows**. The web-based version is there for all platforms but is still in development.
 
-Mapping Tools is an open source all-in-one collection of utilities for mapping in _osu!_.
+## Windows {#windows}
 
-It currently only runs on Windows.
+Mapping Tools can be downloaded from the [downloads page](/download) or from the [GitHub releases](https://github.com/OliBomby/Mapping_Tools/releases).
 
-### Windows {#windows}
+### Installer {#installer}
 
-Mapping Tools can be downloaded from the [downloads page](/download).
+Download and run the installer. Go through all the steps and finish the installer. Mapping Tools will then be installed.
 
-### Mac {#mac}
+The installer automatically installs any dependencies that may be required for Mapping Tools to work.
 
-:::caution Unavailable
+### Portable {#portable}
 
-Mapping Tools is not yet supported yet for this platform.
+Download the portable version .zip file and extract all of the contents into a folder. You can then open **Mapping Tools.exe**.
 
-:::
+:::note
 
-### Linux {#linux}
-
-:::caution Unavailable
-
-Mapping Tools is not yet supported yet for this platform.
+In order to run, you need to have installed **.NET Desktop Runtime 5** with the same architecture as your version of Mapping Tools. That means you need to install x64 .NET if you downloaded x64 Mapping Tools and you need to install x86 .NET if you downloaded x86 Mapping Tools.
 
 :::
 
-### Android {#android}
+## Web-based
 
-:::caution Unavailable
-
-Mapping Tools is not yet supported yet for this platform.
-
-:::
-
-### iOS {#ios}
-
-:::caution Unavailable
-
-Mapping Tools is not yet supported yet for this platform.
-
-:::
-
-### Web-based
+You can find an early preview of web-based Mapping Tools [**here**](https://misakura-rin.github.io/mapping-tools-web/). This version works on all platforms.
 
 :::caution Still in early stages of developement
 
-You can find an early preview of web-based Mapping Tools [here](https://misakura-rin.github.io/mapping-tools-web/)
+Many of the tools are still missing and there are likely a lot of bugs.
 
 :::
 
 ## Setup {#setup}
 
-Once you've installed Mapping Tools, go to **Options > Preferences** to configure Mapping Tools.
+Once you have installed Mapping Tools, go to **Options > Preferences** to configure Mapping Tools.
 
 The most important fields to set are the following:
 
