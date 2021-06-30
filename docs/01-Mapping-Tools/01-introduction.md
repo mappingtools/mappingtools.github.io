@@ -19,15 +19,17 @@ It provides **quality-of-life features** such as backups and memory reading whic
 Get to know Mapping Tools quickly by following any of the **Guides**.
 
 
-[**Install**](02-installation.md) and start Mapping Tools.
+1. [**Install**](02-installation.md) and start Mapping Tools.
 
-Select your beatmap with **File > Open (current) beatmap**.
+2. [**Configure**](02-installation.md#setup) Mapping Tools
 
-Navigate to a tool with the **Tools** menu.
+3. Select your beatmap with **File > Open (current) beatmap**.
 
-Configure and run the tool with the run button on the bottom left.
+4. Navigate to a tool with the **Tools** menu.
 
-Reload your beatmap without saving: `Ctrl+L, Enter`
+5. Configure and run the tool with the run button on the bottom left.
+
+6. Reload your beatmap without saving: `Ctrl+L, Enter`
 
 ## Features {#features}
 

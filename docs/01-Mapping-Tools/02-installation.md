@@ -6,6 +6,7 @@ description: How to install Mapping Tools.
 keywords:
   - docs
   - mapping tools
+  - install
 ---
 
 Mapping Tools currently **only runs on Windows**. The web-based version is there for all platforms but is still in development.
