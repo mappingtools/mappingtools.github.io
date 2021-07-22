@@ -48,8 +48,8 @@ There are three different distinctions SmartQuickRun can make:
 - **Single** for when exactly one hit object is selected. `N=1`
 - **Multiple** for when more than one hit objects are selected. `N>1`
 
-## QuickUndo {#QuickUndo}
+## QuickUndo {#quickundo}
 
-**QuickUndo** is a hotkey that loads the most recent back-up into the editor, effectively undoing the previous tool run. It also supports the **auto reload** feature, just like QuickRun. It's recommended to use QuickUndo alongside QuickRun.
+**QuickUndo** is a hotkey that loads the most recent backup into the editor, effectively undoing the previous tool run. It also supports the **auto reload** feature, just like QuickRun. It's recommended to use QuickUndo alongside QuickRun.
 
 `Ctrl+Shift+Z` is a good hotkey to use for QuickUndo.
