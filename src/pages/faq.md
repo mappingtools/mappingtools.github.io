@@ -33,6 +33,8 @@ If you do copy hitsounds while muting sliderends, then the tool will use the obj
 
 It could be that you installed the wrong version of .NET. You need to install **.NET Desktop Runtime 5** with the **same architecture as Mapping Tools**. So if you have x64 Mapping Tools you need x64 .NET and if you have x86 Mapping Tools you need x86 .NET.
 
+Reinstalling Mapping Tools with a fresh installer from the website should also fix the issue, because the installer automatically installs the correct version of .NET for you.
+
 ## I have a question not on this list or I found a bug.
 
 Ask a question in the mapping-tools-techsupport channel in the [Discord](https://discord.gg/YfjKN2yjQV), ask me directly on Discord (OliBomby#3573), or make a new issue on [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).
