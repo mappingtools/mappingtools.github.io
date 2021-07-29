@@ -168,8 +168,6 @@ module.exports = {
     defaultLocale: 'en',
     locales: [
       'en',
-      'zh-Hans',
-      'ru',
       "de"
     ],
     localeConfigs: {
