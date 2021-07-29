@@ -2,13 +2,13 @@
 title: "Einführung"
 author: "Potoofu"
 id: introduction
-description: Mapping-Tools ist eine All-in-One Hilfsanwendung für das Mapping in osu!.
+description: Mapping Tools ist eine All-in-One Hilfsanwendung für das Mapping in osu!.
 keywords:
   - docs
   - mapping tools
 slug: /
 ---
-Mapping-Tools ist eine Ansammlung von Tools **in einer einzigen Applikation** für das Mapping in osu!
+Mapping Tools ist eine Ansammlung von Tools **in einer einzigen Applikation** für das Mapping in osu!
 Es ermöglicht dir, schnell Änderungen an deiner Beatmap vorzunehmen, welche normalerweise Stunden dauern würden.
 Außerdem bietet es dir **Quality-of-Life** Funktionen wie z.B. automatische Backups und einen direkt ausgelesenen Speicher, welcher von allen Tools genutzt wird, sodass diese dir schnell und zuverlässig zu Verfügung stehen.
 
@@ -16,11 +16,11 @@ Außerdem bietet es dir **Quality-of-Life** Funktionen wie z.B. automatische Bac
 
 ## Erste Schritte {#get-started}
 
-Mit den nachfolgenden **Guides** bist in null Komma nichts dazu bereit Mapping-Tools zu verwenden
+Mit den nachfolgenden **Guides** bist in null Komma nichts dazu bereit Mapping Tools zu verwenden
 
-1. [**Installiere**](02-installation.md) und starte Mapping-Tools.
+1. [**Installiere**](02-installation.md) und starte Mapping Tools.
 
-2. [**Konfiguriere**](02-installation.md#setup) Mapping-Tools
+2. [**Konfiguriere**](02-installation.md#setup) Mapping Tools
 
 3. Wähle deine Beatmap aus über **File > Open (current) beatmap**.
 

@@ -2,7 +2,7 @@
 title: "Mitwirken"
 author: "Potoofu"
 id: contribute
-description: So kannst du an der Entwicklung von Mapping-Tools mitwirken.
+description: So kannst du an der Entwicklung von Mapping Tools mitwirken.
 keywords:
   - docs
   - mapping tools
@@ -13,7 +13,7 @@ Es gibt mehrere fortlaufende Projekte von Mapping Tools.
 
 ### Mapping Tools
 
-Die Desktop-Anwendung von Mapping-Tools
+Die Desktop-Anwendung von Mapping Tools
 
 https://github.com/OliBomby/Mapping_Tools
 
@@ -31,6 +31,6 @@ https://github.com/misakura-rin/mapping-tools-web
 
 ### Mapping Tools Website
 
-Die derzeitige Webseite. Dabei handelt es sich um eine Wissensdatenbank rundum die Features von Mapping-Tools.
+Die derzeitige Webseite. Dabei handelt es sich um eine Wissensdatenbank rundum die Features von Mapping Tools.
 
 https://github.com/mappingtools/mappingtools.github.io
