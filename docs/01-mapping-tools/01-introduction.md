@@ -83,3 +83,5 @@ Mapping Tools is built with freedom in mind, always maximizing the utility of si
 - **Pattern Gallery**
   - Create and share collections of mapping patterns
   - Copy patterns between beatmaps
+- **Mapset Merger**
+  - Merge multiple mapsets into one big mapset
