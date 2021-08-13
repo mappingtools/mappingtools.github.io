@@ -37,7 +37,7 @@ You can find an early preview of web-based Mapping Tools [**here**](https://misa
 
 :::caution Still in early stages of developement
 
-Many of the tools are still missing and there are likely a lot of bugs.
+Many of the tools are still missing and there are likely a lot of bugs. If it doesn't load, try reloading the page with Shift-F5 and clear the cache.
 
 :::
 
