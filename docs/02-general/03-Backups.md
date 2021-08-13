@@ -9,7 +9,7 @@ keywords:
   - backups
 ---
 
-Mapping Tools makes backups of your osu! beatmaps and stores them in the backups folder. To open the backups folder use **Options > Open backups folder**. The location of the backups folder and other settings can be changed in the **Options > Preferences**. 
+Mapping Tools makes backups of your osu! beatmaps and stores them in the backups folder. To open the backups folder use **About > Open backups folder**. The location of the backups folder and other settings can be changed in the **Preferences**. 
 
 The creation of backups makes use of Editor Reader to backup the latest version in the editor instead of the last save.
 

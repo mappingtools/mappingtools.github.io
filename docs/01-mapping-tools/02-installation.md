@@ -43,7 +43,7 @@ Many of the tools are still missing and there are likely a lot of bugs. If it do
 
 ## Setup {#setup}
 
-Once you have installed Mapping Tools, go to **Options > Preferences** to configure Mapping Tools.
+Once you have installed Mapping Tools, click the button in the top left to open the navigation menu and go to **Preferences** to configure Mapping Tools.
 
 The most important fields to set are the following:
 

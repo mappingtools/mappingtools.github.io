@@ -25,7 +25,7 @@ Get to know Mapping Tools quickly by following any of the **Guides**.
 
 3. Select your beatmap with **File > Open (current) beatmap**.
 
-4. Navigate to a tool with the **Tools** menu.
+4. Navigate to a tool with the navigation menu: `Ctrl+K`
 
 5. Configure and run the tool with the run button on the bottom left.
 

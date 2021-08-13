@@ -14,7 +14,7 @@ keywords:
 
 QuickRun is a great way to speed up the usage of Mapping Tools. It allows you to run tools by pressing a hotkey and automatically reload the editor, making the whole process of using a tool just one press of a button.
 
-You can enable QuickRun in the **Options > Preferences**.
+You can enable QuickRun in the **Preferences**.
 
 ```mdx-code-block
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -31,7 +31,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 ## Setup {#setup}
 
-To enable QuickRun, go to **Options > Preferences** and assign a hotkey to the **QuickRun hotkey** field. Now when you press the hotkey, it will run the tool which is currently open in Mapping Tools.
+To enable QuickRun, go to **Preferences** and assign a hotkey to the **QuickRun hotkey** field. Now when you press the hotkey, it will run the tool which is currently open in Mapping Tools.
 
 `Alt+M` is a good hotkey to use since it doesn't interfere with the standard osu! editor hotkeys.
 
