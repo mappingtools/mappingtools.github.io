@@ -61,7 +61,7 @@ Mapping Tools is built with freedom in mind, always maximizing the utility of si
   - Copy hitsounds to slider ticks and slider slide sounds
   - Automatically mute sliderends
 - **Hitsound Studio**
-  - Convert osu! mania hitsounds to osu! standard hitsounds
+  - [Convert osu! mania hitsounds to osu! standard hitsounds](../04-guides/hs-studio-convert-mania-to-standard.md)
   - Combine custom hitsounds from multiple mapsets into one mapset
   - Convert MIDI's to keysounds
 - **Hitsound Preview Helper**
