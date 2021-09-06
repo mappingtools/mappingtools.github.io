@@ -1,8 +1,8 @@
 ---
-title: "Sliderator"
+title: "Convert mania HS to standard HS"
 author: "OliBomby"
 id: convert-mania-to-standard-hs
-description: How to convert osu!mania hitsounds to osu!standard hitsounds with Hitsound Stduio.
+description: How to convert osu!mania hitsounds to osu!standard hitsounds with Hitsound Studio.
 keywords:
   - docs
   - mapping tools
