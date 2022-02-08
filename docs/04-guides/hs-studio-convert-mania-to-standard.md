@@ -14,7 +14,7 @@ osu!mania is known for being able to have multiple notes on the same tick. This 
 
 ## Step 1: Set-up Hitsound Studio {#1}
 
-Open Hitosund Studio in Mapping Tools. Click on the **Project** menu and click **New project**. If don't want to lose your current configuration in Hitsound Studio, first save it with **Save project**.
+Open Hitsound Studio in Mapping Tools. Click on the **Project** menu and click **New project**. If don't want to lose your current configuration in Hitsound Studio, first save it with **Save project**.
 
 ## Step 2: Import hitsound layers {#2}
 
