@@ -9,9 +9,7 @@ keywords:
   - install
 ---
 
-Mapping Tools currently **only runs on Windows**. The web-based version is there for all platforms but is still in development.
-
-## Windows {#windows}
+Mapping Tools currently **only supports Windows**. For non-Windows users there is the option to use [Wine](#wine) or use the [web-based version of Mapping Tools](#web-based).
 
 Mapping Tools can be downloaded from the [downloads page](/download) or from the [GitHub releases](https://github.com/OliBomby/Mapping_Tools/releases).
 
@@ -19,7 +17,7 @@ Mapping Tools can be downloaded from the [downloads page](/download) or from the
 
 Download and run the installer. Go through all the steps and finish the installer. Mapping Tools will then be installed.
 
-The installer automatically installs any dependencies that may be required for Mapping Tools to work.
+The installer automatically installs any dependencies that may be required for Mapping Tools to work, such as .NET 5.
 
 ### Portable {#portable}
 
@@ -31,9 +29,21 @@ In order to run, you need to have installed **.NET Desktop Runtime 5** with the 
 
 :::
 
-## Web-based
+### Wine {#wine}
 
-You can find an early preview of web-based Mapping Tools [**here**](https://misakura-rin.github.io/mapping-tools-web/). This version works on all platforms.
+You can successfully run Mapping Tools on different operating systems with Wine. Most features will work correctly except memory reading and Geometry Dashboard. I recommend disabling Editor Reader in the Preferences, so Mapping Tools will not attempt memory reading every time it does something.
+
+1. Download and install [WineHQ](https://www.winehq.org/). Follow the installation instructions for your operating system.
+2. Download and run the Mapping Tools installer with Wine. 
+3. Run Mapping Tools after the installation is complete.
+
+This has been tested for Ubuntu 20.04 64-bit with wine-6.0.2 and wine-7.0.
+
+### Web-based {#web-based}
+
+You can find an early preview of web-based Mapping Tools [**here**](https://misakura-rin.github.io/mapping-tools-web/). This version works on all platforms. This version of Mapping Tools does not have all the tools available.
+
+Start by uploading your beatmap files with the **Upload** button at the top right. Select a mapping tool on the left, select a beatmap and run. The modified beatmap will be automatically downloaded. The files on the right also update when you run a mapping tool to modify them.
 
 :::caution Still in early stages of developement
 

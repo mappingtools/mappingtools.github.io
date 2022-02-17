@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
+import {Link } from "react-router-dom";
 
 import Layout from '@theme/Layout';
 
@@ -7,70 +8,97 @@ import styles from './index.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAndroid, faApple, faAppStoreIos, faGithub, faLinux, faWindows, } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDownload, faFileArchive } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faDownload, faExternalLinkAlt, faExternalLinkSquareAlt, faFileArchive, faWineBottle, faWineGlass, faWineGlassAlt } from '@fortawesome/free-solid-svg-icons';
 
 const OS_SUPPORT = Object.freeze({
   undefined: {
     name: "undefined",
-    supported: false
+    supported: false,
+    wine_supported: false,
+    web_supported: true
   },
   macos: {
     macintosh: {
       name: "Macintosh",
-      supported: false
+      supported: false,
+      wine_supported: true,
+      web_supported: true
     },
     macIntel: {
       name: "MacIntel",
-      supported: false
+      supported: false,
+      wine_supported: true,
+      web_supported: true
     },
     macPPC: {
       name: "MacPPC",
-      supported: false
+      wine_supported: true,
+      web_supported: true
     },
     mac86K: {
       name: "Mac68K",
-      supported: false
+      supported: false,
+      wine_supported: true,
+      web_supported: true
     }
   },
   windows: {
     win32: {
       name: "Win32",
-      supported: true
+      supported: true,
+      wine_supported: false,
+      web_supported: true
     },
     win64: {
       name: "Win64",
-      supported: true
+      supported: true,
+      wine_supported: false,
+      web_supported: true
     },
     win: {
       name: "Windows",
-      supported: false
+      supported: false,
+      wine_supported: false,
+      web_supported: true
     },
     winCe: {
       name: "WinCE",
-      supported: false
+      supported: false,
+      wine_supported: false,
+      web_supported: true
     }
   },
   ios: {
     iPhone: {
       name: "iPhone",
-      supported: false
+      supported: false,
+      wine_supported: false,
+      web_supported: true
     },
     iPad: {
       name: "iPad",
-      supported: false
+      supported: false,
+      wine_supported: false,
+      web_supported: true
     },
     iPod: {
       name: "iPod",
-      supported: false
+      supported: false,
+      wine_supported: false,
+      web_supported: true
     }
   },
   android: {
     name: "Android",
-    supported: false
+    supported: false,
+    wine_supported: true,
+    web_supported: true
   },
   linux: {
     name: "Linux",
-    supported: false
+    supported: false,
+    wine_supported: true,
+    web_supported: true
   },
 });
 
@@ -179,7 +207,35 @@ function DetectOs(props) {
     return <h4 className={styles.autodetect}>Cannot identify operating system!</h4>
   }
 
-  return <h4 className={styles.autodetect}>Mapping Tools is {props.os.supported ? '' : 'not yet'} available for your operating system ({props.os.name})</h4>
+  return <h4 className={styles.autodetect}>Mapping Tools is {props.os.supported ? '' : 'not '} available for your operating system ({props.os.name}) {props.os.supported ? '' : [', but you can try ', <Link to="/docs/mapping-tools/installation">Wine</Link>]}</h4>
+}
+
+function MakeButtons(props) {
+  const os = props.os;
+  const items = props.items;
+  console.log(os);
+  if (os.supported) {
+    return items.map((item, j) => (
+      <button key={j} className={clsx('button button--block button--secondary button--outline', !os.supported && clsx('disabled', styles.disabled), styles.downloadOption)} onClick={item.onClick}>
+        <FontAwesomeIcon icon={item.icon} />
+        <span className={clsx(styles.itemText)}>{item.text}</span>
+      </button>));
+  }
+  if (os.wine_supported || os.web_supported) {
+    return [<Link to="/docs/mapping-tools/installation"></Link>,
+    <button key={0} className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
+    clsx('disabled', styles.disabled), styles.downloadOption)}>
+      <FontAwesomeIcon icon={faWineGlassAlt} />
+      <span className={clsx(styles.itemText)}>Wine instructions</span>
+    </button>,
+    <button key={0} className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
+    clsx('disabled', styles.disabled), styles.downloadOption)} onClick={() => window.open("https://misakura-rin.github.io/mapping-tools-web/")}>
+      <FontAwesomeIcon icon={faExternalLinkAlt} />
+      <span className={clsx(styles.itemText)}>Mapping Tools Web</span>
+    </button>];
+  }
+
+  return <p className={clsx(styles.comingNever)}>Not supported :(</p>;
 }
 
 const Download: React.FC = () => {
@@ -200,21 +256,13 @@ const Download: React.FC = () => {
               <div key={i} className={clsx('col col--4', styles.dlCol)}>
                 <div className={clsx("card", styles.customCard, currentOs === os ? styles.cardCurrentOs : styles.cardNotCurrentOs)}>
                   <div className="card__header">
-                    <h3 className={clsx(!os.supported && styles.disabledText, styles.cardTitle)}>
+                    <h3 className={clsx(styles.cardTitle)}>
                       <FontAwesomeIcon icon={icon} />
                       &nbsp; {label}
                     </h3>
                   </div>
                   <div className="card__body">
-                    {!os.supported
-                      ? <p className={clsx(styles.comingSoon)}>Coming soon!</p>
-                      : items.map((item, j) => (
-                        <button key={j} className={clsx('button button--block button--secondary button--outline', !os.supported && clsx('disabled', styles.disabled), styles.downloadOption)} onClick={item.onClick}>
-                          <FontAwesomeIcon icon={item.icon} />
-                          <span className={clsx(styles.itemText)}>{item.text}</span>
-                        </button>
-                      ))
-                    }
+                    <MakeButtons os={os} items={items} />
                   </div>
                 </div>
               </div>
