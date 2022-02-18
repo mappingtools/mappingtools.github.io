@@ -213,7 +213,6 @@ function DetectOs(props) {
 function MakeButtons(props) {
   const os = props.os;
   const items = props.items;
-  console.log(os);
   if (os.supported) {
     return items.map((item, j) => (
       <button key={j} className={clsx('button button--block button--secondary button--outline', !os.supported && clsx('disabled', styles.disabled), styles.downloadOption)} onClick={item.onClick}>
@@ -222,13 +221,15 @@ function MakeButtons(props) {
       </button>));
   }
   if (os.wine_supported || os.web_supported) {
-    return [<Link to="/docs/mapping-tools/installation"></Link>,
-    <button key={0} className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
-    clsx('disabled', styles.disabled), styles.downloadOption)}>
-      <FontAwesomeIcon icon={faWineGlassAlt} />
-      <span className={clsx(styles.itemText)}>Wine instructions</span>
-    </button>,
-    <button key={0} className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
+    return [
+    <Link key={0} to="/docs/mapping-tools/installation">,
+      <button className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
+      clsx('disabled', styles.disabled), styles.downloadOption)}>
+        <FontAwesomeIcon icon={faWineGlassAlt} />
+        <span className={clsx(styles.itemText)}>Wine instructions</span>
+      </button>
+    </Link>,
+    <button key={2} className={clsx('button button--block button--secondary button--outline', !os.web_supported && 
     clsx('disabled', styles.disabled), styles.downloadOption)} onClick={() => window.open("https://misakura-rin.github.io/mapping-tools-web/")}>
       <FontAwesomeIcon icon={faExternalLinkAlt} />
       <span className={clsx(styles.itemText)}>Mapping Tools Web</span>
