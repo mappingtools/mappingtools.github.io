@@ -222,7 +222,7 @@ function MakeButtons(props) {
   }
   if (os.wine_supported || os.web_supported) {
     return [
-    <Link key={0} to="/docs/mapping-tools/installation#wine">,
+    <Link key={0} to="/docs/mapping-tools/installation#wine">
       <button className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
       clsx('disabled', styles.disabled), styles.downloadOption)}>
         <FontAwesomeIcon icon={faWineGlassAlt} />
