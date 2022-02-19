@@ -8,6 +8,7 @@ keywords:
   - mapping tools
   - hitsound studio
   - hitsounds
+  - convert hs
 ---
 
 osu!mania is known for being able to have multiple notes on the same tick. This gives a lot more freedom in hitsounding osu!mania, because you can use multiple sample sets or custom samples simultaneously. However this makes copying hitsounds from osu!mania to osu!standard more difficult, because in osu!standard you can have at most one note per tick. Hitsound Studio makes it possible to convert these osu!mania hitsounds to osu!standard hitsounds and open up a lot of hitsounding possibilities.
