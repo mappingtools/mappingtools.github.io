@@ -8,9 +8,9 @@ Sliderator is a tool that lets you create sliders or streams which change speed 
 
 To get started, simply import a slider with the controls in the top left and start editing the graph with your right mouse button.
 
-:::caution Unrankable
+:::caution Semi-Unrankable
 
-Sliders made by Sliderator are deemed unrankable, because the changes in speed are unreadable.
+Sliders made by Sliderator are generally deemed unrankable, unless the changes in speed are readable.
 
 :::
 
