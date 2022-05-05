@@ -45,7 +45,7 @@ For the Y-axis there are two modes and they can be toggled with the green button
 
 You edit the graph using control points and interpolations. 
 
-To place a new control point, **right-click** anywhere on the graph. Right-clicking on a control point opens a context menu which lets you delete the control point or change its method of interpolation. Use **left-click** to drag around control points.
+To place a new control point, **right-click** anywhere on the graph. Right-clicking on a control point opens a context menu which lets you delete the control point or change its method of interpolation. Use **shift+right-click** on a control point to instantly remove it. Use **left-click** on control points to drag them around. You can pan and zoom the view by dragging the background with the left mouse button or scrolling with the scrollwheel.
 
 In the middle of each interpolated section is a smaller control point. Dragging this control point up and down lets you change the shape of the interpolation. **Right-click** on it to reset the control point.
 
