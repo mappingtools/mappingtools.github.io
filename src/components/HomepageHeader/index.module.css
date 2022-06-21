@@ -3,7 +3,6 @@
 }
 
 .heroBanner {
-  height: calc(100vh - var(--ifm-navbar-height));
   padding: 0 20px;
   overflow: hidden;
   text-align: center;
