@@ -27,7 +27,7 @@ Get to know Mapping Tools quickly by following any of the **Guides**.
 
 4. Navigate to a tool with the navigation menu: `Ctrl+K`
 
-5. Configure and run the tool with the run button on the bottom left.
+5. Configure and run the tool with the run button on the bottom right.
 
 6. Reload your beatmap without saving: `Ctrl+L, Enter`
 
