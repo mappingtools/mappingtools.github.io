@@ -85,3 +85,6 @@ Mapping Tools is built with freedom in mind, always maximizing the utility of si
   - Copy patterns between beatmaps
 - **Mapset Merger**
   - Merge multiple mapsets into one big mapset
+- **Tumour Generator**
+  - Add various shapes along the sides of your sliders
+  - Design complete sliders in a new way
