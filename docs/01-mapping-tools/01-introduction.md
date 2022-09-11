@@ -16,7 +16,7 @@ It provides **quality-of-life features** such as backups and memory reading whic
 
 ## Get Started {#get-started}
 
-Get to know Mapping Tools quickly by following any of the **Guides**.
+Get to know Mapping Tools quickly by following any of the **Guides** or [**Video Tutorials**](https://www.youtube.com/playlist?list=PLuijZnrwVA86pO7zIP9oVu-7YAQ5qEe2Y).
 
 
 1. [**Install**](02-installation.md) and start Mapping Tools.
