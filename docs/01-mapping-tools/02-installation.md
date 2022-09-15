@@ -29,15 +29,19 @@ In order to run, you need to have installed **.NET Desktop Runtime 5** with the 
 
 :::
 
-### Wine {#wine}
+### Wine (Linux) {#wine}
 
 You can successfully run Mapping Tools on different operating systems with Wine. Most features will work correctly except memory reading and Geometry Dashboard. I recommend disabling Editor Reader in the Preferences, so Mapping Tools will not attempt memory reading every time it does something.
 
-1. Download and install [WineHQ](https://www.winehq.org/). Follow the installation instructions for your operating system.
-2. Download and run the Mapping Tools installer with Wine. 
-3. Run Mapping Tools after the installation is complete.
+1. Install [WineHQ](https://www.winehq.org/). Follow the installation instructions for your operating system.
+2. If you are using an Arch Linux distro, then you need to install GDI+ using Winetricks.
+3. Download and install [.NET 5 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) using Wine.
+4. Download and run the Mapping Tools installer using Wine.
+5. Run Mapping Tools after the installation is complete.
 
-This has been tested for Ubuntu 20.04 64-bit with wine-6.0.2 and wine-7.0.
+This has been tested with:
+- Ubuntu 20.04 64-bit with wine-6.0.2 and wine-7.0.
+- Manjaro KDE 21.3.7 with wine-7.1.
 
 ### Web-based {#web-based}
 
