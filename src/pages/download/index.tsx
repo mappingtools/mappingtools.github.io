@@ -230,7 +230,7 @@ function MakeButtons(props) {
       </button>
     </Link>,
     <button key={2} className={clsx('button button--block button--secondary button--outline', !os.web_supported && 
-    clsx('disabled', styles.disabled), styles.downloadOption)} onClick={() => window.open("https://misakura-rin.github.io/mapping-tools-web/")}>
+    clsx('disabled', styles.disabled), styles.downloadOption)} onClick={() => window.open("https://potoofu.github.io/mapping-tools-web/")}>
       <FontAwesomeIcon icon={faExternalLinkAlt} />
       <span className={clsx(styles.itemText)}>Mapping Tools Web</span>
     </button>];

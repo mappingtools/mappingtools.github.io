@@ -45,7 +45,7 @@ This has been tested with:
 
 ### Web-based {#web-based}
 
-You can find an early preview of web-based Mapping Tools [**here**](https://misakura-rin.github.io/mapping-tools-web/). This version works on all platforms. This version of Mapping Tools does not have all the tools available.
+You can find an early preview of web-based Mapping Tools [**here**](https://potoofu.github.io/mapping-tools-web/). This version works on all platforms. This version of Mapping Tools does not have all the tools available.
 
 Start by uploading your beatmap files with the **Upload** button at the top right. Select a mapping tool on the left, select a beatmap and run. The modified beatmap will be automatically downloaded. The files on the right also update when you run a mapping tool to modify them.
 
