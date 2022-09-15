@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mappingtools.github.io/blog</id>
+    <id>https://mappingtools.github.io/de/blog</id>
     <title>Mapping Tools Blog</title>
     <updated>2020-03-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://mappingtools.github.io/blog"/>
+    <link rel="alternate" href="https://mappingtools.github.io/de/blog"/>
     <subtitle>Mapping Tools Blog</subtitle>
-    <icon>https://mappingtools.github.io/img/favicon.ico</icon>
+    <icon>https://mappingtools.github.io/de/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Mapping Tools Discord]]></title>
         <id>0</id>
         <link href="https://mappingtools.github.io/de/blog/0"/>
         <updated>2020-03-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Mapping Tools now has its own discord!]]></summary>
+        <content type="html"><![CDATA[<p>Mapping Tools now has its own discord!</p><p>Permanent invite link: <a href="https://discord.gg/YfijKN2yjQV" target="_blank" rel="noopener noreferrer">https://discord.gg/YfijKN2yjQV</a></p>]]></content>
+        <author>
+            <name>OliBomby</name>
+            <uri>https://github.com/OliBomby</uri>
+        </author>
+        <category label="discord" term="discord"/>
     </entry>
 </feed>
