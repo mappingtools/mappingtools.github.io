@@ -24,6 +24,7 @@ Mapping Tools saves backups of your beatmaps any time it makes a change. You can
 These are features that depend on reading the memory of the osu! client. Memory reading can randomly stop working sometimes in which case restarting osu! or restarting your computer usually fixes the issue. Other causes and solutions for the issue:
 - Firewall of anti-virus is blocking Mapping Tools: Disable the anti-virus or exempt Mapping Tools and try again.
 - Not using the latest version of Mapping Tools: Sometimes an update to Mapping Tools is required to match changes in osu!
+- Not using the latest version of osu!: Switch off of private servers and update osu! to the latest version.
 - osu! updated and changed memory offsets again: Please notify me so the issue can be fixed.
 - Using Mapping Tools on Windows 7 or earlier: Make sure you have .NET framework 4.5.1 or later installed.
 - Using Mapping Tools on an OS which is not Windows: No solutions for this unfortunately.
