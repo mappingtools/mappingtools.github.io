@@ -15,6 +15,10 @@ Also, make sure to **reload the editor without saving** after running the tool, 
 
 Hover your mouse cursor over the **Beatmap name at the top of the window** and it will show the full path. Does this path exist? Is the Songs folder in the right place? If your Songs folder is not in the default Appdata location, make sure you have set the correct path to your Songs folder in the **Preferences**.
 
+### I get an error every time I run any tool on a specific map, but other maps don't give the error.
+
+The map you are trying to edit is probably using an old unsupported file format or it is corrupted. You can fix this by opening the map in the editor and saving it. This will force osu! to update the map to the latest file format which is compatible with Mapping Tools.
+
 ## A tool broke my map. What do I do?
 
 Mapping Tools saves backups of your beatmaps any time it makes a change. You can find these backups by going to **About > Open backup folder**. You can also load a backup to the Current Map with **File > Load backup**, or by using the QuickUndo hotkey which you can enable in the **Preferences**.
