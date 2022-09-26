@@ -10,7 +10,7 @@ To get started, simply import a slider with the controls in the top left and sta
 
 :::caution Semi-Unrankable
 
-Sliders made by Sliderator are generally deemed unrankable, unless the changes in speed are readable.
+Sliders made by Sliderator are deemed unrankable. Details can be read in [this reddit post](https://www.reddit.com/r/osugame/comments/xnmcuq/acceldecel_sliders_made_with_mapping_tool_is_now/?utm_source=share&utm_medium=web2x&context=3).
 
 :::
 
