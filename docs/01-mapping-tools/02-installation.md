@@ -38,6 +38,7 @@ You can successfully run Mapping Tools on different operating systems with Wine.
 3. Download and install [.NET 5 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) using Wine.
 4. Download and run the Mapping Tools installer using Wine.
 5. Run Mapping Tools after the installation is complete.
+6. Go to the Preferences and disable Editor Reader.
 
 This has been tested with:
 - Ubuntu 20.04 64-bit with wine-6.0.2 and wine-7.0.
