@@ -125,8 +125,8 @@ module.exports = {
           title: "Support us",
           items: [
             {
-              label: "Patreon",
-              to: "https://www.patreon.com/OliBomby"
+              label: "Ko-fi",
+              to: "https://ko-fi.com/olibomby"
             }
           ]
         }
