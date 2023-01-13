@@ -43,9 +43,9 @@
     "message": "Website",
     "description": "The label of footer link with label=Website linking to docs/contribute/Website/contribute-mt-intro"
   },
-  "link.item.label.Patreon": {
-    "message": "Patreon",
-    "description": "The label of footer link with label=Patreon linking to https://www.patreon.com/OliBomby"
+  "link.item.label.Ko-fi": {
+    "message": "Ko-fi",
+    "description": "The label of footer link with label=Ko-fi linking to https://ko-fi.com/olibomby"
   },
   "copyright": {
     "message": "Copyright © 2021 OliBomby and the Mapping Tools documentation contributors.",
