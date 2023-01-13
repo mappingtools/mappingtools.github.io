@@ -4,10 +4,20 @@
         <title>Mapping Tools Blog</title>
         <link>https://mappingtools.github.io/de/blog</link>
         <description>Mapping Tools Blog</description>
-        <lastBuildDate>Mon, 16 Mar 2020 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Jan 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>de</language>
+        <item>
+            <title><![CDATA[Ko-fi donations]]></title>
+            <link>https://mappingtools.github.io/de/blog/1</link>
+            <guid>1</guid>
+            <pubDate>Mon, 09 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[You can now support Mapping Tools on Ko-fi!]]></description>
+            <content:encoded><![CDATA[<p>You can now support Mapping Tools on Ko-fi!</p><p><a href="https://ko-fi.com/olibomby" target="_blank" rel="noopener noreferrer">https://ko-fi.com/olibomby</a></p>]]></content:encoded>
+            <category>ko-fi</category>
+            <category>donations</category>
+        </item>
         <item>
             <title><![CDATA[Mapping Tools Discord]]></title>
             <link>https://mappingtools.github.io/de/blog/0</link>

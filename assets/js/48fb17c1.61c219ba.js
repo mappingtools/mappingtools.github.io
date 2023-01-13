@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmt_website=self.webpackChunkmt_website||[]).push([[185],{7764:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/donations","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

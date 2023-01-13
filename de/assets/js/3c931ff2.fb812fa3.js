@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmt_website=self.webpackChunkmt_website||[]).push([[652],{8391:e=>{e.exports=JSON.parse('{"permalink":"/de/blog/tags/ko-fi","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
