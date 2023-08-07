@@ -35,10 +35,12 @@ You can successfully run Mapping Tools on different operating systems with Wine.
 
 1. Install [WineHQ](https://www.winehq.org/). Follow the installation instructions for your operating system.
 2. If you are using an Arch Linux distro, then you need to install GDI+ using Winetricks.
-3. Download and install [.NET 5 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) using Wine.
-4. Download and run the Mapping Tools installer using Wine.
-5. Run Mapping Tools after the installation is complete.
-6. Go to the Preferences and disable Editor Reader.
+3. Download and install the windows version of [.NET 5 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) using Wine.
+4. Launch `wine regedit` and then go to the `HKEY_CURRENT_USER/Environment`.
+5. Create a new text key called `DOTNET_ROOT` and set the value to `C:\Program Files\dotnet`.
+6. Download and run the Mapping Tools installer using Wine.
+7. Run Mapping Tools after the installation is complete.
+8. Go to the Preferences and disable Editor Reader.
 
 This has been tested with:
 - Ubuntu 20.04 64-bit with wine-6.0.2 and wine-7.0.
