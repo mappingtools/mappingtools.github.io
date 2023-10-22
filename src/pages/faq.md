@@ -15,7 +15,7 @@ Also, make sure to **reload the editor without saving** after running the tool, 
 
 Hover your mouse cursor over the **Beatmap name at the top of the window** and it will show the full path. Does this path exist? Is the Songs folder in the right place? If your Songs folder is not in the default Appdata location, make sure you have set the correct path to your Songs folder in the **Preferences**.
 
-### I get an error every time I run any tool on a specific map, but other maps don't give the error.
+## I get an error every time I run any tool on a specific map, but other maps don't give the error.
 
 The map you are trying to edit is probably using an old unsupported file format or it is corrupted. You can fix this by opening the map in the editor and saving it. This will force osu! to update the map to the latest file format which is compatible with Mapping Tools.
 
@@ -47,4 +47,4 @@ Reinstalling Mapping Tools with a fresh installer from the website should also f
 
 ## I have a question not on this list or I found a bug.
 
-Ask a question in the mapping-tools-techsupport channel in the [Discord](https://discord.gg/YfjKN2yjQV), ask me directly on Discord (OliBomby#3573), or make a new issue on [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).
+Ask a question in the mapping-tools-techsupport channel in the [Discord](https://discord.gg/YfjKN2yjQV), ask me directly on Discord (olibomby), or make a new issue on [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).
