@@ -28,6 +28,7 @@ Any features that use Editor Reader will not work in osu! lazer, so it is recomm
 - :x: Anything **Open current beatmap** does not work
 - :x: Anything **Current editor time** does not work
 - :x: Anything **Selected hit objects** does not work
+- :x: Anything that requires calculating slider paths for sliders with multiple segments does not work
 - :white_check_mark: **Generate backup** works
 - :white_check_mark: **Load backup** works
 
@@ -35,21 +36,30 @@ Any features that use Editor Reader will not work in osu! lazer, so it is recomm
 - :x: **Geometry Dashboard** does not work. Relies on editor reader.
 - :white_check_mark: **Hitsound Copier** works
 - :large_orange_diamond: **Hitsound Studio** works, but references to imported samples and beatmaps break after the temp folder is removed.
-- :large_orange_diamond: **Pattern Gallery** works, but thumbnails render incorrectly for multiple path type sliders.
+- :large_orange_diamond: **Pattern Gallery** works, but thumbnails render incorrectly for sliders with multiple segments.
 - :white_check_mark: **Property Transformer** works
-- :large_orange_diamond: **Sliderator** works, but is extremely laggy in lazer editor. Does not work for multiple path types.
-- :large_orange_diamond: **Tumour Generator 2** works, but not for multiple path types.
+- :large_orange_diamond: **Sliderator** works, but is extremely laggy in lazer editor. Does not work for sliders with multiple segments.
+- :large_orange_diamond: **Tumour Generator 2** works, but not for sliders with multiple segments.
 - :large_orange_diamond: **Auto-fail Detector** works, but auto-fail does not exist in Lazer.
 - :white_check_mark: **Combo Colour Studio** works
-- :large_orange_diamond: **Hitsound Preview Helper** works, but custom samples do not work in Lazer.
+- :large_orange_diamond: **Hitsound Preview Helper** works, but custom samples do not work yet in Lazer.
 - :white_check_mark: **Map Cleaner** works
 - :white_check_mark: **Mapset Merger** works
 - :white_check_mark: **Metadata Manager** works
 - :white_check_mark: **Rhythm Guide** works
-- :large_orange_diamond: **Slider Completionator** works, but length calculation and **Move anchors to new length** do not work for multiple path types.
-- :large_orange_diamond: **Slider Merger** works, but not for multiple path types.
+- :large_orange_diamond: **Slider Completionator** works, but length calculation and **Move anchors to new length** do not work for sliders with multiple segments.
+- :large_orange_diamond: **Slider Merger** works, but not for sliders with multiple segments.
 - :large_orange_diamond: **Slider Picturator** works, but the picture slider does not show up in Lazer.
 - :white_check_mark: **Timing Copier** works
 - :white_check_mark: **Timing Helper** works
 
+## Heads up about continued lazer compatibility
+As osu! lazer continues to evolve, it's file format changes more and more from the stable format, and with that Mapping Tools struggles to keep up with the changes.
+
+If you run into any issues using Mapping Tools on lazer, I recommend this workaround:
+- Export your beatmap with stable compatibility: **File > Export > For compatibility (.osz)**
+- Open the .osz in osu! stable or extract it with an archive manager (7zip/winrar)
+- Select the beatmap .osu file from the .osz in Mapping Tools
+- Do your Mapping Tool business
+- Import the changed beatmap .osu file back into lazer. You can do this with **File > Edit externally** in the lazer editor, then add the edited .osu file in the folder, or copy individual hitobjects from .osu file to .osu file.
 
