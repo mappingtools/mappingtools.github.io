@@ -56,7 +56,7 @@ You can find an early preview of web-based Mapping Tools [here](https://misakura
 
 ## Setup {#setup}
 
-Once you've installed Mapping Tools, go to **Options > Preferences** to configure Mapping Tools.
+Once you've installed Mapping Tools, go to **Preferences** to configure Mapping Tools.
 
 The most important fields to set are the following:
 

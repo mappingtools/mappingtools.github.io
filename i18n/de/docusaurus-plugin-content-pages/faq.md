@@ -19,11 +19,11 @@ Am besten lädst du die Beatmap im Editor neu indem du erst `Ctrl+L` und dann `E
 
 Überprüfe zuerst, ob **die blaue Leiste am unteren Rand der Anwendung den richtigen Pfad zur zu bearbeitenden Beatmap** anzeigt.
 
-Sollte dies nicht der Fall sein, musst du die Pfade in **Options > Preferences** überprüfen und eventuell korrigieren.
+Sollte dies nicht der Fall sein, musst du die Pfade in **Preferences** überprüfen und eventuell korrigieren.
 
 ## Meine Beatmap hat Fehler oder ist nicht mehr nutzbar nachdem ich ein Tool verwendet habe.
 
-Mapping-Tools erstellt nach jeder Änderung ein Backup der Beatmap. Den Ordner mit diesem Backup kannst du ganz einfach über das Dropdown **Options > Open backup folder** öffnen. Ansonsten kannst du über das Menü **File > Load backup** oder mit dem **QuickUndo-Hotkey** (falls dieser gesetzt ist) ein Backup auch direkt wiederherstellen.
+Mapping-Tools erstellt nach jeder Änderung ein Backup der Beatmap. Den Ordner mit diesem Backup kannst du ganz einfach über das Dropdown **About > Open backup folder** öffnen. Ansonsten kannst du über das Menü **File > Load backup** oder mit dem **QuickUndo-Hotkey** (falls dieser gesetzt ist) ein Backup auch direkt wiederherstellen.
 
 ## Der Menüpunkt "Open Current Beatmap" funktioniert nicht oder es können keine Hitobjekte abgerufen werden.
 

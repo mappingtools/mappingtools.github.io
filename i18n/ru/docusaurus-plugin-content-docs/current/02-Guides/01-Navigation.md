@@ -6,7 +6,7 @@ id: navigation
 
 Mapping Tools by default opens to the Get Started Screen, which contains a changelog of the application, as well as a list of most recently used maps with Mapping Tools. 
 
-This screen can also be reached via **Options > Get started**.
+This screen can also be reached via **Left bar > Get started**.
 
 ### File {#file}
 
