@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmt_website=self.webpackChunkmt_website||[]).push([[698],{9014:s=>{s.exports=JSON.parse('{"label":"donations","permalink":"/blog/tags/donations","allTagsPath":"/blog/tags","count":1}')}}]);

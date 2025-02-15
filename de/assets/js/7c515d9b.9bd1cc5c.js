@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmt_website=self.webpackChunkmt_website||[]).push([[334],{4098:e=>{e.exports=JSON.parse('{"label":"ko-fi","permalink":"/de/blog/tags/ko-fi","allTagsPath":"/de/blog/tags","count":1}')}}]);
