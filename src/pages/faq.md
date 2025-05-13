@@ -31,7 +31,7 @@ These are features that depend on reading the memory of the osu! client. Memory 
 - Not using the latest version of osu!: Switch off of private servers and update osu! to the latest version.
 - osu! updated and changed memory offsets again: Please notify me so the issue can be fixed.
 - Using Mapping Tools on Windows 7 or earlier: Make sure you have .NET framework 4.5.1 or later installed.
-- Using Mapping Tools on an OS which is not Windows: No solutions for this unfortunately.
+- Using Mapping Tools on an OS which is not Windows: Refer to the [Wine instructions](../../docs/mapping-tools/installation#wine).
 
 ## How to mute sliderends without copying hitsounds?
 

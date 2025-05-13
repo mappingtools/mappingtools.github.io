@@ -31,7 +31,19 @@ In order to run, you need to have installed **.NET Desktop Runtime 5** with the 
 
 ### Wine (Linux) {#wine}
 
-You can successfully run Mapping Tools on different operating systems with Wine. Most features will work correctly except memory reading and Geometry Dashboard. I recommend disabling Editor Reader in the Preferences, so Mapping Tools will not attempt memory reading every time it does something.
+You can successfully run Mapping Tools on different operating systems with Wine. Most features will work correctly, but memory reading and Geometry Dashboard need some extra consideration.
+In order to get memory reading to work, you need to install Mapping Tools into the osu! Wine prefix and run it with the same Wine binary. You also need to open osu! before opening Mapping Tools. If you can not get it to work, I recommend disabling Editor Reader in the Preferences, so Mapping Tools will not attempt memory reading every time it does something.
+
+#### Install script (Recommended)
+
+Use [this install script](https://gist.github.com/night-mareLuna/52c21dabd35d7cd359f9c52b471f0a8f) to automatically install Mapping Tools into your osu! Wine prefix. It will install any dependencies and memory reading should work too. This has been tested with [osu-winello](https://github.com/NelloKudo/osu-winello).
+
+1. Download `install-mappingtools.sh` from the [GitHub gist](https://gist.github.com/night-mareLuna/52c21dabd35d7cd359f9c52b471f0a8f).
+2. Start your osu! client.
+3. Run: `chmod +x ./install-mappingtools.sh`
+4. Run: `./install-mappingtools.sh --install`
+
+#### Manual install
 
 1. Install [WineHQ](https://www.winehq.org/). Follow the installation instructions for your operating system.
 2. If you are using an Arch Linux distro, then you need to install GDI+ using Winetricks.
