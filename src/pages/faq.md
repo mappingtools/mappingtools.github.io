@@ -45,6 +45,10 @@ It could be that you installed the wrong version of .NET. You need to install **
 
 Reinstalling Mapping Tools with a fresh installer from the website should also fix the issue, because the installer automatically installs the correct version of .NET for you.
 
+## Does Mapping Tools work in lazer?
+
+Yes, most functionality of Mapping Tools works in lazer. For more details see the [guide](../../docs/04-guides/use-mt-in-lazer.md).
+
 ## I have a question not on this list or I found a bug.
 
 Ask a question in the mapping-tools-techsupport channel in the [Discord](https://discord.gg/YfjKN2yjQV), ask me directly on Discord (olibomby), or make a new issue on [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).
