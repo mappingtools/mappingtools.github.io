@@ -41,7 +41,9 @@ Solltest du Hitsounds kopieren und gleichzeitig Sliderends stummschalten, verwen
 
 # Beim Start von Mapping-Tools werde ich aufgefordert, .NET zu installieren, obwohl ich dies schon getan habe.
 
-Möglicherweise hat du falsche Version von .NET installiert. Du musst **.NET Desktop Runtime 5** mit der **gleichen Architektur wie Mapping Tools** installieren. Wenn du also `x64` Mapping Tools installiert hast, benötigst du `x64` .NET und wenn du `x86` Mapping Tools installiert hast, benötigst du `x86` .NET. 
+Aktuelle Versionen von Mapping Tools verwenden .NET 10 und werden als selbstenthaltendes Paket ausgeliefert, daher sollte keine separate .NET-Installation erforderlich sein.
+
+Wenn trotzdem eine .NET-Aufforderung erscheint, stelle sicher, dass du eine aktuelle Mapping-Tools-Version startest, und installiere sie mit einem frischen Download von der Website neu.
 
 ## Ich habe eine Frage die hier nicht vorkommt oder ich habe einen Bug gefunden.
 

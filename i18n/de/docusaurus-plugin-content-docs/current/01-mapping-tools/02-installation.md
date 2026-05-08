@@ -17,17 +17,11 @@ Mapping tools kann von der [Downloads Seite](/download) oder von den [GitHub rel
 
 Lade den Installer herunter und führe ihn aus. Schließe alle Schritte ab und beende den Installer. Mapping Tools wird daraufhin installiert sein.
 
-Der Installer lädt automatisch alle Abhängigkeiten (Dependencies) herrunter die Mapping Tools benötogt, wie z.B. .NET 5.
+Mapping Tools verwendet .NET 10 und wird als selbstenthaltendes Paket ausgeliefert, daher ist keine separate .NET-Installation erforderlich.
 
 ### Portable {#portable}
 
 Lade die portable .zip Datei herunter und extrahiere deren Inhalte in einen Ordner. Öffne die Datei **Mapping Tools.exe**
-
-:::note
-
-Um Mapping Tools ausführen zu können musst du **.NET Desktop Runtime 5** mit der selben Architektur wie deine Verion von Mapping Tools installiert haben. Das bedeutet, dass du x64 .NET installieren musst wenn du x64 Mapping Tools heruntergeladen hast, und x86 .NET installieren musst wenn du x64 Mapping Tools heruntergeladen hast.
-
-:::
 
 ### Wine {#wine}
 

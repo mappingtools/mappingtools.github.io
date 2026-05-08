@@ -17,17 +17,11 @@ Mapping Tools can be downloaded from the [downloads page](/download) or from the
 
 Download and run the installer. Go through all the steps and finish the installer. Mapping Tools will then be installed.
 
-The installer automatically installs any dependencies that may be required for Mapping Tools to work, such as .NET 5.
+Mapping Tools targets .NET 10 and is packaged self-contained, so no separate .NET installation is required.
 
 ### Portable {#portable}
 
 Download the portable version .zip file and extract all of the contents into a folder. You can then open **Mapping Tools.exe**.
-
-:::note
-
-In order to run, you need to have installed **.NET Desktop Runtime 5** with the same architecture as your version of Mapping Tools. That means you need to install x64 .NET if you downloaded x64 Mapping Tools and you need to install x86 .NET if you downloaded x86 Mapping Tools.
-
-:::
 
 ### Wine (Linux) {#wine}
 
@@ -47,12 +41,9 @@ Use [this install script](https://gist.github.com/night-mareLuna/52c21dabd35d7cd
 
 1. Install [WineHQ](https://www.winehq.org/). Follow the installation instructions for your operating system.
 2. If you are using an Arch Linux distro, then you need to install GDI+ using Winetricks.
-3. Download and install the windows version of [.NET 5 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) using Wine.
-4. Launch `wine regedit` and then go to the `HKEY_CURRENT_USER/Environment`.
-5. Create a new text key called `DOTNET_ROOT` and set the value to `C:\Program Files\dotnet`.
-6. Download and run the Mapping Tools installer using Wine.
-7. Run Mapping Tools after the installation is complete.
-8. Go to the Preferences and disable Editor Reader.
+3. Download and run the Mapping Tools installer using Wine.
+4. Run Mapping Tools after the installation is complete.
+5. Go to the Preferences and disable Editor Reader if it doesn't work.
 
 This has been tested with:
 - Ubuntu 20.04 64-bit with wine-6.0.2 and wine-7.0.

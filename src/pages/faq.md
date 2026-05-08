@@ -41,9 +41,9 @@ If you do copy hitsounds while muting sliderends, then the tool will use the obj
 
 ## Starting Mapping Tools prompts me to install .NET, but I installed it already.
 
-It could be that you installed the wrong version of .NET. You need to install **.NET Desktop Runtime 5** with the **same architecture as Mapping Tools**. So if you have x64 Mapping Tools you need x64 .NET and if you have x86 Mapping Tools you need x86 .NET.
+Current versions of Mapping Tools target .NET 10 and are packaged self-contained, so they should not require a separate .NET installation.
 
-Reinstalling Mapping Tools with a fresh installer from the website should also fix the issue, because the installer automatically installs the correct version of .NET for you.
+If you still see a .NET prompt, make sure you are launching a current Mapping Tools release and reinstall with a fresh download from the website.
 
 ## Does Mapping Tools work in lazer?
 
