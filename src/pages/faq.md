@@ -47,7 +47,7 @@ If you still see a .NET prompt, make sure you are launching a current Mapping To
 
 ## Does Mapping Tools work in lazer?
 
-Yes, most functionality of Mapping Tools works in lazer. For more details see the [guide](../../docs/04-guides/use-mt-in-lazer.md).
+Yes, most functionality of Mapping Tools works in lazer. For more details see the [guide](/docs/guides/use-mt-in-lazer).
 
 ## I have a question not on this list or I found a bug.
 
