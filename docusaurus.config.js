@@ -5,7 +5,11 @@ module.exports = {
   url: 'https://mappingtools.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   organizationName: 'mappingtools', // Usually your GitHub org/user name.
   projectName: 'mappingtools.github.io', // Usually your repo name.
@@ -101,7 +105,7 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: 'docs/Mapping-Tools/contribute',
+              to: 'docs/mapping-tools/contribute',
             },
             {
               label: 'Mapping Tools ',

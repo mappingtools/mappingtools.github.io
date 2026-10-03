@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
-import {Link } from "react-router-dom";
+import Link from '@docusaurus/Link';
 
 import Layout from '@theme/Layout';
 
 import styles from './index.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAndroid, faApple, faAppStoreIos, faGithub, faLinux, faWindows, } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDownload, faExternalLinkAlt, faExternalLinkSquareAlt, faFileArchive, faWineBottle, faWineGlass, faWineGlassAlt } from '@fortawesome/free-solid-svg-icons';
+import { faLinux, faWindows } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare, faDownload, faFileZipper, faWineGlass } from '@fortawesome/free-solid-svg-icons';
 
 const OS_SUPPORT = Object.freeze({
   undefined: {
@@ -114,7 +114,7 @@ const cards = [
         onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x64.exe"),
       },
       {
-        icon: faFileArchive,
+        icon: faFileZipper,
         text: "Portable",
         onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/release_x64.zip"),
       }
@@ -131,7 +131,7 @@ const cards = [
         onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x86.exe"),
       },
       {
-        icon: faFileArchive,
+        icon: faFileZipper,
         text: "Portable",
         onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/release.zip"),
       }
@@ -147,7 +147,7 @@ const cards = [
         onClick: () => { },
       },
       {
-        icon: faFileArchive,
+        icon: faFileZipper,
         text: "Portable",
         onClick: () => { },
       }
@@ -225,13 +225,13 @@ function MakeButtons(props) {
     <Link key={0} to="/docs/mapping-tools/installation#wine">
       <button className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
       clsx('disabled', styles.disabled), styles.downloadOption)}>
-        <FontAwesomeIcon icon={faWineGlassAlt} />
+        <FontAwesomeIcon icon={faWineGlass} />
         <span className={clsx(styles.itemText)}>Wine instructions</span>
       </button>
     </Link>,
     <button key={2} className={clsx('button button--block button--secondary button--outline', !os.web_supported && 
     clsx('disabled', styles.disabled), styles.downloadOption)} onClick={() => window.open("https://potoofu.github.io/mapping-tools-web/")}>
-      <FontAwesomeIcon icon={faExternalLinkAlt} />
+      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
       <span className={clsx(styles.itemText)}>Mapping Tools Web</span>
     </button>];
   }
