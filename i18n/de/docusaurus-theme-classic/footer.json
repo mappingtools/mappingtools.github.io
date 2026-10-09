@@ -1,54 +1,50 @@
 {
   "link.title.Docs": {
-    "message": "Docs",
-    "description": "The title of the footer links column with title=Docs in the footer"
+    "message": "Dokumentation",
+    "description": "Überschrift der Dokumentationslinks in der Fußzeile"
   },
   "link.title.Community": {
     "message": "Community",
-    "description": "The title of the footer links column with title=Community in the footer"
+    "description": "Überschrift der Community-Links in der Fußzeile"
   },
   "link.title.Contribute": {
-    "message": "Contribute",
-    "description": "The title of the footer links column with title=Contribute in the footer"
+    "message": "Mitwirken",
+    "description": "Überschrift der Mitwirkungslinks in der Fußzeile"
   },
   "link.title.Support us": {
-    "message": "Support us",
-    "description": "The title of the footer links column with title=Support us in the footer"
+    "message": "Unterstützen",
+    "description": "Überschrift der Unterstützungslinks in der Fußzeile"
   },
-  "link.item.label.Getting Started": {
-    "message": "Getting Started",
-    "description": "The label of footer link with label=Getting Started linking to docs/documentation/getting-started"
+  "link.item.label.Introduction": {
+    "message": "Einführung",
+    "description": "Dokumentationslink auf die Einführung"
   },
   "link.item.label.Documentation": {
-    "message": "Documentation",
-    "description": "The label of footer link with label=Documentation linking to docs/"
+    "message": "Dokumentation",
+    "description": "Dokumentationslink"
   },
   "link.item.label.Download": {
     "message": "Download",
-    "description": "The label of footer link with label=Download linking to download"
+    "description": "Link zur Download-Seite"
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discord.gg/YfjKN2yjQV"
+    "description": "Link zur Community"
   },
   "link.item.label.Overview": {
-    "message": "Overview",
-    "description": "The label of footer link with label=Overview linking to docs/contribute/"
+    "message": "Übersicht",
+    "description": "Link zur Mitwirkungsübersicht"
   },
-  "link.item.label.Mapping Tools - Client": {
-    "message": "Mapping Tools - Client",
-    "description": "The label of footer link with label=Mapping Tools - Client linking to docs/contribute/Mapping Tools - Client/contribute-mt-intro"
+  "link.item.label.Source code": {
+    "message": "Quellcode",
+    "description": "Link zum Mapping-Tools-Quellcode"
   },
-  "link.item.label.Website": {
-    "message": "Website",
-    "description": "The label of footer link with label=Website linking to docs/contribute/Website/contribute-mt-intro"
+  "link.item.label.Website source": {
+    "message": "Website-Quellcode",
+    "description": "Link zum Quellcode der Website"
   },
   "link.item.label.Ko-fi": {
     "message": "Ko-fi",
-    "description": "The label of footer link with label=Ko-fi linking to https://ko-fi.com/olibomby"
-  },
-  "copyright": {
-    "message": "Copyright © 2021 OliBomby and the Mapping Tools documentation contributors.",
-    "description": "The footer copyright"
+    "description": "Link zur Unterstützung auf Ko-fi"
   }
 }

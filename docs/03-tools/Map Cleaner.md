@@ -4,7 +4,7 @@ author: "OliBomby"
 id: map-cleaner
 ---
 
-Map Cleaner cleans the current beatmap of useless greenlines and it also lets you do some
+Map Cleaner cleans the selected beatmap of useless greenlines and it also lets you do some
 other usefull operations on the whole beatmap.
 
 Map cleaner works by reconstructing all timing points. It first stores all the influences of the
@@ -71,7 +71,7 @@ the exact length deviates with the rounding around the timeline ticks.
 All spinner ends and hold note ends are also resnapped using the second
 method.
 
-If the current beatmap is in the osu! mania gamemode, then resnapping will also resnap the X
+If the selected beatmap is in the osu! mania gamemode, then resnapping will also resnap the X
 position of the notes to the middle of the columns and to Y = 192.
 
 ## Timeline

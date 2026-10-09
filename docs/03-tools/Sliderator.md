@@ -20,8 +20,8 @@ Before you do anything with Sliderator, you need to import one or more sliders w
 There are 3 ways to import sliders:
 
 - **Selected** imports the sliders which you have currently selected in the osu! editor.
-- **Bookmarked** imports any sliders in the current beatmap which have a bookmark on them.
-- **Time** imports sliders in the current beatmap which are referenced by a time code which you input in the box next to it. This time code should be the same format as what you get when you copy some objects in the editor and paste it in a text field, so for example: `00:56:823 (1,2,1,2) -`
+- **Bookmarked** imports any sliders in the selected beatmap which have a bookmark on them.
+- **Time** imports sliders in the selected beatmap which are referenced by a time code which you input in the box next to it. This time code should be the same format as what you get when you copy some objects in the editor and paste it in a text field, so for example: `00:56:823 (1,2,1,2) -`
 
 If you have imported multiple sliders, you can navigate between them with the left and right buttons. Shift-clicking these buttons will make it also quickly sliderate the current slider before moving to the next slider.
 
@@ -61,7 +61,7 @@ This section explains some of the other controls which are related to the graph.
 
 - **Beat length** is the duration of the slider in beats. This also affects the width of the graph.
 - **BPM** is the beats-per-minute at which the slider operates. This value should be equal to the BPM at the place where the slider will be exported.
-- **Global SV** is the slider multiplier of the beatmap. This value should be equal to the slider multiplier of the current beatmap.
+- **Global SV** is the slider multiplier of the beatmap. This value should be equal to the slider multiplier of the selected beatmap.
 - **SV limit** is the maximum allowed SV in the graph. This also affects the height of the graph in velocity mode. By default this value is 10, because that is the maximum SV allowed in inherited timing points.
 - **Scale to completion** lets you scale all control points vertically such that the furthest the sliderball ever travels along the slider is at the wanted completion.
 - **Reset graph** lets you reset the graph to the default state.
@@ -71,7 +71,7 @@ This section explains some of the other controls which are related to the graph.
 
 ## Export options {#export-options}
 
-Running Sliderator exports the sliderated slider to the current beatmap at the export time. You can choose to just add to the beatmap or replace whatever is there in the beatmap already with **Override**.
+Running Sliderator exports the sliderated slider to the selected beatmap at the export time. You can choose to just add to the beatmap or replace whatever is there in the beatmap already with **Override**.
 
 If you check **Export as stream instead** Sliderator will not export a slider but a stream of circles which follows the speed and duration of the slider. This option uses the beat snap divisor of the graph to determine how many circles it will put in each beat.
 

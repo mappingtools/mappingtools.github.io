@@ -7,7 +7,7 @@ author: OliBomby, aehrea
 
 ## Why don't I see any changes in my map?
 
-Check the **Current Map** (blue bar at the top of the application) to make sure you have set the correct path to your beatmap.
+Check the **Selected Map** (blue bar at the top of the application) to make sure you have set the correct path to your beatmap.
 
 Also, make sure to **reload the editor without saving** after running the tool, as saving the map in the editor reverts the changes caused by the tool, because saving overwrites the .osu with the old version of the beatmap. You can reload the map quickly by pressing `Ctrl+L` and `Enter` in the editor.
 
@@ -31,7 +31,7 @@ These are features that depend on reading the memory of the osu! client. Memory 
 - Not using the latest version of osu!: Switch off of private servers and update osu! to the latest version.
 - osu! updated and changed memory offsets again: Please notify me so the issue can be fixed.
 - Using Mapping Tools on Windows 7 or earlier: Make sure you have .NET framework 4.5.1 or later installed.
-- Using Mapping Tools on an OS which is not Windows: Refer to the [Wine instructions](../../docs/mapping-tools/installation#wine).
+- Using Mapping Tools on an OS which is not Windows: Refer to the [installation guide](../../docs/mapping-tools/installation).
 
 ## How to mute sliderends without copying hitsounds?
 
@@ -51,4 +51,4 @@ Yes, most functionality of Mapping Tools works in lazer. For more details see th
 
 ## I have a question not on this list or I found a bug.
 
-Ask a question in the mapping-tools-techsupport channel in the [Discord](https://discord.gg/YfjKN2yjQV), ask me directly on Discord (olibomby), or make a new issue on [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).
+Ask a question in the mt-techsupport channel in the [Discord](https://discord.gg/YfjKN2yjQV), ask me directly on Discord (olibomby), or make a new issue on [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).

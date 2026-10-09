@@ -21,7 +21,7 @@ module.exports = {
     announcementBar: {
       id: 'discord_announcement', // Any value that will identify this message.
       content:
-        'Mapping Tools now has a new <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YfjKN2yjQV">discord</a>!',
+        'Join the Mapping Tools community on <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YfjKN2yjQV">Discord</a> for support and discussion.',
       isCloseable: true,
     },
     navbar: {
@@ -108,20 +108,12 @@ module.exports = {
               to: 'docs/mapping-tools/contribute',
             },
             {
-              label: 'Mapping Tools ',
-              to: 'https://github.com/OliBomby/Mapping_Tools',
+              label: 'Source code',
+              href: 'https://github.com/OliBomby/Mapping_Tools',
             },
             {
-              label: 'Mapping Tools Core',
-              to: 'https://github.com/OliBomby/Mapping_Tools_Core',
-            },
-            {
-              label: 'Mapping Tools Web',
-              to: 'https://github.com/misakura-rin/mapping-tools-web',
-            },
-            {
-              label: 'Mapping Tools Website',
-              to: 'https://github.com/mappingtools/mappingtools.github.io',
+              label: 'Website source',
+              href: 'https://github.com/mappingtools/mappingtools.github.io',
             }
           ],
         },
@@ -138,6 +130,8 @@ module.exports = {
       logo: {
         alt: 'Mapping Tools Logo',
         src: 'img/logo.svg',
+        width: 72,
+        height: 72,
       },
       copyright: `Copyright © ${new Date().getFullYear()} OliBomby and the Mapping Tools documentation contributors.`,
     },

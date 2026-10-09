@@ -6,6 +6,12 @@ id: geometry-dashboard
 
 Geometry Dashboard is a powerful tool that overlays geometrically relevant virtual objects on top of the osu! editor, allowing you to snap objects to these virtual points, lines, and circles. This allows for creating geometrically perfect patterns that would be much harder, or impossible, to achieve otherwise.
 
+:::note Platform support
+
+Geometry Dashboard currently requires Windows because its live editor overlay depends on Windows-specific integration.
+
+:::
+
 :::tip
 You must specify your user config file in the Mapping Tools Preferences for this tool to function.
 :::

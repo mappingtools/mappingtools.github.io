@@ -2,64 +2,32 @@
 title: "Installation"
 author: "aehrea"
 id: installation
-description: How to install Mapping Tools.
+description: How to install Mapping Tools on Windows, Linux, and macOS.
 keywords:
   - docs
   - mapping tools
   - install
 ---
 
-Mapping Tools currently **only supports Windows**. For non-Windows users there is the option to use [Wine](#wine) or use the [web-based version of Mapping Tools](#web-based).
+Mapping Tools has native desktop builds for **Windows, Linux, and macOS**. Download the build for your processor from the [downloads page](/download) or the [GitHub releases](https://github.com/OliBomby/Mapping_Tools/releases/latest).
 
-Mapping Tools can be downloaded from the [downloads page](/download) or from the [GitHub releases](https://github.com/OliBomby/Mapping_Tools/releases).
+All packages are self-contained and include the .NET 10 runtime.
 
-### Installer {#installer}
+## Choose a package
 
-Download and run the installer. Go through all the steps and finish the installer. Mapping Tools will then be installed.
+- **Windows**: use the installer or portable ZIP. Choose x64 for most systems; x86 is for 32-bit Windows.
+- **Linux**: use the AppImage or portable ZIP for x64 or ARM64.
+- **macOS**: download the portable ZIP for Intel (x64) or Apple silicon (ARM64), then open **Mapping Tools.app** from the extracted folder.
 
-Mapping Tools targets .NET 10 and is packaged self-contained, so no separate .NET installation is required.
+## Editor integration by platform
 
-### Portable {#portable}
+Beatmap file tools work across the desktop builds. Some live-editor features depend on the operating system and the integration method:
 
-Download the portable version .zip file and extract all of the contents into a folder. You can then open **Mapping Tools.exe**.
+- **Geometry Dashboard** and the **Editor Reader** memory integration require Windows.
+- On Linux and macOS, current-beatmap discovery defaults to the local **Gosumemory/Tosu** API at `127.0.0.1:24050`. Start a compatible API to use **Open current beatmap**. Live editor state reading and automatic editor reload are disabled by default on these platforms.
+- You can always select a beatmap directly with **File > Open beatmap**.
 
-### Wine (Linux) {#wine}
-
-You can successfully run Mapping Tools on different operating systems with Wine. Most features will work correctly, but memory reading and Geometry Dashboard need some extra consideration.
-In order to get memory reading to work, you need to install Mapping Tools into the osu! Wine prefix and run it with the same Wine binary. You also need to open osu! before opening Mapping Tools. If you can not get it to work, I recommend disabling Editor Reader in the Preferences, so Mapping Tools will not attempt memory reading every time it does something.
-
-#### Install script (Recommended)
-
-Use [this install script](https://gist.github.com/night-mareLuna/52c21dabd35d7cd359f9c52b471f0a8f) to automatically install Mapping Tools into your osu! Wine prefix. It will install any dependencies and memory reading should work too. This has been tested with [osu-winello](https://github.com/NelloKudo/osu-winello).
-
-1. Download `install-mappingtools.sh` from the [GitHub gist](https://gist.github.com/night-mareLuna/52c21dabd35d7cd359f9c52b471f0a8f).
-2. Start your osu! client.
-3. Run: `chmod +x ./install-mappingtools.sh`
-4. Run: `./install-mappingtools.sh --install`
-
-#### Manual install
-
-1. Install [WineHQ](https://www.winehq.org/). Follow the installation instructions for your operating system.
-2. If you are using an Arch Linux distro, then you need to install GDI+ using Winetricks.
-3. Download and run the Mapping Tools installer using Wine.
-4. Run Mapping Tools after the installation is complete.
-5. Go to the Preferences and disable Editor Reader if it doesn't work.
-
-This has been tested with:
-- Ubuntu 20.04 64-bit with wine-6.0.2 and wine-7.0.
-- Manjaro KDE 21.3.7 with wine-7.1.
-
-### Web-based {#web-based}
-
-You can find an early preview of web-based Mapping Tools [**here**](https://potoofu.github.io/mapping-tools-web/). This version works on all platforms. This version of Mapping Tools does not have all the tools available.
-
-Start by uploading your beatmap files with the **Upload** button at the top right. Select a mapping tool on the left, select a beatmap and run. The modified beatmap will be automatically downloaded. The files on the right also update when you run a mapping tool to modify them.
-
-:::caution Still in early stages of developement
-
-Many of the tools are still missing and there are likely a lot of bugs. If it doesn't load, try reloading the page with Shift-F5 and clear the cache.
-
-:::
+For osu! lazer, use its **File > Edit externally** workflow. See the [lazer guide](/docs/guides/use-mt-in-lazer).
 
 ## Setup {#setup}
 
@@ -73,6 +41,6 @@ The most important fields to set are the following:
 
 :::note
 
-Make sure these fields are correct, as Mapping Tools may not work properly otherwise.
+Make sure these fields are correct if you are using osu!stable, as Mapping Tools may not work properly otherwise.
 
 :::

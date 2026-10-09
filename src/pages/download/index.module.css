@@ -16,21 +16,30 @@
   min-height: 7.9rem;
 }
 
-.autodetect {
+.subtitle {
+  margin: 2rem 0;
   opacity: 0.65;
-  margin-top: 2rem;
+  text-align: center;
 }
 
-.itemText {
-  margin-left: 10px;
+.downloadGrid {
+  display: grid;
+  width: 100%;
+  max-width: 72rem;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.osColumn {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: var(--ifm-spacing-vertical);
 }
 
 .cardTitle {
   text-align: center;
-}
-
-.dlCol {
-  margin: var(--ifm-spacing-vertical) 0;
 }
 
 .downloadOption {
@@ -38,20 +47,30 @@
   border-color: transparent;
 }
 
-.supported {
-  border-color: green;
+.itemText {
+  margin-left: 10px;
 }
 
-.disabledText {
-  opacity: 0.25;
-}
-
-.disabled > * {
-  opacity: 0.25;
-}
-
-.comingNever {
+.downloadUnavailable {
+  display: flex;
+  min-height: 3.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  color: var(--ifm-color-emphasis-600);
+  font-weight: var(--ifm-button-font-weight);
   text-align: center;
-  opacity: 0.50;
-  margin-top: 10px;
+}
+
+.releaseFallback {
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 996px) {
+  .downloadGrid {
+    max-width: 36rem;
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

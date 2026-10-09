@@ -2,61 +2,41 @@
 title: "Installation"
 author: "Julaaaan"
 id: installation
-description: So installierst du Mapping Tools.
+description: So installierst du Mapping Tools unter Windows, Linux und macOS.
 keywords:
   - docs
   - mapping tools
   - install
 ---
 
-Mapping Tools unterstützt im Moment **nur Windows**. Für Nicht-Windows Nutzer gibt es die Option [Wine](#wine) oder die  [Web-Basierte Version von Mapping Tools](#web-based) zu benutzen.
+Mapping Tools bietet native Desktop-Versionen für **Windows, Linux und macOS**. Lade die passende Version auf der [Download-Seite](/download) oder in den [GitHub-Releases](https://github.com/OliBomby/Mapping_Tools/releases/latest) herunter.
 
-Mapping tools kann von der [Downloads Seite](/download) oder von den [GitHub releases](https://github.com/OliBomby/Mapping_Tools/releases) herutergeladen werden.
+Alle Pakete enthalten die .NET-10-Laufzeit; eine separate Installation ist nicht nötig.
 
-### Installer {#installer}
+## Passendes Paket auswählen
 
-Lade den Installer herunter und führe ihn aus. Schließe alle Schritte ab und beende den Installer. Mapping Tools wird daraufhin installiert sein.
+- **Windows**: Installer oder portable ZIP-Datei. x64 ist für die meisten Systeme geeignet; x86 ist für 32-Bit-Windows.
+- **Linux**: AppImage oder portable ZIP-Datei für x64 oder ARM64.
+- **macOS**: portable ZIP-Datei für Intel (x64) oder Apple Silicon (ARM64). Entpacke sie und öffne **Mapping Tools.app**.
 
-Mapping Tools verwendet .NET 10 und wird als selbstenthaltendes Paket ausgeliefert, daher ist keine separate .NET-Installation erforderlich.
+## Editor-Anbindung
 
-### Portable {#portable}
+Die Dateibearbeitungs-Tools funktionieren auf allen Desktop-Versionen. Einige Live-Editor-Funktionen hängen vom Betriebssystem und der gewählten Anbindung ab:
 
-Lade die portable .zip Datei herunter und extrahiere deren Inhalte in einen Ordner. Öffne die Datei **Mapping Tools.exe**
+- **Geometry Dashboard** und die **Editor Reader**-Speicheranbindung benötigen Windows.
+- Unter Linux und macOS verwendet die Beatmap-Erkennung standardmäßig die lokale **Gosumemory/Tosu**-API unter `127.0.0.1:24050`. Starte eine kompatible API, um **Open current beatmap** zu verwenden. Das Lesen des Live-Editorzustands und das automatische Neuladen sind dort standardmäßig deaktiviert.
+- Eine Beatmap kannst du immer direkt über **File > Open beatmap** auswählen.
 
-### Wine {#wine}
+Für osu! lazer verwendest du **File > Edit externally**. Weitere Informationen stehen im [lazer-Guide](/docs/guides/use-mt-in-lazer).
 
-Du kannst Mapping Tools erfolgreich auf anderen Betriebssystemen mit Wine ausführen. Die meisten Funktionen werden Fehlerfrei funktionieren, mit Ausnahme von memory reading und Geometry Dashboard. Ich empfehle, Editor Reader in den Einstellungen zu Deaktivieren, damit Mapping Tools nicht ständig versucht, den Arbeitsspeicher auszulesen. 
+## Einrichtung {#setup}
 
-1. Lade [WineHQ](https://www.winehq.org/) herunter und installiere es. Volge den Installations-Anweisungen für dein Betriebssystem.
-2. Lade Mapping Tools herunter und starte den Installer mit Wine.
-3. Starte Mapping Tools nachdem die Installation abgeschlossen ist.
+Öffne über die Navigation (`Ctrl+K`) die **Preferences**. Setze den **Songs folder** auf den Ordner mit deinen Beatmaps. **osu! folder** und **osu! user config file** kannst du angeben, damit Mapping Tools diese Pfade aus deiner osu!-Installation ermittelt.
 
-Dies wurde auf Ubuntu 20.04 64-bit mit wine-6.0.2 und wine-7.0 getestet.
-
-### Web-based {#web-based}
-
-Du kannst eine frühe Vorschau der Web-Basierten Version von Mapping Tools [**hier**](https://misakura-rin.github.io/mapping-tools-web/) finden. Diese version funktioniert auf allen Plattformen. Diese Version verfügt allerdings nicht über alle Tools.
-
-Starte indem du deine Beatmap Dateien mit dem **Upload** Button oben rechts hochlädst. Wähle ein Tool auf der linken seite aus, wähle eine Beatmap und fürhe das Tool aus. Die modifizierte Beatmap wird automatisch heruntergeladen. Zusätzlich werden die Dateien auf der rechten Seite aktualisiert sobald ein Tool ausgeführt wird.
-
-:::caution Noch in frühem Entwicklungsstadium
-
-Viele der Tools fehlen und es kann zu Fehlern kommen. Falls sie Website nicht lädt, versuche sie mit Shift-F5 neuzuladen und den cache zu leeren.
-
-:::
-
-## Setup {#setup}
-
-Sobald du Mapping Tools installiert hast, klicke auf den Button oben links um das Navigationsmenü zu öffen. Gehe von dor aus zu **Preferences** um Mapping Tools zu konfigurieren.
-
-Die wichtigsten Felder sind:
-
-- **osu! folder**: Pfad zu dem Order der _osu!_ enthält.
-- **Songs folder**: Pfad zu dem Ordner der alle Songs enthält. Er ist typischerweise direkt in dem _osu!_ Ordner.
-- **osu! config user file**: Prad zu deiner osu! Banutzerkonfigurationsdatei. Sie ist typischerweise direkt in dem _osu!_ Ordner mit dem Dateinamen `osu.[username].cfg`.
+Mit **Current beatmap fetching**, **Beatmap live state reading** und **Editor reload** legst du fest, wie Mapping Tools mit dem Editor kommuniziert. Die verfügbaren Optionen hängen vom Betriebssystem ab. Für die Erkennung über Gosumemory/Tosu muss die lokale API auf Port `24050` laufen.
 
 :::note
 
-Stelle sicher dass diese Felder korrekt sind, weil Mapping Tools sonst möglicherweise nicht richtig Funktioniert.
+Du kannst **File > Open beatmap** auch ohne Editor-Anbindung verwenden. Der Songs-Ordner wird benötigt, wenn Mapping Tools Beatmap-Pfade aus osu! oder einer lokalen Gosumemory/Tosu-API auflösen soll.
 
 :::

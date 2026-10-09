@@ -1,52 +1,36 @@
 ---
 title: FAQ
-author: Potoofu
+author: OliBomby
 ---
 
 # FAQ
 
-## Warum sehe ich keine Veränderungen in meiner Beatmap?
+## Warum sehe ich keine Änderungen in meiner Beatmap?
 
-Überprüfe zuerst, ob **die blaue Leiste am unteren Rand der Anwendung den richtigen Pfad zur zu bearbeitenden Beatmap** anzeigt.
+Prüfe, ob in Mapping Tools die richtige Beatmap ausgewählt ist. Lade den osu!-stable-Editor nach einer externen Änderung neu, ohne vorher zu speichern. Sonst kann die ältere Editor-Kopie die Änderungen überschreiben. In den **Preferences** kannst du **Editor reload** konfigurieren oder manuell mit `Ctrl+L` und danach `Enter` neu laden.
 
-Außerdem solltest du sicherstellen, dass der Editor nach der Ausführung eines Tools **ohne die Änderungen davor zuspeichern** neu geladen wird. 
+Verwende in osu! lazer **File > Edit externally** und importiere die Änderungen nach der Bearbeitung wieder. Weitere Informationen stehen im [lazer-Guide](/docs/guides/use-mt-in-lazer).
 
-Grund dafür ist, dass das Speichern der Beatmap im Editor die Veränderungen von Mapping-Tools rückgängig macht, da dadurch die vorherige `.osu` Beatmap-Datei ohne die Veränderungen abgespeichert wird.
+## Beim Ausführen eines Tools erscheint „Could not find part of the path“ oder „Empty path name is not legal“.
 
-Am besten lädst du die Beatmap im Editor neu indem du erst `Ctrl+L` und dann `Enter` drückst.
+Prüfe, ob die ausgewählte Beatmap noch existiert und ob der **Songs folder** in den **Preferences** auf deine osu!-Beatmap-Bibliothek zeigt. Für die Erkennung über Gosumemory/Tosu muss die lokale API auf Port `24050` laufen.
 
-## Ich erhalte den Fehler "Could not find part of the path" oder "Empty path name is not legal" wenn ein Tool ausgeführt wird.
+## Ein Tool hat meine Beatmap beschädigt. Was kann ich tun?
 
-Überprüfe zuerst, ob **die blaue Leiste am unteren Rand der Anwendung den richtigen Pfad zur zu bearbeitenden Beatmap** anzeigt.
+Mapping Tools kann vor Tool-Ausführungen automatische Backups und bei aktivierter Option periodische Backups erstellen. Öffne sie über **About > Open backups folder**. Mit **File > Load backup** oder **QuickUndo** kannst du ein Backup wiederherstellen.
 
-Sollte dies nicht der Fall sein, musst du die Pfade in **Preferences** überprüfen und eventuell korrigieren.
+## „Open current beatmap“ oder Funktionen für ausgewählte Objekte funktionieren nicht.
 
-## Meine Beatmap hat Fehler oder ist nicht mehr nutzbar nachdem ich ein Tool verwendet habe.
+Diese Funktionen verwenden die in **Preferences** gewählte Anbindung. Unter Windows kann die Beatmap-Erkennung den Speicher auslesen; ungespeicherter Editorzustand wird über **Editor Reader** oder **MTIPC** gelesen. Unter Linux und macOS verwendet die Beatmap-Erkennung standardmäßig die lokale Gosumemory/Tosu-API; das Lesen des Live-Editorzustands ist dort standardmäßig deaktiviert. Du kannst Beatmaps immer direkt über **File > Open beatmap** öffnen. **Geometry Dashboard** benötigt Windows.
 
-Mapping-Tools erstellt nach jeder Änderung ein Backup der Beatmap. Den Ordner mit diesem Backup kannst du ganz einfach über das Dropdown **About > Open backup folder** öffnen. Ansonsten kannst du über das Menü **File > Load backup** oder mit dem **QuickUndo-Hotkey** (falls dieser gesetzt ist) ein Backup auch direkt wiederherstellen.
+## Beim Start werde ich aufgefordert, .NET zu installieren.
 
-## Der Menüpunkt "Open Current Beatmap" funktioniert nicht oder es können keine Hitobjekte abgerufen werden.
+Aktuelle Downloads enthalten die .NET-10-Laufzeit. Eine separate Installation sollte nicht erforderlich sein. Lade bei einer Laufzeitaufforderung ein aktuelles Paket von der [Download-Seite](/download) herunter.
 
-Einige Features sind abhängig davon, den Speicher der _osu!_ Anwendung auslesen zu können. 
+## Funktioniert Mapping Tools mit osu! lazer?
 
-Meistens liegt der Fehler darin, dass Mapping-Tools diesen Speicher nicht finden konnte. Ein **Neustart der beiden Programme oder des Computers** beheben dies im Normalfall.
+Die meisten Beatmap-Tools funktionieren mit lazer über **File > Edit externally**, einige Funktionen haben jedoch Einschränkungen. Siehe den [Kompatibilitätsguide](/docs/guides/use-mt-in-lazer).
 
-Es ist aber außerdem möglich, dass eine **Firewall- oder Antivirensoftware** Mapping-Tools daran hindert diesen Speicher auszulesen. In diesem Fall musst du Mapping-Tools die nötigen Rechte geben oder die Software kurzzeitig deaktivieren.
+## Ich habe eine weitere Frage oder einen Fehler gefunden.
 
-## Wie kann ich Sliderends stummschalten ohne dessen Hitsounds zu kopieren?
-
-Lasse das Feld `Copy hitsounds from` leer und füge im Feld `Copy hitsounds to` die Beatmap hinzu, deren Sliderends stummgeschaltet werden sollen. Dadurch werden keine Hitsounds kopiert, die Stummschaltung der Sliderends funktioniert aber trotzdem noch.
-
-Solltest du Hitsounds kopieren und gleichzeitig Sliderends stummschalten, verwendet das Tool die zu kopierenden Objekte als Referenz und schaltet Sliderends nur stumm an Stellen, an denen noch keine Hitsounds existieren.
-
-# Beim Start von Mapping-Tools werde ich aufgefordert, .NET zu installieren, obwohl ich dies schon getan habe.
-
-Aktuelle Versionen von Mapping Tools verwenden .NET 10 und werden als selbstenthaltendes Paket ausgeliefert, daher sollte keine separate .NET-Installation erforderlich sein.
-
-Wenn trotzdem eine .NET-Aufforderung erscheint, stelle sicher, dass du eine aktuelle Mapping-Tools-Version startest, und installiere sie mit einem frischen Download von der Website neu.
-
-## Ich habe eine Frage die hier nicht vorkommt oder ich habe einen Bug gefunden.
-
-Du kannst auf [Discord](https://discord.gg/YfjKN2yjQV) im Kanal `#mapping-tools-techsupport` oder direkt dem Nutzer `OliBomby#3573` fragen stellen.
-
-Für Bugs solltest du am Besten eine Fehlermeldung auf [GitHub](https://github.com/OliBomby/Mapping_Tools/issues) erstellen.
+Stelle deine Frage im Discord-Kanal `#mapping-tools-techsupport` oder erstelle ein Issue auf [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).

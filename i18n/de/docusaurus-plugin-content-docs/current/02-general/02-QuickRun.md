@@ -1,6 +1,6 @@
 ---
 title: "QuickRun"
-author: "Julaaaan"
+author: "OliBomby"
 id: quickrun
 description: Everything about QuickRun.
 keywords:
@@ -11,46 +11,24 @@ keywords:
   - quickundo
 ---
 
+QuickRun startet ein kompatibles Tool mit einem globalen Hotkey auf der Beatmap, die im osu!-Editor geöffnet ist. In den **Preferences** kannst du außerdem festlegen, dass normale **Run**-Buttons QuickRun verwenden.
 
-QuickRun ist eine großartige Methode um das Benutzen von Mapping Tools zu beschleunigen. Es erlaubt das Ausführen eines Tools und das Neuladen des osu! editors durch das Drücken eines Hotkeys. Dadurch lassen sich Tools auf knopfdruck benutzen.
+## Einrichtung {#setup}
 
-Du kannst QuickRun in den **Preferences** aktivieren.
+Lege in den **Preferences** einen **QuickRun hotkey** fest. Mapping Tools sucht zuerst nach der im osu!-Editor geöffneten Beatmap. Wenn keine gefunden wird, wird die in Mapping Tools ausgewählte Beatmap verwendet. Wird die Editor-Beatmap gefunden, aktualisiert Mapping Tools die Auswahl.
 
-```mdx-code-block
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import ThemedImage from '@theme/ThemedImage';
-
-<ThemedImage
-  alt="QuickRun example image"
-  sources={{
-    light: useBaseUrl('./img/quickrun_example_light.png'),
-    dark: useBaseUrl('./img/quickrun_example_dark.png'),
-  }}
-/>
-```
-
-## Setup {#setup}
-
-Um QuickRun zu aktivieren, weise dem **QuickRun hotkey** Feld in den **Preferences** einen Hotkey zu. Wenn du nun deinen festgelegten Hotkey drückst, wird das aktuell ausgewählt Tool in Mapping Tools ausführen.
-
-`Alt+M` ist ein guter Hotkey, da er die normalen osu! editor hotkeys nicht Stört.
-
-Wenn die Option **Auto reload after QuickRun** aktiviert ist, wird Mapping Tools die Tastenkombination `Strg+L, Enter` an das osu! Fenster senden um den editor neuzuladen nachdem das Tool fertig ist. Dadurch musst du den Editor nicht manuell neu laden.
-
-Anzumerken ist dass QuickRun **immer die aktuell im osu! Editor geöffnete map benutzt** und nicht nicht die in Mapping Tools ausgewählte Beatmap.
+Unter **Editor reload** kannst du festlegen, ob und wie der Editor nach einer Änderung neu geladen wird. Die simulierte Tastatureingabe lädt osu! stable mit `Ctrl+L` und danach `Enter` neu. Die verfügbaren Methoden hängen vom Betriebssystem ab.
 
 ## SmartQuickRun {#smartquickrun}
 
-**SmartQuickRun** lässt sich durch das Klicken der Checkbox rechts neben dem QuickRun Hotkey Feld aktivieren. Dieses Feature erlaubt QuickRun, verschiedene Tools auszuführen, je nach dem wie viele Objekte du in dem osu! editor ausgewählt hast.
+SmartQuickRun kann den globalen QuickRun-Hotkey abhängig von der Anzahl ausgewählter Hitobjekte einem anderen Tool zuordnen. Lege in den **Preferences** ein Tool für jede Auswahl fest:
 
-Es gibt drei verschiedene Unterscheidungen die SmartQuickRun machen kann:
-- **None** wenn keine Objekte ausgeählt sind. `N=0`
-- **Single** wenn genau ein Objekt ausgewählt ist. `N=1`
-- **Multiple** wenn mehr als ein Object ausgewählt ist. `N>1`
+- **None**: keine Objekte ausgewählt (`N=0`)
+- **Single**: genau ein Objekt ausgewählt (`N=1`)
+- **Multiple**: mehr als ein Objekt ausgewählt (`N>1`)
+
+SmartQuickRun benötigt eine Editor-Anbindung, die die aktuelle Auswahl lesen kann.
 
 ## QuickUndo {#quickundo}
 
-**QuickUndo** ist ein hotkey der das letzte Backup in den Editor lädt und damit das vorherige Tool rückgängig macht. Außerdem unterstützt er das **auto reload** feature, genau wie QuickRun. Es ist empfohlen, QuickUndo neben QuickRun zu benutzen.
-
-`Strg+Shift+Z` is a good hotkey to use for QuickUndo.
-`Strg+Shift+Z` ist ein guter Hotkey für QuickUndo.
+QuickUndo stellt das neueste nicht periodische Backup der im osu!-Editor geöffneten Beatmap wieder her. Lege den Hotkey in den **Preferences** fest. Wenn eine Methode unter **Editor reload** aktiviert ist, kann Mapping Tools den Editor danach neu laden.

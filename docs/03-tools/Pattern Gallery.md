@@ -18,7 +18,7 @@ The Pattern Gallery tool allows you to:
 *   Import and export patterns from osu! beatmaps, which allows you to move any group of hit objects between beatmaps.
 *   Create pattern collections which you can share with your friends.
 *   Add or remove patterns using the buttons at the bottom.
-*   Export a pattern to the current beatmap by selecting one or more patterns and clicking the run button, or by double-clicking a pattern.
+*   Export a pattern to the selected beatmap by selecting one or more patterns and clicking the run button, or by double-clicking a pattern.
 *   Utilize export options for additional processing on the pattern during export.
 *   Save, load, rename, import, and export your pattern collections via the 'Project' menu.
 
@@ -27,7 +27,7 @@ The Pattern Gallery tool allows you to:
 1.  Open Pattern Gallery in Mapping Tools.
 2.  Add patterns to your collection using the import options.
 3.  Select a pattern from the gallery.
-4.  Click the run button to export the pattern to your current beatmap.
+4.  Click the run button to export the pattern to your selected beatmap.
 
 ## Functionality and Settings
 

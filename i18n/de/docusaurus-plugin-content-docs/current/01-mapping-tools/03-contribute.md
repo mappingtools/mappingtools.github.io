@@ -1,36 +1,22 @@
 ---
 title: "Mitwirken"
-author: "Potoofu"
+author: "OliBomby"
 id: contribute
-description: So kannst du an der Entwicklung von Mapping Tools mitwirken.
+description: So kannst du an Mapping Tools mitwirken.
 keywords:
   - docs
   - mapping tools
   - contribute
 ---
 
-Es gibt mehrere fortlaufende Projekte von Mapping Tools.
+Die Desktop-Anwendung und ihre .NET-Bibliotheken werden im selben Repository entwickelt. Die Lösung ist in folgende Projekte aufgeteilt:
 
-### Mapping Tools
+- **Mapping_Tools.Desktop**: Avalonia-Desktop-Anwendung und Tool-Oberflächen.
+- **Mapping_Tools.Application**: Anwendungsfälle und Betriebssystem-Abstraktionen.
+- **Mapping_Tools.Core**: Beatmap-Modelle, Berechnungen und Domänenregeln.
+- **Mapping_Tools.Infrastructure**: Datei-, osu!-, Audio- und Plattformadapter.
 
-Die Desktop-Anwendung von Mapping Tools
+Website und Dokumentation haben ein eigenes Repository. Beiträge zu beiden Projekten sind als Pull Request oder Issue willkommen.
 
-https://github.com/OliBomby/Mapping_Tools
-
-### Mapping Tools Core
-
-Die Core-Bibliothek basierend auf .NET. Enthält alle Funktionen zur Verwendung der einzelnen Tools.
-
-https://github.com/OliBomby/Mapping_Tools_Core
-
-### Mapping Tools Web
-
-Die Webversion von Mapping Tools. Verwendet Mapping Tools Core und ist vollständig plattformübergreifend kompatibel.
-
-https://github.com/misakura-rin/mapping-tools-web
-
-### Mapping Tools Website
-
-Die derzeitige Webseite. Dabei handelt es sich um eine Wissensdatenbank rundum die Features von Mapping Tools.
-
-https://github.com/mappingtools/mappingtools.github.io
+- [Mapping Tools Quellcode](https://github.com/OliBomby/Mapping_Tools)
+- [Mapping Tools Website](https://github.com/mappingtools/mappingtools.github.io)
