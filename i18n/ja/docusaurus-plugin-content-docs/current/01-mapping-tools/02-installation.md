@@ -39,7 +39,7 @@ Mapping Tools は **Windows、Linux、macOS** 向けのネイティブデスク�
 
 </div>
 
-- **osu! stable**: Windows では、現在の譜面の検出とエディター状態のリアルタイム読み取りにメモリ連携を使い、自動再読み込みにはキー入力のシミュレーションを使います。Linux と macOS では、stable を Wine 経由で実行し、互換性のある **Gosumemory/Tosu** API を `127.0.0.1:24050` で起動すると、現在の譜面を取得できます。Preferences で **Songs folder** を設定してください。
+- **osu! stable**: Windows と Linux（Wine）では、**メモリ読み取り**で現在の譜面を取得します。Preferences の **Songs folder** に OS 側のファイルシステムのパスを設定してください。エディター状態のリアルタイム読み取りと自動再読み込みは Windows のみ対応しています。macOS ではネイティブのメモリ読み取りに対応していません。
 - **osu! lazer**: **File > Edit externally** を使って譜面ファイルを公開します。Mapping Tools は外部編集用の譜面を自動検出します。これはこの表で「現在の譜面を取得」に該当します。変更を適用するには、lazer で **Finish editing and import changes** を使ってください。詳しくは[osu! lazer ガイド](/docs/guides/use-mt-in-lazer)をご覧ください。
 - **osu! unstable**: 現在の譜面の取得、エディター状態のリアルタイム読み取り、エディターの再読み込みには、Preferences で **MTIPC** を選択してください。これらの機能にはクライアント側の MTIPC サーバーが必要です。Linux と macOS では、エディター状態のリアルタイム読み取りと再読み込みは既定で無効です。
 - **グローバルホットキー**: Linux では、X11 またはグローバルショートカットポータルを備えたデスクトップ環境で利用できます。macOS では、システムから求められたキーボードアクセス権限を許可してください。

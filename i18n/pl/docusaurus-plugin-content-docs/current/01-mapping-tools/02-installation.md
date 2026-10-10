@@ -39,7 +39,7 @@ Wszystkie pakiety są samowystarczalne i zawierają środowisko uruchomieniowe .
 
 </div>
 
-- **osu! stable**: w systemie Windows wykrywanie aktualnej beatmapy i odczyt bieżącego stanu edytora korzystają z integracji z pamięcią, a automatyczne ponowne wczytywanie symuluje naciśnięcia klawiszy. W systemach Linux i macOS uruchom stable przez Wine oraz zgodne API **Gosumemory/Tosu** pod adresem `127.0.0.1:24050`, aby pobierać aktualną beatmapę. Ustaw **Songs folder** w preferencjach.
+- **osu! stable**: pobieranie aktualnej beatmapy korzysta z **odczytu pamięci** w systemach Windows i Linux (Wine). Ustaw **Songs folder** w preferencjach na jego natywną ścieżkę w systemie plików. Odczyt bieżącego stanu edytora i automatyczne ponowne wczytywanie są dostępne tylko w systemie Windows. Natywny odczyt pamięci nie jest obsługiwany w macOS.
 - **osu! lazer**: użyj opcji **File > Edit externally**, aby udostępnić pliki beatmapy. Mapping Tools automatycznie wykryje beatmapę edytowaną zewnętrznie, co w tej tabeli liczy się jako pobranie aktualnej beatmapy. Użyj opcji **Finish editing and import changes** w lazer, aby zastosować zmiany. Zobacz [poradnik do lazer](/docs/guides/use-mt-in-lazer).
 - **osu! unstable**: wybierz **MTIPC** w preferencjach, aby pobierać aktualną beatmapę, odczytywać bieżący stan edytora i ponownie wczytywać edytor. Te funkcje wymagają serwera MTIPC klienta. Odczyt bieżącego stanu edytora i ponowne wczytywanie edytora są domyślnie wyłączone w systemach Linux i macOS.
 - **Globalne skróty klawiszowe**: w systemie Linux ich obsługa zależy od X11 lub środowiska graficznego z portalem globalnych skrótów. W systemie macOS przyznaj uprawnienia dostępu do klawiatury, o które poprosi system.

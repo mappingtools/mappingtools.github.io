@@ -39,7 +39,7 @@ Semua paket sudah lengkap dan menyertakan runtime .NET 10.
 
 </div>
 
-- **osu! stable**: di Windows, deteksi beatmap saat ini dan pembacaan status editor langsung menggunakan integrasi memori, sedangkan muat ulang otomatis menggunakan penekanan tombol simulasi. Di Linux dan macOS, jalankan stable melalui Wine dan mulai API **Gosumemory/Tosu** yang kompatibel di `127.0.0.1:24050` untuk mendapatkan beatmap saat ini. Atur **Songs folder** di Preferences.
+- **osu! stable**: pengambilan beatmap saat ini menggunakan **pembacaan memori** di Windows dan Linux (Wine). Atur **Songs folder** di Preferences ke jalur asli pada sistem berkas. Pembacaan status editor langsung dan muat ulang otomatis hanya tersedia di Windows. Pembacaan memori native tidak didukung di macOS.
 - **osu! lazer**: gunakan **File > Edit externally** agar file beatmap dapat diakses. Mapping Tools mendeteksi beatmap yang sedang diedit secara eksternal secara otomatis; ini dihitung sebagai fitur mendapatkan beatmap saat ini pada tabel. Gunakan **Finish editing and import changes** di lazer untuk menerapkan perubahan. Lihat [panduan lazer](/docs/guides/use-mt-in-lazer).
 - **osu! unstable**: pilih **MTIPC** di Preferences untuk mengambil beatmap saat ini, membaca status editor langsung, dan memuat ulang editor. Fitur ini memerlukan server MTIPC dari klien. Pembacaan status editor langsung dan pemuatan ulang editor dinonaktifkan secara default di Linux dan macOS.
 - **Tombol pintas global**: dukungan di Linux bergantung pada X11 atau desktop dengan portal pintasan global. Di macOS, izinkan aksesibilitas papan ketik yang diminta sistem.
