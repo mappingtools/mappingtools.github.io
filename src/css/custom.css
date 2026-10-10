@@ -35,7 +35,7 @@ html[data-theme='dark'] {
   border-bottom: 3px solid var(--ifm-color-emphasis-500);
 }
 
-.feature-compatibility tbody tr:nth-child(3n + 4) td {
+.feature-compatibility tbody tr:nth-child(2n + 3) td {
   border-top: 3px solid var(--ifm-color-emphasis-500);
 }
 
