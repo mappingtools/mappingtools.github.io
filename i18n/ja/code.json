@@ -330,7 +330,7 @@
     "message": "ホーム"
   },
   "homepage.description": {
-    "message": "osu! 向け Mapping Tools"
+    "message": "osu!の譜面制作者向け無料ツール。タイミングポイントを整理し、スライダーの形状を編集し、パターンやヒットサウンドをMapping Toolsで管理できます。"
   },
   "homepage.tagline": {
     "message": "Mapping Tools は osu! マッピングを{efficient}かつ{creative}に行うための{allInOne}アプリです。",

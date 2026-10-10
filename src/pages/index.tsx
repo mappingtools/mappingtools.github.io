@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   return (
     <Layout
       title={translate({ id: 'homepage.title', message: 'Home' })}
-      description={translate({ id: 'homepage.description', message: 'Mapping Tools for osu!' })}>
+      description={translate({ id: 'homepage.description', message: 'Free tools for osu! beatmap creators. Clean timing points, shape sliders, create patterns, and manage hitsounds with Mapping Tools.' })}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

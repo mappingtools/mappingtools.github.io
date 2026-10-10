@@ -330,7 +330,7 @@
     "message": "首頁"
   },
   "homepage.description": {
-    "message": "osu! Mapping Tools"
+    "message": "為 osu! 譜面創作者提供的免費工具：整理時間點、調整滑條形狀、建立譜面模式，並使用 Mapping Tools 管理打擊音效。"
   },
   "homepage.tagline": {
     "message": "Mapping Tools 是一款{allInOne}應用，協助你{efficient}、{creative}地製作 osu! 譜面。",

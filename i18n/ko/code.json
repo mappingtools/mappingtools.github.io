@@ -330,7 +330,7 @@
     "message": "홈"
   },
   "homepage.description": {
-    "message": "osu!를 위한 Mapping Tools"
+    "message": "osu! 비트맵 제작자를 위한 무료 도구입니다. 타이밍 포인트를 정리하고, 슬라이더 모양을 다듬고, 패턴과 히트사운드를 Mapping Tools로 관리하세요."
   },
   "homepage.tagline": {
     "message": "Mapping Tools는 osu! 매핑을 {efficient} 하고 {creative} 할 수 있도록 돕는 {allInOne} 애플리케이션입니다.",

@@ -330,7 +330,7 @@
     "message": "Strona główna"
   },
   "homepage.description": {
-    "message": "Mapping Tools dla osu!"
+    "message": "Darmowe narzędzia dla twórców beatmap osu!: porządkuj punkty czasowe, kształtuj slidery, twórz wzory i zarządzaj hitsoundami w Mapping Tools."
   },
   "homepage.tagline": {
     "message": "Mapping Tools to {allInOne} aplikacja do {efficient} i {creative} tworzenia map w osu!.",

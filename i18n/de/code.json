@@ -330,7 +330,7 @@
     "message": "Startseite"
   },
   "homepage.description": {
-    "message": "Mapping Tools für osu!"
+    "message": "Kostenlose Tools für osu!-Mapper: Timingpunkte bereinigen, Slider formen, Muster erstellen und Hitsounds mit Mapping Tools verwalten."
   },
   "homepage.tagline": {
     "message": "Mapping Tools ist eine {allInOne}-Anwendung für {efficient} und {creative} osu!-Mapping.",

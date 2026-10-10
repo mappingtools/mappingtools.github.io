@@ -342,7 +342,7 @@
     "message": "Inicio"
   },
   "homepage.description": {
-    "message": "Mapping Tools para osu!"
+    "message": "Herramientas gratuitas para creadores de beatmaps de osu!: limpia puntos de timing, da forma a sliders, crea patrones y gestiona hitsounds con Mapping Tools."
   },
   "homepage.tagline": {
     "message": "Mapping Tools es una aplicación {allInOne} para mapear en osu! de forma {efficient} y {creative}.",

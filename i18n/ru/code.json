@@ -330,7 +330,7 @@
     "message": "Главная"
   },
   "homepage.description": {
-    "message": "Mapping Tools для osu!"
+    "message": "Бесплатные инструменты для создателей карт osu!: очищайте точки тайминга, меняйте форму слайдеров, создавайте паттерны и настраивайте хитсаунды в Mapping Tools."
   },
   "homepage.tagline": {
     "message": "Mapping Tools представляет собой {allInOne} приложение для {efficient} и {creative} создания карт osu!",
