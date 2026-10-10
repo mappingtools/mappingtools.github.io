@@ -159,7 +159,7 @@ const Download: React.FC = () => {
                       return asset ? (
                         <a
                           key={option.label}
-                          className={clsx('button button--block button--secondary', styles.downloadOption)}
+                          className={clsx('button button--block button--secondary button--outline', styles.downloadOption)}
                           href={asset.browser_download_url}>
                           <FontAwesomeIcon icon={option.icon} />
                           <span className={styles.itemText}>{option.label}</span>
