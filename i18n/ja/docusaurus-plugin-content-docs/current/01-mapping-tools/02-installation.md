@@ -19,15 +19,32 @@ Mapping Tools は **Windows、Linux、macOS** 向けのネイティブデスク�
 - **Linux**: x64 または ARM64 用の AppImage かポータブル ZIP を使います。
 - **macOS**: Intel (x64) または Apple silicon (ARM64) 用のポータブル ZIP をダウンロードして展開し、フォルダー内の **Mapping Tools.app** を開きます。
 
-## プラットフォームごとのエディター連携
+## 機能の対応状況 {#editor-integration-by-platform}
 
-譜面ファイルを扱うツールは、どのデスクトップ版でも利用できます。一部のライブエディター機能は、OS や連携方法によって制限されます。
+✅ 対応 · ❌ 非対応。対応機能でも、以下のセットアップが必要な場合があります。
 
-- **Geometry Dashboard** と **Editor Reader** のメモリ連携には Windows が必要です。
-- Linux と macOS では、現在の譜面の検出にローカルの **Gosumemory/Tosu** API (`127.0.0.1:24050`) を既定で使います。**Open current beatmap** を使うには、対応する API を起動してください。これらのプラットフォームでは、ライブエディター状態の読み取りとエディターの自動再読み込みは既定で無効です。
-- **File > Open beatmap** からいつでも譜面を直接選択できます。
+<div className="feature-compatibility">
 
-osu! lazer では **File > Edit externally** のワークフローを使ってください。詳しくは[osu! lazer ガイド](/docs/guides/use-mt-in-lazer)をご覧ください。
+| OS | osu! クライアント | 譜面の読み書き | 現在の譜面を取得 | エディターの状態をリアルタイムで読み取り | 自動再読み込み | グローバルホットキー | Geometry Dashboard オーバーレイ |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+
+</div>
+
+- **osu! stable**: Windows では、現在の譜面の検出とエディター状態のリアルタイム読み取りにメモリ連携を使い、自動再読み込みにはキー入力のシミュレーションを使います。Linux と macOS では、stable を Wine 経由で実行し、互換性のある **Gosumemory/Tosu** API を `127.0.0.1:24050` で起動すると、現在の譜面を取得できます。Preferences で **Songs folder** を設定してください。
+- **osu! lazer**: **File > Edit externally** を使って譜面ファイルを公開します。Mapping Tools は外部編集用の譜面を自動検出します。これはこの表で「現在の譜面を取得」に該当します。変更を適用するには、lazer で **Finish editing and import changes** を使ってください。詳しくは[osu! lazer ガイド](/docs/guides/use-mt-in-lazer)をご覧ください。
+- **osu! unstable**: 現在の譜面の取得、エディター状態のリアルタイム読み取り、エディターの再読み込みには、Preferences で **MTIPC** を選択してください。これらの機能にはクライアント側の MTIPC サーバーが必要です。Linux と macOS では、エディター状態のリアルタイム読み取りと再読み込みは既定で無効です。
+- **グローバルホットキー**: Linux では、X11 またはグローバルショートカットポータルを備えたデスクトップ環境で利用できます。macOS では、システムから求められたキーボードアクセス権限を許可してください。
+
+**File > Open beatmap** からいつでも譜面を直接選択できます。
 
 ## セットアップ {#setup}
 

@@ -19,15 +19,32 @@ Todos los paquetes son autónomos e incluyen el entorno de ejecución de .NET 10
 - **Linux**: usa AppImage o el ZIP portable para x64 o ARM64.
 - **macOS**: descarga el ZIP portable para Intel (x64) o Apple silicon (ARM64) y abre **Mapping Tools.app** desde la carpeta extraída.
 
-## Integración con el editor según la plataforma
+## Compatibilidad de funciones {#editor-integration-by-platform}
 
-Las herramientas que trabajan con archivos de beatmap funcionan en todas las versiones de escritorio. Algunas funciones que interactúan con el editor en directo dependen del sistema operativo y del método de integración:
+✅ Compatible · ❌ No compatible. Algunas funciones compatibles requieren la configuración que se describe a continuación.
 
-- **Geometry Dashboard** y la integración de memoria de **Editor Reader** requieren Windows.
-- En Linux y macOS, la detección del beatmap actual usa de forma predeterminada la API local **Gosumemory/Tosu** en `127.0.0.1:24050`. Inicia una API compatible para usar **Open current beatmap**. En estas plataformas, la lectura del estado del editor en directo y su recarga automática están desactivadas de forma predeterminada.
-- Siempre puedes seleccionar un beatmap directamente con **File > Open beatmap**.
+<div className="feature-compatibility">
 
-Para osu! lazer, usa el flujo **File > Edit externally**. Consulta la [guía de lazer](/docs/guides/use-mt-in-lazer).
+| Sistema operativo | Cliente de osu! | Leer/escribir beatmaps | Obtener beatmap actual | Leer estado del editor en directo | Recarga automática | Atajos de teclado globales | Superposición de Geometry Dashboard |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+
+</div>
+
+- **osu! stable**: en Windows, la detección del beatmap actual y la lectura del estado del editor en directo usan la integración con la memoria; la recarga automática simula pulsaciones de teclas. En Linux y macOS, ejecuta stable con Wine e inicia una API **Gosumemory/Tosu** compatible en `127.0.0.1:24050` para obtener el beatmap actual. Configura **Songs folder** en Preferences.
+- **osu! lazer**: usa **File > Edit externally** para acceder a los archivos del beatmap. Mapping Tools detecta automáticamente el beatmap que se edita externamente, lo que cuenta como obtener el beatmap actual en esta tabla. Usa **Finish editing and import changes** en lazer para aplicar tus cambios. Consulta la [guía de lazer](/docs/guides/use-mt-in-lazer).
+- **osu! unstable**: selecciona **MTIPC** en Preferences para obtener el beatmap actual, leer el estado del editor en directo y recargar el editor. Estas funciones requieren el servidor MTIPC del cliente. La lectura del estado del editor en directo y la recarga del editor están desactivadas de forma predeterminada en Linux y macOS.
+- **Atajos de teclado globales**: en Linux, la compatibilidad depende de X11 o de un entorno de escritorio con el portal de atajos globales. En macOS, concede los permisos de acceso al teclado que solicite el sistema.
+
+Siempre puedes seleccionar un beatmap directamente con **File > Open beatmap**.
 
 ## Configuración {#setup}
 

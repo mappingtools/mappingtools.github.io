@@ -19,15 +19,32 @@ Semua paket sudah lengkap dan menyertakan runtime .NET 10.
 - **Linux**: gunakan AppImage atau ZIP portabel untuk x64 atau ARM64.
 - **macOS**: unduh ZIP portabel untuk Intel (x64) atau Apple silicon (ARM64), lalu buka **Mapping Tools.app** dari folder hasil ekstraksi.
 
-## Integrasi editor menurut platform
+## Kompatibilitas fitur {#editor-integration-by-platform}
 
-Alat untuk file beatmap dapat digunakan di semua build desktop. Beberapa fitur editor langsung bergantung pada sistem operasi dan metode integrasinya:
+✅ Didukung · ❌ Tidak didukung. Fitur yang didukung mungkin memerlukan penyiapan di bawah ini.
 
-- **Geometry Dashboard** dan integrasi memori **Editor Reader** memerlukan Windows.
-- Di Linux dan macOS, pencarian beatmap yang sedang dibuka menggunakan API lokal **Gosumemory/Tosu** di `127.0.0.1:24050` secara default. Jalankan API yang kompatibel untuk menggunakan **Open current beatmap**. Pembacaan status editor langsung dan pemuatan ulang editor otomatis dinonaktifkan secara default di platform ini.
-- Kamu selalu bisa memilih beatmap secara langsung melalui **File > Open beatmap**.
+<div className="feature-compatibility">
 
-Untuk osu! lazer, gunakan alur kerja **File > Edit externally**. Lihat [panduan lazer](/docs/guides/use-mt-in-lazer).
+| OS | Klien osu! | Baca/tulis beatmap | Dapatkan beatmap saat ini | Baca status editor langsung | Muat ulang otomatis | Tombol pintas global | Overlay Geometry Dashboard |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+
+</div>
+
+- **osu! stable**: di Windows, deteksi beatmap saat ini dan pembacaan status editor langsung menggunakan integrasi memori, sedangkan muat ulang otomatis menggunakan penekanan tombol simulasi. Di Linux dan macOS, jalankan stable melalui Wine dan mulai API **Gosumemory/Tosu** yang kompatibel di `127.0.0.1:24050` untuk mendapatkan beatmap saat ini. Atur **Songs folder** di Preferences.
+- **osu! lazer**: gunakan **File > Edit externally** agar file beatmap dapat diakses. Mapping Tools mendeteksi beatmap yang sedang diedit secara eksternal secara otomatis; ini dihitung sebagai fitur mendapatkan beatmap saat ini pada tabel. Gunakan **Finish editing and import changes** di lazer untuk menerapkan perubahan. Lihat [panduan lazer](/docs/guides/use-mt-in-lazer).
+- **osu! unstable**: pilih **MTIPC** di Preferences untuk mengambil beatmap saat ini, membaca status editor langsung, dan memuat ulang editor. Fitur ini memerlukan server MTIPC dari klien. Pembacaan status editor langsung dan pemuatan ulang editor dinonaktifkan secara default di Linux dan macOS.
+- **Tombol pintas global**: dukungan di Linux bergantung pada X11 atau desktop dengan portal pintasan global. Di macOS, izinkan aksesibilitas papan ketik yang diminta sistem.
+
+Kamu selalu bisa memilih beatmap secara langsung melalui **File > Open beatmap**.
 
 ## Penyiapan {#setup}
 

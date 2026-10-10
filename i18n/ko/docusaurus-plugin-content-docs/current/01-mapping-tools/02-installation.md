@@ -20,15 +20,32 @@ Mapping Tools는 **Windows, Linux, macOS**용 네이티브 데스크톱 빌드�
 - **Linux**: x64 또는 ARM64용 AppImage나 포터블 ZIP을 사용하세요.
 - **macOS**: Intel(x64) 또는 Apple silicon(ARM64)용 포터블 ZIP을 다운로드한 다음, 압축을 푼 폴더에서 **Mapping Tools.app**을 여세요.
 
-## 플랫폼별 편집기 연동
+## 기능 호환성 {#editor-integration-by-platform}
 
-비트맵 파일 도구는 모든 데스크톱 빌드에서 작동합니다. 실시간 편집기 기능 중 일부는 운영체제와 연동 방식에 따라 달라집니다.
+✅ 지원 · ❌ 지원 안 함. 지원되는 기능에도 아래 설정이 필요할 수 있습니다.
 
-- **Geometry Dashboard**와 **Editor Reader** 메모리 연동에는 Windows가 필요합니다.
-- Linux와 macOS에서는 현재 비트맵을 찾을 때 기본적으로 `127.0.0.1:24050`의 로컬 **Gosumemory/Tosu** API를 사용합니다. **Open current beatmap**을 사용하려면 호환되는 API를 실행하세요. 이 플랫폼에서는 실시간 편집기 상태 읽기와 편집기 자동 새로고침이 기본적으로 비활성화되어 있습니다.
-- **File > Open beatmap**으로 비트맵을 직접 선택할 수도 있습니다.
+<div className="feature-compatibility">
 
-osu! lazer에서는 **File > Edit externally** 작업 흐름을 사용하세요. 자세한 내용은 [lazer 가이드](/docs/guides/use-mt-in-lazer)를 참고하세요.
+| OS | osu! 클라이언트 | 비트맵 읽기/쓰기 | 현재 비트맵 가져오기 | 실시간 편집기 상태 읽기 | 자동 새로고침 | 전역 단축키 | Geometry Dashboard 오버레이 |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+
+</div>
+
+- **osu! stable**: Windows에서는 현재 비트맵 감지와 실시간 편집기 상태 읽기에 메모리 연동을 사용하고, 자동 새로고침에는 키 입력 시뮬레이션을 사용합니다. Linux와 macOS에서는 stable을 Wine으로 실행하고 호환되는 **Gosumemory/Tosu** API를 `127.0.0.1:24050`에서 실행하면 현재 비트맵을 가져올 수 있습니다. Preferences에서 **Songs folder**를 설정하세요.
+- **osu! lazer**: **File > Edit externally**를 사용해 비트맵 파일을 외부에 노출하세요. Mapping Tools가 외부 편집 중인 비트맵을 자동으로 감지하며, 표에서는 이를 현재 비트맵 가져오기로 표시합니다. 변경 사항을 적용하려면 lazer에서 **Finish editing and import changes**를 사용하세요. [lazer 가이드](/docs/guides/use-mt-in-lazer)를 참고하세요.
+- **osu! unstable**: 현재 비트맵 가져오기, 실시간 편집기 상태 읽기, 편집기 새로고침을 사용하려면 Preferences에서 **MTIPC**를 선택하세요. 이 기능을 사용하려면 클라이언트의 MTIPC 서버가 필요합니다. Linux와 macOS에서는 실시간 편집기 상태 읽기와 편집기 새로고침이 기본적으로 비활성화되어 있습니다.
+- **전역 단축키**: Linux에서는 X11 또는 전역 단축키 포털을 지원하는 데스크톱 환경이 필요합니다. macOS에서는 시스템이 요청하는 키보드 접근 권한을 허용하세요.
+
+**File > Open beatmap**으로 언제든지 비트맵을 직접 선택할 수 있습니다.
 
 ## 설정 {#setup}
 

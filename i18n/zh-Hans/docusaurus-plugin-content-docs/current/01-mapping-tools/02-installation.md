@@ -19,15 +19,32 @@ Mapping Tools 提供适用于 **Windows、Linux 和 macOS** 的原生桌面版�
 - **Linux**：x64 或 ARM64 系统可使用 AppImage 或便携 ZIP 包。
 - **macOS**：下载适用于 Intel（x64）或 Apple 芯片（ARM64）的便携 ZIP 包，解压后打开 **Mapping Tools.app**。
 
-## 各平台的编辑器集成
+## 功能兼容性 {#editor-integration-by-platform}
 
-谱面文件工具适用于所有桌面版本。部分实时编辑器功能取决于操作系统和集成方式：
+✅ 支持 · ❌ 不支持。使用某些功能可能需要按照下方说明进行设置。
 
-- **Geometry Dashboard** 和 **Editor Reader** 内存集成需要 Windows。
-- 在 Linux 和 macOS 上，当前谱面的发现功能默认使用本地 **Gosumemory/Tosu** API，地址为 `127.0.0.1:24050`。请启动兼容的 API，以使用 **Open current beatmap**。这些平台默认关闭实时编辑器状态读取和自动重新载入编辑器功能。
-- 你也可以随时通过 **File > Open beatmap** 手动选择谱面。
+<div className="feature-compatibility">
 
-使用 osu! lazer 时，请采用其 **File > Edit externally** 工作流程。请参阅 [lazer 指南](/docs/guides/use-mt-in-lazer)。
+| 操作系统 | osu! 客户端 | 读取/写入谱面 | 获取当前谱面 | 读取实时编辑器状态 | 自动重新载入 | 全局快捷键 | Geometry Dashboard 覆盖层 |
+| --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+
+</div>
+
+- **osu! stable**：在 Windows 上，当前谱面检测和实时编辑器状态读取使用内存集成，自动重新载入则通过模拟按键实现。在 Linux 和 macOS 上，请通过 Wine 运行 stable，并在 `127.0.0.1:24050` 启动兼容的 **Gosumemory/Tosu** API，以获取当前谱面。还需在 Preferences 中设置 **Songs folder**。
+- **osu! lazer**：使用 **File > Edit externally** 使谱面文件可供外部编辑。Mapping Tools 会自动检测通过外部编辑打开的谱面，在本表中这也算作获取当前谱面。编辑完成后，在 lazer 中使用 **Finish editing and import changes** 应用修改。请参阅 [lazer 指南](/docs/guides/use-mt-in-lazer)。
+- **osu! unstable**：在 Preferences 中选择 **MTIPC**，以获取当前谱面、读取实时编辑器状态并重新载入编辑器。这些功能需要客户端的 MTIPC 服务器。在 Linux 和 macOS 上，实时编辑器状态读取和编辑器重新载入默认关闭。
+- **全局快捷键**：在 Linux 上，支持情况取决于使用的是 X11 还是提供全局快捷键门户的桌面环境。在 macOS 上，请允许系统请求的键盘访问权限。
+
+你也可以随时通过 **File > Open beatmap** 直接选择谱面。
 
 ## 设置 {#setup}
 
