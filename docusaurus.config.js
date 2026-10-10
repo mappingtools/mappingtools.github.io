@@ -5,7 +5,11 @@ module.exports = {
   url: 'https://mappingtools.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   organizationName: 'mappingtools', // Usually your GitHub org/user name.
   projectName: 'mappingtools.github.io', // Usually your repo name.
@@ -17,7 +21,7 @@ module.exports = {
     announcementBar: {
       id: 'discord_announcement', // Any value that will identify this message.
       content:
-        'Mapping Tools now has a new <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YfjKN2yjQV">discord</a>!',
+        'Join the Mapping Tools community on <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/YfjKN2yjQV">Discord</a> for support and discussion.',
       isCloseable: true,
     },
     navbar: {
@@ -53,6 +57,12 @@ module.exports = {
           to: 'blog',
           label: 'Blog',
           position: 'left'
+        },
+        {
+          href: 'https://ko-fi.com/olibomby',
+          label: 'Donate',
+          position: 'right',
+          className: 'header-kofi-link',
         },
         {
           href: 'https://github.com/olibomby/mapping_tools',
@@ -101,23 +111,15 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: 'docs/Mapping-Tools/contribute',
+              to: 'docs/mapping-tools/contribute',
             },
             {
-              label: 'Mapping Tools ',
-              to: 'https://github.com/OliBomby/Mapping_Tools',
+              label: 'Source code',
+              href: 'https://github.com/OliBomby/Mapping_Tools',
             },
             {
-              label: 'Mapping Tools Core',
-              to: 'https://github.com/OliBomby/Mapping_Tools_Core',
-            },
-            {
-              label: 'Mapping Tools Web',
-              to: 'https://github.com/misakura-rin/mapping-tools-web',
-            },
-            {
-              label: 'Mapping Tools Website',
-              to: 'https://github.com/mappingtools/mappingtools.github.io',
+              label: 'Website source',
+              href: 'https://github.com/mappingtools/mappingtools.github.io',
             }
           ],
         },
@@ -134,6 +136,8 @@ module.exports = {
       logo: {
         alt: 'Mapping Tools Logo',
         src: 'img/logo.svg',
+        width: 72,
+        height: 72,
       },
       copyright: `Copyright © ${new Date().getFullYear()} OliBomby and the Mapping Tools documentation contributors.`,
     },
@@ -168,21 +172,55 @@ module.exports = {
     defaultLocale: 'en',
     locales: [
       'en',
-      "de"
+      'de',
+      'es',
+      'fr',
+      'id',
+      'ja',
+      'ko',
+      'nl',
+      'pl',
+      'ru',
+      'zh-Hans',
+      'zh-Hant',
     ],
     localeConfigs: {
-      'en': {
+      en: {
         label: 'English',
       },
-      'zh-Hans': {
-        label: '中文',
+      de: {
+        label: 'Deutsch',
       },
-      'ru': {
+      es: {
+        label: 'Español',
+      },
+      fr: {
+        label: 'Français',
+      },
+      id: {
+        label: 'Bahasa Indonesia',
+      },
+      ja: {
+        label: '日本語',
+      },
+      ko: {
+        label: '한국어',
+      },
+      nl: {
+        label: 'Nederlands',
+      },
+      pl: {
+        label: 'Polski',
+      },
+      ru: {
         label: 'Русский',
       },
-      "de": {
-        label: "Deutsch"
-      }
+      'zh-Hans': {
+        label: '简体中文',
+      },
+      'zh-Hant': {
+        label: '繁體中文',
+      },
     }
   },
 };

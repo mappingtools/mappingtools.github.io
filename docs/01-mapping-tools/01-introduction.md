@@ -88,3 +88,5 @@ Mapping Tools is built with freedom in mind, always maximizing the utility of si
 - **Tumour Generator**
   - Add various shapes along the sides of your sliders
   - Design complete sliders in a new way
+- **Slider Picturator**
+  - Turn an image into a slider and place it in a beatmap

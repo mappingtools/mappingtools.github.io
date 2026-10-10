@@ -1,278 +1,191 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
-import {Link } from "react-router-dom";
-
 import Layout from '@theme/Layout';
+import { translate } from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAndroid, faApple, faAppStoreIos, faGithub, faLinux, faWindows, } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDownload, faExternalLinkAlt, faExternalLinkSquareAlt, faFileArchive, faWineBottle, faWineGlass, faWineGlassAlt } from '@fortawesome/free-solid-svg-icons';
+import { faApple, faLinux, faWindows } from '@fortawesome/free-brands-svg-icons';
+import { faDownload, faFileZipper } from '@fortawesome/free-solid-svg-icons';
 
-const OS_SUPPORT = Object.freeze({
-  undefined: {
-    name: "undefined",
-    supported: false,
-    wine_supported: false,
-    web_supported: true
-  },
-  macos: {
-    macintosh: {
-      name: "Macintosh",
-      supported: false,
-      wine_supported: true,
-      web_supported: true
-    },
-    macIntel: {
-      name: "MacIntel",
-      supported: false,
-      wine_supported: true,
-      web_supported: true
-    },
-    macPPC: {
-      name: "MacPPC",
-      wine_supported: true,
-      web_supported: true
-    },
-    mac86K: {
-      name: "Mac68K",
-      supported: false,
-      wine_supported: true,
-      web_supported: true
-    }
-  },
-  windows: {
-    win32: {
-      name: "Win32",
-      supported: true,
-      wine_supported: false,
-      web_supported: true
-    },
-    win64: {
-      name: "Win64",
-      supported: true,
-      wine_supported: false,
-      web_supported: true
-    },
-    win: {
-      name: "Windows",
-      supported: false,
-      wine_supported: false,
-      web_supported: true
-    },
-    winCe: {
-      name: "WinCE",
-      supported: false,
-      wine_supported: false,
-      web_supported: true
-    }
-  },
-  ios: {
-    iPhone: {
-      name: "iPhone",
-      supported: false,
-      wine_supported: false,
-      web_supported: true
-    },
-    iPad: {
-      name: "iPad",
-      supported: false,
-      wine_supported: false,
-      web_supported: true
-    },
-    iPod: {
-      name: "iPod",
-      supported: false,
-      wine_supported: false,
-      web_supported: true
-    }
-  },
-  android: {
-    name: "Android",
-    supported: false,
-    wine_supported: true,
-    web_supported: true
-  },
-  linux: {
-    name: "Linux",
-    supported: false,
-    wine_supported: true,
-    web_supported: true
-  },
-});
-
-const cards = [
-  {
-    label: 'Windows x64',
-    os: OS_SUPPORT.windows.win64,
-    icon: faWindows,
-    items: [
-      {
-        icon: faDownload,
-        text: "Installer",
-        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x64.exe"),
-      },
-      {
-        icon: faFileArchive,
-        text: "Portable",
-        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/release_x64.zip"),
-      }
-    ]
-  },
-  {
-    label: 'Windows x86',
-    os: OS_SUPPORT.windows.win32,
-    icon: faWindows,
-    items: [
-      {
-        icon: faDownload,
-        text: "Installer",
-        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/mapping_tools_installer_x86.exe"),
-      },
-      {
-        icon: faFileArchive,
-        text: "Portable",
-        onClick: () => window.open("https://github.com/OliBomby/Mapping_Tools/releases/latest/download/release.zip"),
-      }
-    ]
-  },
-  {
-    label: 'Linux',
-    os: OS_SUPPORT.linux,
-    icon: faLinux,
-    items: [
-      {
-        icon: faDownload,
-        onClick: () => { },
-      },
-      {
-        icon: faFileArchive,
-        text: "Portable",
-        onClick: () => { },
-      }
-    ],
-  }
-];
-
-const getOs = () => {
-  const userAgent = window.navigator.userAgent;
-
-  const winX64Pattern = /\b(x86_x64|x86-64|Win64|x64;|amd64|WOW64|x64_x64)\b/gi;
-
-  if (winX64Pattern.test(userAgent)) {
-    return OS_SUPPORT.windows.win64;
-  }
-
-  const platform = window.navigator.platform;
-
-  const windowsPlatforms = Object.keys(OS_SUPPORT.windows);
-
-  for (let i = 0; i < windowsPlatforms.length; i++) {
-    const os = OS_SUPPORT.windows[windowsPlatforms[i]];
-    if (os.name === platform) return os;
-  }
-
-  const macPlatforms = Object.keys(OS_SUPPORT.macos);
-
-  for (let i = 0; i < macPlatforms.length; i++) {
-    const os = OS_SUPPORT.macos[macPlatforms[i]];
-    if (os.name === platform) return os;
-  }
-
-  const iosPlatforms = Object.keys(OS_SUPPORT.ios);
-
-  for (let i = 0; i < iosPlatforms.length; i++) {
-    const os = OS_SUPPORT.ios[iosPlatforms[i]];
-    if (os.name === platform) return os;
-  }
-
-  if (/Android/.test(userAgent)) {
-    return OS_SUPPORT.android;
-  }
-
-  if (/Linux/.test(platform)) {
-    return OS_SUPPORT.linux
-  }
-
-  return OS_SUPPORT.undefined;
+type ReleaseAsset = {
+  name: string;
+  browser_download_url: string;
 };
 
-function DetectOs(props) {
-  if (props.os === null) {
-    return <h4 className={styles.autodetect}>Detecting operating system ...</h4>
-  }
+const LATEST_RELEASE_API_URL = 'https://api.github.com/repos/OliBomby/Mapping_Tools/releases/latest';
+const LATEST_RELEASE_URL = 'https://github.com/OliBomby/Mapping_Tools/releases/latest';
 
-  if (props.os.name === "undefined") {
-    return <h4 className={styles.autodetect}>Cannot identify operating system!</h4>
-  }
+const downloadColumns = [
+  {
+    id: 'windows',
+    label: 'Windows',
+    cards: [
+      {
+        label: 'Windows x64',
+        icon: faWindows,
+        rid: 'win-x64',
+        options: [
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '-Setup.exe', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
+        ],
+      },
+      {
+        label: 'Windows x86',
+        icon: faWindows,
+        rid: 'win-x86',
+        options: [
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '-Setup.exe', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'linux',
+    label: 'Linux',
+    cards: [
+      {
+        label: 'Linux x64',
+        icon: faLinux,
+        rid: 'linux-x64',
+        options: [
+          { label: translate({ id: 'download.appImage', message: 'AppImage' }), suffix: '.appimage', icon: faDownload },
+        ],
+      },
+      {
+        label: 'Linux ARM64',
+        icon: faLinux,
+        rid: 'linux-arm64',
+        options: [
+          { label: translate({ id: 'download.appImage', message: 'AppImage' }), suffix: '.appimage', icon: faDownload },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'macos',
+    label: 'macOS',
+    cards: [
+      {
+        label: 'macOS ARM64',
+        icon: faApple,
+        rid: 'osx-arm64',
+        options: [
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '.pkg', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
+        ],
+      },
+      {
+        label: 'macOS x64',
+        icon: faApple,
+        rid: 'osx-x64',
+        options: [
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '.pkg', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
+        ],
+      },
+    ],
+  },
+];
 
-  return <h4 className={styles.autodetect}>Mapping Tools is {props.os.supported ? '' : 'not '} available for your operating system ({props.os.name}) {props.os.supported ? '' : [', but you can try ', <Link to="/docs/mapping-tools/installation">Wine</Link>]}</h4>
-}
+function findReleaseAsset(assets: ReleaseAsset[], rid: string, suffix: string) {
+  const target = rid.toLowerCase();
+  const fileSuffix = suffix.toLowerCase();
 
-function MakeButtons(props) {
-  const os = props.os;
-  const items = props.items;
-  if (os.supported) {
-    return items.map((item, j) => (
-      <button key={j} className={clsx('button button--block button--secondary button--outline', !os.supported && clsx('disabled', styles.disabled), styles.downloadOption)} onClick={item.onClick}>
-        <FontAwesomeIcon icon={item.icon} />
-        <span className={clsx(styles.itemText)}>{item.text}</span>
-      </button>));
-  }
-  if (os.wine_supported || os.web_supported) {
-    return [
-    <Link key={0} to="/docs/mapping-tools/installation#wine">
-      <button className={clsx('button button--block button--secondary button--outline', !os.wine_supported && 
-      clsx('disabled', styles.disabled), styles.downloadOption)}>
-        <FontAwesomeIcon icon={faWineGlassAlt} />
-        <span className={clsx(styles.itemText)}>Wine instructions</span>
-      </button>
-    </Link>,
-    <button key={2} className={clsx('button button--block button--secondary button--outline', !os.web_supported && 
-    clsx('disabled', styles.disabled), styles.downloadOption)} onClick={() => window.open("https://potoofu.github.io/mapping-tools-web/")}>
-      <FontAwesomeIcon icon={faExternalLinkAlt} />
-      <span className={clsx(styles.itemText)}>Mapping Tools Web</span>
-    </button>];
-  }
-
-  return <p className={clsx(styles.comingNever)}>Not supported :(</p>;
+  return assets.find((asset) => {
+    const name = asset.name.toLowerCase();
+    return name.includes(target) && name.endsWith(fileSuffix);
+  });
 }
 
 const Download: React.FC = () => {
-  const [currentOs, setOs] = useState(null);
+  const [releaseAssets, setReleaseAssets] = useState<ReleaseAsset[] | null>(null);
 
   useEffect(() => {
-    setOs(getOs());
+    let isMounted = true;
+
+    fetch(LATEST_RELEASE_API_URL)
+      .then((response) => {
+        if (!response.ok) throw new Error('Could not load release assets.');
+        return response.json();
+      })
+      .then((release) => {
+        if (isMounted) setReleaseAssets(release.assets);
+      })
+      .catch(() => {
+        if (isMounted) setReleaseAssets([]);
+      });
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (
-    <Layout title="Download" description="download Mapping Tools">
-      <div className={clsx("container padding-vert--lg pt-3", styles.content)}>
-        <h1>Download</h1>
-        <DetectOs os={currentOs} />
-        <div className={clsx("container", styles.downloadsContainer)}>
-          <div className="row">
-            {cards.map(({ label, icon, os, items }, i) => (
-              <div key={i} className={clsx('col col--4', styles.dlCol)}>
-                <div className={clsx("card", styles.customCard, currentOs === os ? styles.cardCurrentOs : styles.cardNotCurrentOs)}>
+    <Layout
+      title={translate({ id: 'download.title', message: 'Download' })}
+      description={translate({ id: 'download.description', message: 'Download Mapping Tools for Windows, macOS, and Linux' })}>
+      <div className={clsx('container padding-vert--lg', styles.content)}>
+        <h1>{translate({ id: 'download.heading', message: 'Download' })}</h1>
+        <h4 className={styles.subtitle}>{translate({ id: 'download.subtitle', message: 'Download Mapping Tools for your operating system' })}</h4>
+
+        {releaseAssets?.length === 0 && (
+          <p className={styles.releaseFallback}>
+            {translate({ id: 'download.unavailable', message: 'Download links are unavailable.' })} <a href={LATEST_RELEASE_URL}>{translate({ id: 'download.latestReleaseLink', message: 'Browse the latest release on GitHub.' })}</a>
+          </p>
+        )}
+
+        <div className={styles.downloadGrid}>
+          {downloadColumns.map(({ id, label, cards }) => (
+            <section key={id} className={styles.osColumn} aria-label={translate({ id: 'download.osAriaLabel', message: '{os} downloads' }, { os: label })}>
+              {cards.map(({ label: cardLabel, icon, rid, options }) => (
+                <article
+                  key={rid}
+                  className={clsx('card', styles.customCard, styles.cardNotCurrentOs)}>
                   <div className="card__header">
-                    <h3 className={clsx(styles.cardTitle)}>
+                    <h3 className={styles.cardTitle}>
                       <FontAwesomeIcon icon={icon} />
-                      &nbsp; {label}
+                      &nbsp; {cardLabel}
                     </h3>
                   </div>
                   <div className="card__body">
-                    <MakeButtons os={os} items={items} />
+                    {options.map((option) => {
+                      const asset = releaseAssets
+                        ? findReleaseAsset(releaseAssets, rid, option.suffix)
+                        : null;
+
+                      return asset ? (
+                        <a
+                          key={option.label}
+                          className={clsx('button button--block button--secondary', styles.downloadOption)}
+                          href={asset.browser_download_url}>
+                          <FontAwesomeIcon icon={option.icon} />
+                          <span className={styles.itemText}>{option.label}</span>
+                        </a>
+                      ) : (
+                        <div
+                          key={option.label}
+                          className={styles.downloadUnavailable}>
+                          <FontAwesomeIcon icon={option.icon} />
+                          <span className={styles.itemText}>
+                            {releaseAssets === null
+                              ? translate({ id: 'download.loading', message: '{option} loading…' }, { option: option.label })
+                              : translate({ id: 'download.optionUnavailable', message: '{option} unavailable' }, { option: option.label })}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
+                </article>
+              ))}
+            </section>
+          ))}
         </div>
       </div>
     </Layout>
   );
-}
+};
 
 export default Download;

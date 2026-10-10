@@ -1,0 +1,470 @@
+{
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Tutup",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Gulir kembali ke atas",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Tersalin",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Salin",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Salin blok kode ke papan klip",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Alihkan bungkus baris",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Ciutkan kategori sidebar \"{label}\"",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Perluas kategori sidebar \"{label}\"",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Halaman ini mengalami crash.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Coba lagi",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(dibuka di tab baru)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Navigasi utama",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "Halaman yang kamu cari tidak dapat ditemukan.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Beri tahu pemilik halaman yang menautkan ke URL asli bahwa tautan tersebut sudah tidak berfungsi.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.title": {
+    "message": "Halaman tidak ditemukan",
+    "description": "The title of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Di halaman ini",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.admonition.caution": {
+    "message": "Perhatian",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "Bahaya",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "Catatan",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Tips",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "Peringatan",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.archive.description": {
+    "message": "Arsip blog",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.archive.title": {
+    "message": "Arsip blog",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Penulis ini belum membuat postingan apa pun.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} – {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Penulis",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Lihat semua penulis",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navigasi halaman blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Postingan lebih baru",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Postingan lebih lama",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Navigasi halaman postingan blog",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Postingan lebih baru",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Postingan lebih lama",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} postingan",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Baca selengkapnya",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Baca selengkapnya tentang \"{title}\"",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} menit waktu baca",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigasi ke postingan blog terbaru",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} dengan tag \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Beralih antara tampilan gelap dan terang (saat ini: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "mode gelap",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "mode terang",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "mode sistem",
+    "description": "The name for the system color mode"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit halaman ini",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Tautan langsung ke judul ini",
+    "description": "Title for link to heading"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Langsung ke konten utama",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Halaman ini adalah draf. Halaman ini hanya terlihat di lingkungan pengembangan dan tidak disertakan dalam build produksi.",
+    "description": "The draft content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Halaman draf",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Halaman ini tidak terdaftar dan tidak akan diindeks oleh mesin pencari. Halaman ini hanya dapat dibuka melalui tautan langsung.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Halaman tidak terdaftar",
+    "description": "The unlisted content banner title"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} item",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Beranda",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Navigasi breadcrumb",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Navigasi halaman dokumentasi",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Berikutnya",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Sebelumnya",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Tutup sidebar navigasi",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Ciutkan sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Ciutkan sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Perluas sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Perluas sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Sidebar navigasi dokumentasi",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Alihkan sidebar navigasi",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} dengan tag \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "1 dokumen dengan tag|{count} dokumen dengan tag",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versi: {versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "versi terbaru",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Dokumentasi terbaru tersedia di {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Ini adalah dokumentasi untuk {siteTitle} {versionLabel}; dokumentasi ini tidak lagi dipelihara.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Ini adalah dokumentasi untuk {siteTitle} {versionLabel} yang belum dirilis.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " pada {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " oleh {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Terakhir diperbarui{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Ciutkan menu dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Perluas menu dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Bahasa",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "Kembali ke menu utama",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versi",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tag:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Lihat semua tag",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tag",
+    "description": "The title of the tag list page"
+  },
+  "homepage.title": {
+    "message": "Beranda"
+  },
+  "homepage.description": {
+    "message": "Alat gratis untuk pembuat beatmap osu!: rapikan titik timing, bentuk slider, buat pola, dan kelola hitsound dengan Mapping Tools."
+  },
+  "homepage.tagline": {
+    "message": "Mapping Tools adalah aplikasi {allInOne} untuk mapping osu! secara {efficient} dan {creative}.",
+    "description": "The homepage tagline"
+  },
+  "homepage.tagline.allInOne": {
+    "message": "serba ada",
+    "description": "The all-in-one phrase highlighted in the homepage tagline"
+  },
+  "homepage.tagline.efficient": {
+    "message": "efisien",
+    "description": "The efficient phrase highlighted in the homepage tagline"
+  },
+  "homepage.tagline.creative": {
+    "message": "kreatif",
+    "description": "The creative phrase highlighted in the homepage tagline"
+  },
+  "homepage.getStarted": {
+    "message": "Mulai",
+    "description": "Homepage button linking to the documentation"
+  },
+  "homepage.download": {
+    "message": "Unduh",
+    "description": "Homepage download button"
+  },
+  "changelog.title": {
+    "message": "Changelog"
+  },
+  "changelog.description": {
+    "message": "Changelog Mapping Tools"
+  },
+  "changelog.heading": {
+    "message": "Rilis terbaru"
+  },
+  "changelog.loading": {
+    "message": "Memuat rilis…"
+  },
+  "changelog.unavailable": {
+    "message": "Catatan rilis saat ini tidak tersedia."
+  },
+  "changelog.latestAriaLabel": {
+    "message": "Rilis terbaru"
+  },
+  "changelog.byAuthor": {
+    "message": "oleh {author}"
+  },
+  "homepage.feature.easy.title": {
+    "message": "Mudah digunakan"
+  },
+  "homepage.feature.easy.description": {
+    "message": "Dengan tooltip serta {documentation} dan {community}, kamu bisa mulai menggunakan Mapping Tools hanya dengan satu klik!"
+  },
+  "homepage.documentationLink": {
+    "message": "dokumentasi"
+  },
+  "homepage.communityLink": {
+    "message": "server Discord komunitas"
+  },
+  "homepage.feature.creativity.title": {
+    "message": "Bebaskan kreativitasmu"
+  },
+  "homepage.feature.creativity.description": {
+    "message": "Bentuk dan edit slider melalui antarmuka yang sederhana dan intuitif."
+  },
+  "homepage.feature.hitsounding.title": {
+    "message": "Perkaya hitsound-mu"
+  },
+  "homepage.feature.hitsounding.description": {
+    "message": "Buat dan edit hitsound yang unik dan kompleks dengan mudah."
+  },
+  "homepage.feature.cleaning.title": {
+    "message": "Bersihkan dan sempurnakan beatmap-mu"
+  },
+  "homepage.feature.cleaning.description": {
+    "message": "Snap ulang titik timing yang relevan dan hapus yang tidak diperlukan hanya dengan sekali klik."
+  },
+  "homepage.feature.color.title": {
+    "message": "Warnai beatmap-mu"
+  },
+  "homepage.feature.color.description": {
+    "message": "Buat colour hax dengan mudah, sesederhana yang seharusnya."
+  },
+  "homepage.feature.geometry.title": {
+    "message": "Perkuat struktur geometris"
+  },
+  "homepage.feature.geometry.description": {
+    "message": "Buat kurva blanket yang sempurna, simetri dengan sudut apa pun, kisi heksagon, dan banyak lagi dengan mudah."
+  },
+  "download.installer": {
+    "message": "Installer"
+  },
+  "download.portable": {
+    "message": "Portabel"
+  },
+  "download.appImage": {
+    "message": "AppImage"
+  },
+  "download.title": {
+    "message": "Unduh"
+  },
+  "download.description": {
+    "message": "Unduh Mapping Tools untuk Windows, macOS, dan Linux."
+  },
+  "download.heading": {
+    "message": "Unduh"
+  },
+  "download.subtitle": {
+    "message": "Unduh Mapping Tools untuk sistem operasimu."
+  },
+  "download.unavailable": {
+    "message": "Tautan unduhan tidak tersedia."
+  },
+  "download.latestReleaseLink": {
+    "message": "Lihat rilis terbaru di GitHub."
+  },
+  "download.osAriaLabel": {
+    "message": "Unduhan untuk {os}"
+  },
+  "download.loading": {
+    "message": "{option} sedang dimuat…"
+  },
+  "download.optionUnavailable": {
+    "message": "{option} tidak tersedia"
+  },
+  "announcement.join": {
+    "message": "Bergabunglah dengan komunitas Mapping Tools melalui {discord} untuk mendapatkan dukungan dan berdiskusi.",
+    "description": "Announcement bar invitation to the Mapping Tools Discord server"
+  },
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "Tutup menu",
+    "description": "The ARIA label for close button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "Buka menu",
+    "description": "The ARIA label for open button of mobile doc sidebar"
+  }
+}

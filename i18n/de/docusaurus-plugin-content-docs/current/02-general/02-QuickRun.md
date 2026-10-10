@@ -1,8 +1,8 @@
 ---
 title: "QuickRun"
-author: "Julaaaan"
+author: "OliBomby"
 id: quickrun
-description: Everything about QuickRun.
+description: Alles über QuickRun.
 keywords:
   - docs
   - mapping tools
@@ -11,17 +11,16 @@ keywords:
   - quickundo
 ---
 
+QuickRun beschleunigt die Verwendung von Mapping Tools. Mit einem Tastenkürzel kannst du Tools ausführen und den Editor automatisch neu laden lassen. So genügt ein Tastendruck, um ein Tool zu verwenden.
 
-QuickRun ist eine großartige Methode um das Benutzen von Mapping Tools zu beschleunigen. Es erlaubt das Ausführen eines Tools und das Neuladen des osu! editors durch das Drücken eines Hotkeys. Dadurch lassen sich Tools auf knopfdruck benutzen.
-
-Du kannst QuickRun in den **Preferences** aktivieren.
+QuickRun lässt sich in den **Preferences** aktivieren.
 
 ```mdx-code-block
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
 
 <ThemedImage
-  alt="QuickRun example image"
+  alt="QuickRun-Beispiel"
   sources={{
     light: useBaseUrl('./img/quickrun_example_light.png'),
     dark: useBaseUrl('./img/quickrun_example_dark.png'),
@@ -29,28 +28,30 @@ import ThemedImage from '@theme/ThemedImage';
 />
 ```
 
-## Setup {#setup}
+## Einrichtung {#setup}
 
-Um QuickRun zu aktivieren, weise dem **QuickRun hotkey** Feld in den **Preferences** einen Hotkey zu. Wenn du nun deinen festgelegten Hotkey drückst, wird das aktuell ausgewählt Tool in Mapping Tools ausführen.
+Öffne **Preferences** und weise dem Feld **QuickRun hotkey** ein Tastenkürzel zu. Wenn du es drückst, wird das aktuell in Mapping Tools geöffnete Tool ausgeführt.
 
-`Alt+M` ist ein guter Hotkey, da er die normalen osu! editor hotkeys nicht Stört.
+`Alt+M` eignet sich gut, weil dieses Tastenkürzel nicht mit den Standardkürzeln des osu!-Editors kollidiert.
 
-Wenn die Option **Auto reload after QuickRun** aktiviert ist, wird Mapping Tools die Tastenkombination `Strg+L, Enter` an das osu! Fenster senden um den editor neuzuladen nachdem das Tool fertig ist. Dadurch musst du den Editor nicht manuell neu laden.
+Wenn **Auto reload after QuickRun** aktiviert ist, sendet Mapping Tools nach Abschluss des Tools automatisch einen Befehl an deinen osu!-Client, um den Editor neu zu laden. So musst du ihn nicht von Hand neu laden.
 
-Anzumerken ist dass QuickRun **immer die aktuell im osu! Editor geöffnete map benutzt** und nicht nicht die in Mapping Tools ausgewählte Beatmap.
+:::info
+Beim Ausführen eines Tools mit QuickRun wird **immer die Beatmap verwendet, die gerade im Editor geöffnet ist** und nicht die in Mapping Tools ausgewählte Beatmap.
+:::
 
 ## SmartQuickRun {#smartquickrun}
 
-**SmartQuickRun** lässt sich durch das Klicken der Checkbox rechts neben dem QuickRun Hotkey Feld aktivieren. Dieses Feature erlaubt QuickRun, verschiedene Tools auszuführen, je nach dem wie viele Objekte du in dem osu! editor ausgewählt hast.
+Aktiviere über das Kontrollkästchen rechts neben dem Feld für das QuickRun-Tastenkürzel **SmartQuickRun**. Damit kannst du je nach Anzahl der im Editor ausgewählten Objekte unterschiedliche Tools per QuickRun ausführen.
 
-Es gibt drei verschiedene Unterscheidungen die SmartQuickRun machen kann:
-- **None** wenn keine Objekte ausgeählt sind. `N=0`
-- **Single** wenn genau ein Objekt ausgewählt ist. `N=1`
-- **Multiple** wenn mehr als ein Object ausgewählt ist. `N>1`
+SmartQuickRun unterscheidet drei Fälle:
+
+- **None**, wenn kein Hitobject ausgewählt ist: `N=0`
+- **Single**, wenn genau ein Hitobject ausgewählt ist: `N=1`
+- **Multiple**, wenn mehrere Hitobjects ausgewählt sind: `N>1`
 
 ## QuickUndo {#quickundo}
 
-**QuickUndo** ist ein hotkey der das letzte Backup in den Editor lädt und damit das vorherige Tool rückgängig macht. Außerdem unterstützt er das **auto reload** feature, genau wie QuickRun. Es ist empfohlen, QuickUndo neben QuickRun zu benutzen.
+**QuickUndo** ist ein Tastenkürzel, mit dem du das neueste Backup in den Editor lädst und damit den vorherigen Tool-Lauf rückgängig machst. Wie QuickRun unterstützt es das automatische Neuladen. Es empfiehlt sich, QuickUndo zusammen mit QuickRun zu verwenden.
 
-`Strg+Shift+Z` is a good hotkey to use for QuickUndo.
-`Strg+Shift+Z` ist ein guter Hotkey für QuickUndo.
+`Ctrl+Shift+Z` eignet sich gut als Tastenkürzel für QuickUndo.

@@ -1,0 +1,470 @@
+{
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Sluiten",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Terug naar boven scrollen",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Gekopieerd",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopiëren",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Codeblok naar klembord kopiëren",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Regelterugloop in- of uitschakelen",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Categorie \"{label}\" in navigatiebalk invouwen",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Categorie \"{label}\" in navigatiebalk uitvouwen",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Deze pagina is gecrasht.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Opnieuw proberen",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opent in een nieuw tabblad)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Hoofdnavigatie",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "De opgevraagde pagina kon niet worden gevonden.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Laat de eigenaar van de pagina die naar de oorspronkelijke URL linkt weten dat de link niet meer werkt.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.title": {
+    "message": "Pagina niet gevonden",
+    "description": "The title of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Op deze pagina",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.admonition.caution": {
+    "message": "Let op",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "Gevaar",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "Info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "Opmerking",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "Tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "Waarschuwing",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.archive.description": {
+    "message": "Blogarchief",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.archive.title": {
+    "message": "Blogarchief",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Deze auteur heeft nog geen berichten geschreven.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} – {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Auteurs",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Alle auteurs bekijken",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blognavigatie",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Nieuwere berichten",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Oudere berichten",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Navigatie door blogberichten",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Nieuwer bericht",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Ouder bericht",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "1 bericht|{count} berichten",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Verder lezen",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Meer lezen over \"{title}\"",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "1 minuut leestijd|{readingTime} minuten leestijd",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigatie naar de nieuwste blogberichten",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} met de tag \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Schakel tussen de donkere en lichte weergave (huidige modus: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "donkere modus",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "lichte modus",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "Systeemmodus",
+    "description": "The name for the system color mode"
+  },
+  "theme.common.editThisPage": {
+    "message": "Deze pagina bewerken",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Directe link naar deze kop",
+    "description": "Title for link to heading"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Naar de hoofdinhoud gaan",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Deze pagina is een concept. De pagina is alleen zichtbaar in de ontwikkelomgeving en wordt niet meegenomen in productie-builds.",
+    "description": "The draft content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Conceptpagina",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Deze pagina is niet vermeld. Zoekmachines nemen de pagina niet op in hun index. Je kunt de pagina alleen via een directe link openen.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Niet-vermelde pagina",
+    "description": "The unlisted content banner title"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Startpagina",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Broodkruimelnavigatie",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Documentatienavigatie",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Volgende",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Vorige",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Navigatiebalk sluiten",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Navigatiebalk invouwen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Navigatiebalk invouwen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Navigatiebalk uitvouwen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Navigatiebalk uitvouwen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Documentatienavigatiebalk",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Navigatiebalk in- of uitschakelen",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} met de tag \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "1 document met tag|{count} documenten met tag",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versie: {versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "nieuwste versie",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "De nieuwste documentatie staat op {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Dit is de documentatie voor {siteTitle} {versionLabel}; deze wordt niet meer onderhouden.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Dit is de niet-uitgebrachte documentatie voor {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " op {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " door {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Laatst bijgewerkt{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Vervolgkeuzemenu invouwen",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Vervolgkeuzemenu uitvouwen",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Talen",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "Terug naar het hoofdmenu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versies",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Alle tags bekijken",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "homepage.title": {
+    "message": "Startpagina"
+  },
+  "homepage.description": {
+    "message": "Gratis tools voor osu!-beatmapmakers: ruim timingpunten op, vorm sliders, maak patronen en beheer hitsounds met Mapping Tools."
+  },
+  "homepage.tagline": {
+    "message": "Mapping Tools is een {allInOne}-applicatie om osu! {efficient} en {creative} te mappen.",
+    "description": "The homepage tagline"
+  },
+  "homepage.tagline.allInOne": {
+    "message": "alles-in-één",
+    "description": "The all-in-one phrase highlighted in the homepage tagline"
+  },
+  "homepage.tagline.efficient": {
+    "message": "efficiënt",
+    "description": "The efficient phrase highlighted in the homepage tagline"
+  },
+  "homepage.tagline.creative": {
+    "message": "creatief",
+    "description": "The creative phrase highlighted in the homepage tagline"
+  },
+  "homepage.getStarted": {
+    "message": "Aan de slag",
+    "description": "Homepage button linking to the documentation"
+  },
+  "homepage.download": {
+    "message": "Downloaden",
+    "description": "Homepage download button"
+  },
+  "changelog.title": {
+    "message": "Wijzigingslogboek"
+  },
+  "changelog.description": {
+    "message": "Wijzigingslogboek van Mapping Tools"
+  },
+  "changelog.heading": {
+    "message": "Nieuwste releases"
+  },
+  "changelog.loading": {
+    "message": "Releases laden…"
+  },
+  "changelog.unavailable": {
+    "message": "De release-informatie is momenteel niet beschikbaar."
+  },
+  "changelog.latestAriaLabel": {
+    "message": "Nieuwste releases"
+  },
+  "changelog.byAuthor": {
+    "message": "door {author}"
+  },
+  "homepage.feature.easy.title": {
+    "message": "Eenvoudig in gebruik"
+  },
+  "homepage.feature.easy.description": {
+    "message": "Begin met Mapping Tools met één klik dankzij tooltips, {documentation} en {community}."
+  },
+  "homepage.documentationLink": {
+    "message": "de documentatie"
+  },
+  "homepage.communityLink": {
+    "message": "de Discord-communityserver"
+  },
+  "homepage.feature.creativity.title": {
+    "message": "Geef je creativiteit de ruimte"
+  },
+  "homepage.feature.creativity.description": {
+    "message": "Vorm en bewerk sliders met een eenvoudige, intuïtieve interface."
+  },
+  "homepage.feature.hitsounding.title": {
+    "message": "Meer variatie in hitsounds"
+  },
+  "homepage.feature.hitsounding.description": {
+    "message": "Maak en bewerk eenvoudig unieke en complexe hitsounds."
+  },
+  "homepage.feature.cleaning.title": {
+    "message": "Ruim je beatmaps op en verfijn ze"
+  },
+  "homepage.feature.cleaning.description": {
+    "message": "Lijn de benodigde timingpunten opnieuw uit en verwijder overbodige punten met één klik."
+  },
+  "homepage.feature.color.title": {
+    "message": "Geef je beatmaps kleur"
+  },
+  "homepage.feature.color.description": {
+    "message": "Maak eenvoudig colourhax, zoals het altijd al had moeten zijn."
+  },
+  "homepage.feature.geometry.title": {
+    "message": "Versterk de geometrische structuur"
+  },
+  "homepage.feature.geometry.description": {
+    "message": "Maak eenvoudig perfecte blanket-curves, symmetrieën met elke hoek, zeshoekrasters en meer."
+  },
+  "download.installer": {
+    "message": "Installatieprogramma"
+  },
+  "download.portable": {
+    "message": "Draagbare versie"
+  },
+  "download.appImage": {
+    "message": "AppImage"
+  },
+  "download.title": {
+    "message": "Downloaden"
+  },
+  "download.description": {
+    "message": "Download Mapping Tools voor Windows, macOS en Linux."
+  },
+  "download.heading": {
+    "message": "Downloaden"
+  },
+  "download.subtitle": {
+    "message": "Download Mapping Tools voor jouw besturingssysteem."
+  },
+  "download.unavailable": {
+    "message": "De downloadlinks zijn niet beschikbaar."
+  },
+  "download.latestReleaseLink": {
+    "message": "Bekijk de nieuwste release op GitHub."
+  },
+  "download.osAriaLabel": {
+    "message": "Downloads voor {os}"
+  },
+  "download.loading": {
+    "message": "{option} laden…"
+  },
+  "download.optionUnavailable": {
+    "message": "{option} is niet beschikbaar"
+  },
+  "announcement.join": {
+    "message": "Word lid van de Mapping Tools-community op {discord} voor hulp en om ervaringen uit te wisselen.",
+    "description": "Announcement bar invitation to the Mapping Tools Discord server"
+  },
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "Menu sluiten",
+    "description": "The ARIA label for close button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "Menu openen",
+    "description": "The ARIA label for open button of mobile doc sidebar"
+  }
+}

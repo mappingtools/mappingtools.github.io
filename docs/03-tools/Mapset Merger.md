@@ -10,7 +10,7 @@ The tool will automatically resolve any file conflicts by moving as many files a
 
 ## Adding mapsets {#adding-mapsets}
 
-To add a mapset, press the plus button at the bottom right. This will add a new mapset to the collection pre-filled with the mapset info of the current beatmap. If you **shift-click** the plus button it will use the mapset currently open in the osu! client instead.
+To add a mapset, press the plus button at the bottom right. This will add a new mapset to the collection pre-filled with the mapset info of the selected beatmap. If you **shift-click** the plus button it will use the mapset currently open in the osu! client instead.
 
 All mapsets to be merged will show up in the list. Each mapset has a name and a path to the root folder of the mapset. The names of the mapsets will be used to categorize files in the merged mapset, so make sure the names are unique and concise. The path can be edited in the list by **double-clicking** on it. It will also show you a browse button which you can use to select the path using the File Explorer.
 

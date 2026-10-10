@@ -11,7 +11,7 @@ import {features} from "./features";
 
 interface FeatureProps {
     imageUrl: string,
-    title: string,
+    title: ReactNode,
     description: ReactNode,
     position: number,
 }
@@ -24,7 +24,7 @@ const Feature: React.FC<FeatureProps> = ({imageUrl, title, description, position
           {
             imgUrl && (
               <div className="text--center">
-              <img className={styles.featureImage} src={imgUrl} alt={title} />
+              <img className={styles.featureImage} src={imgUrl} alt="" />
               </div>
             )
           }

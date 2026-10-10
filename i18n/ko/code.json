@@ -1,0 +1,470 @@
+{
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "공지 닫기",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "페이지 맨 위로 돌아가기",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "복사됨",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "복사",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "코드 블록을 클립보드에 복사",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "줄바꿈 전환",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "사이드바 카테고리 ‘{label}’ 접기",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "사이드바 카테고리 ‘{label}’ 펼치기",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "이 페이지에서 오류가 발생했습니다.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "다시 시도",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(새 탭에서 열림)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "주 탐색 메뉴",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "요청하신 페이지를 찾을 수 없습니다.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "원래 URL로 연결된 페이지 관리자에게 링크가 더 이상 작동하지 않는다고 알려 주세요.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.title": {
+    "message": "페이지를 찾을 수 없습니다",
+    "description": "The title of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "이 페이지의 내용",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.admonition.caution": {
+    "message": "주의",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "위험",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "정보",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "참고",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "팁",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "경고",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.blog.archive.description": {
+    "message": "블로그 보관함",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.archive.title": {
+    "message": "블로그 보관함",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "이 작성자는 아직 글을 작성하지 않았습니다.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} · {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "작성자",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "모든 작성자 보기",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "블로그 페이지 탐색",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "최신 글",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "이전 글",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "블로그 글 페이지 탐색",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "최신 글",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "이전 글",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count}개 글",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "더 읽기",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "‘{title}’ 자세히 읽기",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime}분 읽기",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "최근 블로그 글 탐색",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{tagName} 태그가 붙은 글 {nPosts}",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "라이트 모드와 다크 모드 전환(현재: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "다크 모드",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "라이트 모드",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "시스템 모드",
+    "description": "The name for the system color mode"
+  },
+  "theme.common.editThisPage": {
+    "message": "이 페이지 편집",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "이 제목의 바로가기 링크",
+    "description": "Title for link to heading"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "본문으로 건너뛰기",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "이 페이지는 초안입니다. 개발 환경에서만 표시되며 프로덕션 빌드에는 포함되지 않습니다.",
+    "description": "The draft content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "초안 페이지",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "이 페이지는 목록에 없습니다. 검색 엔진에 색인되지 않으며 직접 링크로만 접근할 수 있습니다.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "목록에 없는 페이지",
+    "description": "The unlisted content banner title"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "항목 {count}개",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "홈",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "탐색 경로",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "문서 페이지 탐색",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.next": {
+    "message": "다음",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "이전",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "문서 탐색 메뉴 닫기",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "사이드바 접기",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "사이드바 접기",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "사이드바 펼치기",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "사이드바 펼치기",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "문서 탐색 메뉴",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "문서 탐색 메뉴 전환",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{tagName} 태그가 지정된 문서 {nDocsTagged}개",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "태그가 지정된 문서 {count}개",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "버전: {versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "최신 버전",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "최신 문서는 {latestVersionLink}({versionLabel})에서 확인할 수 있습니다.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "{siteTitle} {versionLabel}의 문서는 더 이상 관리되지 않습니다.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "{siteTitle} {versionLabel}의 문서는 아직 공개되지 않았습니다.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}에",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "{user} 작성",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "마지막 업데이트{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "드롭다운 메뉴 접기",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "드롭다운 메뉴 펼치기",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "언어",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "주 메뉴로 돌아가기",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "버전",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "태그:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "모든 태그 보기",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "태그",
+    "description": "The title of the tag list page"
+  },
+  "homepage.title": {
+    "message": "홈"
+  },
+  "homepage.description": {
+    "message": "osu! 비트맵 제작자를 위한 무료 도구입니다. 타이밍 포인트를 정리하고, 슬라이더 모양을 다듬고, 패턴과 히트사운드를 Mapping Tools로 관리하세요."
+  },
+  "homepage.tagline": {
+    "message": "Mapping Tools는 osu! 매핑을 {efficient} 하고 {creative} 할 수 있도록 돕는 {allInOne} 애플리케이션입니다.",
+    "description": "The homepage tagline"
+  },
+  "homepage.tagline.allInOne": {
+    "message": "올인원",
+    "description": "The all-in-one phrase highlighted in the homepage tagline"
+  },
+  "homepage.tagline.efficient": {
+    "message": "효율적으로",
+    "description": "The efficient phrase highlighted in the homepage tagline"
+  },
+  "homepage.tagline.creative": {
+    "message": "창의적으로",
+    "description": "The creative phrase highlighted in the homepage tagline"
+  },
+  "homepage.getStarted": {
+    "message": "시작하기",
+    "description": "Homepage button linking to the documentation"
+  },
+  "homepage.download": {
+    "message": "다운로드",
+    "description": "Homepage download button"
+  },
+  "changelog.title": {
+    "message": "변경 기록"
+  },
+  "changelog.description": {
+    "message": "Mapping Tools 변경 기록"
+  },
+  "changelog.heading": {
+    "message": "최신 릴리스"
+  },
+  "changelog.loading": {
+    "message": "릴리스 불러오는 중…"
+  },
+  "changelog.unavailable": {
+    "message": "현재 릴리스 정보를 사용할 수 없습니다."
+  },
+  "changelog.latestAriaLabel": {
+    "message": "최신 릴리스"
+  },
+  "changelog.byAuthor": {
+    "message": "{author} 작성"
+  },
+  "homepage.feature.easy.title": {
+    "message": "쉽게 사용"
+  },
+  "homepage.feature.easy.description": {
+    "message": "도구 설명과 {documentation}, {community}를 활용해 한 번의 클릭으로 Mapping Tools 사용을 시작하세요!"
+  },
+  "homepage.documentationLink": {
+    "message": "문서"
+  },
+  "homepage.communityLink": {
+    "message": "커뮤니티 Discord 서버"
+  },
+  "homepage.feature.creativity.title": {
+    "message": "창의력을 마음껏 발휘하세요"
+  },
+  "homepage.feature.creativity.description": {
+    "message": "간단하고 직관적인 사용자 인터페이스로 슬라이더 모양을 만들고 편집하세요."
+  },
+  "homepage.feature.hitsounding.title": {
+    "message": "더욱 다양한 히트사운드"
+  },
+  "homepage.feature.hitsounding.description": {
+    "message": "독특하고 복잡한 히트사운드를 손쉽게 만들고 수정하세요."
+  },
+  "homepage.feature.cleaning.title": {
+    "message": "비트맵을 정리하고 다듬으세요"
+  },
+  "homepage.feature.cleaning.description": {
+    "message": "관련 타이밍 포인트를 다시 스냅하고 불필요한 포인트는 버튼 한 번으로 제거하세요."
+  },
+  "homepage.feature.color.title": {
+    "message": "비트맵에 색을 더하세요"
+  },
+  "homepage.feature.color.description": {
+    "message": "언제나 그래야 했던 것처럼 간단하게 Colorhax를 만드세요."
+  },
+  "homepage.feature.geometry.title": {
+    "message": "기하학적 구조를 탄탄하게"
+  },
+  "homepage.feature.geometry.description": {
+    "message": "완벽한 블랭킷 곡선, 자유 각도 대칭, 육각형 격자 등을 손쉽게 만드세요."
+  },
+  "download.installer": {
+    "message": "설치 프로그램"
+  },
+  "download.portable": {
+    "message": "포터블"
+  },
+  "download.appImage": {
+    "message": "AppImage"
+  },
+  "download.title": {
+    "message": "다운로드"
+  },
+  "download.description": {
+    "message": "Windows, macOS, Linux용 Mapping Tools를 다운로드하세요."
+  },
+  "download.heading": {
+    "message": "다운로드"
+  },
+  "download.subtitle": {
+    "message": "사용 중인 운영체제에 맞는 Mapping Tools를 다운로드하세요."
+  },
+  "download.unavailable": {
+    "message": "다운로드 링크를 사용할 수 없습니다."
+  },
+  "download.latestReleaseLink": {
+    "message": "GitHub에서 최신 릴리스 보기."
+  },
+  "download.osAriaLabel": {
+    "message": "{os} 다운로드"
+  },
+  "download.loading": {
+    "message": "{option} 불러오는 중…"
+  },
+  "download.optionUnavailable": {
+    "message": "{option}을(를) 사용할 수 없음"
+  },
+  "announcement.join": {
+    "message": "{discord}에서 Mapping Tools 커뮤니티에 참여해 지원을 받고 의견을 나눠 보세요.",
+    "description": "Announcement bar invitation to the Mapping Tools Discord server"
+  },
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "탐색 메뉴 닫기",
+    "description": "The ARIA label for close button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "탐색 메뉴 열기",
+    "description": "The ARIA label for open button of mobile doc sidebar"
+  }
+}

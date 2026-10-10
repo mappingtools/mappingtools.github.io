@@ -1,32 +1,33 @@
 ---
 title: "Navigation"
-author: "Julaaaan"
+author: "aehrea"
 id: navigation
 ---
 
-Standardmäßig öffnet Mapping Tools den Get Started Fenter, welcher einen Changelog für das Programm beinhaltet, sowie eine Liste der zuletzt mit Mapping Tools bearbeiteten Maps. Dieser Fenster kann außerdem über das Navigationsmenü erreicht werden.
+Mapping Tools öffnet standardmäßig den Bildschirm „Erste Schritte“. Dort findest du das Änderungsprotokoll der Anwendung sowie eine Liste der zuletzt mit Mapping Tools verwendeten Beatmaps. Du kannst diesen Bildschirm auch über das Navigationsmenü öffnen.
 
-Ganz Oben des Fensters ist eine blaue Leiste welche den Navigationsbutton, Menüs und eine Anzeige für die _Aktuelle Beatmap_ beinhaltet. Diese Map wird von dem Großteil von Mapping Tools bearbeitet.
+Oben im Fenster befindet sich eine blaue Leiste mit der Schaltfläche zum Öffnen der Navigation, den Menüs und der Anzeige der _Selected beatmap_. Die meisten Mapping-Tools bearbeiten diese Beatmap.
 
-Der Navigationsbutton öffnet ein Menü auf der linken Seite, womit man alle Seiten erreichen kann. Es gibt eine Suchleiste in der du den Namen einer Seite eingeben kannst. Drücke `Enter` um zu dem ersten Ergebnis zu navigieren. Außerdem kannst du jederzeit `Strg+K` drücken um das Navigationsmenü zu öffnen.
+Über die Schaltfläche für die Navigation öffnest du links ein Menü, über das du alle Seiten in Mapping Tools erreichst. Mit der Suchleiste kannst du nach einer Seite suchen. Drücke `Enter`, um das erste Ergebnis zu öffnen. Das Navigationsmenü lässt sich jederzeit mit `Ctrl+K` öffnen.
 
 ### File {#file}
 
-Das **File** Manü beinhaltet optionen zum auswählen, laden, und speichern deiner Beatmap Dateien.
+Das Menü **File** enthält Schaltflächen zum Auswählen, Laden und Speichern von Beatmap-Dateien.
 
-- **Open beatmap** öffnet einen Datei Explorer um einen oder mehrere Beatmaps als aktuelle Beatmap festzulegen. 
-- **Open current beatmap** setzt die Aktuelle Beatmap zu der, die im _osu!_ Editor geöffnet ist. 
-- **Generate backup** erstellt ein Backup der aktuellen Beatmap.
-- **Load backup** öffnet einen Datei Explorer um eine Backup Beatmap in die Aktuelle Beatmap zu laden.
-- **BetterSave™ current beatmap** speichert die Beatmap die aktuell im _osu!_ Editor gröffnet ist mit dem Runden der Koordinaten ansatt deren Kommastellen abzuschneiden.
+- **Open beatmap** öffnet einen Dateiauswahldialog, in dem du eine oder mehrere Beatmaps als ausgewählte Beatmap festlegen kannst.
+- **Open current beatmap** legt die Beatmap, die im _osu!_-Client ausgewählt ist, als ausgewählte Beatmap fest.
+- **Generate backup** erstellt ein Backup der ausgewählten Beatmap.
+- **Load backup** öffnet einen Dateiauswahldialog, in dem du ein Backup zum Laden in die ausgewählte Beatmap auswählen kannst.
+- **QuickUndo** lädt das neueste nicht-periodische Backup in die ausgewählte Beatmap.
+- **BetterSave™ current beatmap** speichert die aktuell im _osu!_-Editor geöffnete Beatmap und rundet Koordinaten, statt sie abzuschneiden.
 
 ### About {#about}
 
-Das **About** Menü stellt zusäzliche Informationen bezüglich Mapping Tools da.
+Das Menü **About** enthält weitere Informationen und nützliche Links zu Mapping Tools.
 
-- **Open backups folder** öffnet den Ordner, der alle Backups, die von Mapping Tools erstellt wurden, beinhaltet.
-- **Open Mapping Tools folder** öffnet den Order, der alle Dateien beinhaltet, die von Mapping Tools erstellt wurden, wie z.B. Einstellungsdateien, Backups und Exports.
+- **Open backups folder** öffnet den Ordner mit allen von Mapping Tools erstellten Backups.
+- **Open Mapping Tools folder** öffnet den Ordner mit allen von Mapping Tools erzeugten Dateien, zum Beispiel Einstellungen, Backups und Exporte.
 
 ### Project {#project}
 
-Das **Project** Menü ist nur dann sichtbar, wenn man sich in einem der Tools befindet. Es Beinhaltet Buttons zum speichern und laden von Tool-spezifischen Einstellungen.
+Das Menü **Project** ist nur auf dem Bildschirm eines Mapping-Tools sichtbar. Es enthält Schaltflächen zum Speichern und Laden der toolspezifischen Einstellungen.

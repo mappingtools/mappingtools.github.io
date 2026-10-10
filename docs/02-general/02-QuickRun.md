@@ -35,9 +35,11 @@ To enable QuickRun, go to **Preferences** and assign a hotkey to the **QuickRun 
 
 `Alt+M` is a good hotkey to use since it doesn't interfere with the standard osu! editor hotkeys.
 
-If you have the option **Auto reload after QuickRun** enabled, Mapping Tools will send a key-combination `Ctrl+L, Enter` to the osu! window to reload the editor after the tool has finished its work. This saves you having to reload manually.
+If you have the option **Auto reload after QuickRun** enabled, Mapping Tools will automatically send a command to your osu! client to reload the editor after the tool has finished its work. This saves you having to reload manually.
 
-It's good to remember that when QuickRunning a tool it **always uses the beatmap currently open in the editor** and not the current map selected in Mapping Tools.
+:::info
+It's good to remember that when QuickRunning a tool it **always uses the beatmap currently open in the editor** and not the map selected in Mapping Tools.
+:::
 
 ## SmartQuickRun {#smartquickrun}
 

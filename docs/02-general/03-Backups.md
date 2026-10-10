@@ -2,33 +2,25 @@
 title: "Backups"
 author: "OliBomby"
 id: backups
-description: Everything about backups.
+description: Everything about Mapping Tools backups.
 keywords:
   - docs
   - mapping tools
   - backups
 ---
 
-Mapping Tools makes backups of your osu! beatmaps and stores them in the backups folder. To open the backups folder use **About > Open backups folder**. The location of the backups folder and other settings can be changed in the **Preferences**. 
+Mapping Tools stores beatmap backups in its configured backups folder. Open the folder with **About > Open backups folder** or change its location in **Preferences**.
 
-The creation of backups makes use of Editor Reader to backup the latest version in the editor instead of the last save.
+When live editor state reading is configured, backups can include the latest unsaved state from the editor. Otherwise, Mapping Tools backs up the beatmap file it can access on disk.
 
 ## Automatic backups {#automatic-backups}
 
-With automatic backups enabled, every time you run a mapping tool a backup will be created of the beatmap that will be changed. This backup is usefull for if you want to undo the work of a tool.
-
-To keep the number of backups in check, there is a max number of backups for the backups folder. If the backups folder is full, the oldest backups will be deleted whenever a new backup gets created.
+When enabled, Mapping Tools creates a backup before a tool changes a beatmap. This gives you a restore point if you want to undo the tool run. You can set the backup folder and retention limit in **Preferences**. When the limit is reached, the oldest backups are removed.
 
 ## Periodic backups {#periodic-backups}
 
-With periodic backups enabled, Mapping Tools will periodically make backups of your beatmap while you are using the osu! editor. It uses Editor Reader to backup the latest version, even when you forget to save. It will skip the backup if there has been no change in the beatmap since the last backup, so if you go AFK in the editor your backups folder won't be spammed with identical backups.
-
-Periodic backups can be recognized by the `PB` (Periodic Backup) in the filename.
+When enabled, Mapping Tools periodically backs up the current beatmap while it can read live editor state. It skips a backup when the beatmap has not changed since the previous one. Periodic backups contain `PB` in their filenames.
 
 ## Manual backups {#manual-backups}
 
-In the **File** menu you have options for manual backup management:
-- **Generate backup** creates a backup of the current beatmap.
-- **Load backup** opens a file explorer to select a backup beatmap to load into the current beatmap.
-
-Manual backups can be recognized by the `UB` (User Backup) in the filename.
+Use the **File** menu to create a backup of the selected beatmap or load a backup into it. Manual backups contain `UB` in their filenames. **QuickUndo** restores the newest non-periodic backup to the beatmap currently open in osu!.

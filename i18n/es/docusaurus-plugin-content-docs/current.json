@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Siguiente",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Mapping Tools": {
+    "message": "Mapping Tools",
+    "description": "The label for category Mapping Tools in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.General": {
+    "message": "General",
+    "description": "The label for category General in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Tools": {
+    "message": "Herramientas",
+    "description": "The label for category Tools in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Guías",
+    "description": "The label for category Guides in sidebar docsSidebar"
+  }
+}

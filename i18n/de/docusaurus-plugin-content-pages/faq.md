@@ -1,52 +1,55 @@
 ---
 title: FAQ
-author: Potoofu
+author: OliBomby, aehrea
 ---
 
 # FAQ
 
-## Warum sehe ich keine Veränderungen in meiner Beatmap?
+## Warum sehe ich keine Änderungen an meiner Beatmap?
 
-Überprüfe zuerst, ob **die blaue Leiste am unteren Rand der Anwendung den richtigen Pfad zur zu bearbeitenden Beatmap** anzeigt.
+Prüfe anhand der **Selected Map** (blaue Leiste oben in der Anwendung), ob du den richtigen Pfad zu deiner Beatmap angegeben hast.
 
-Außerdem solltest du sicherstellen, dass der Editor nach der Ausführung eines Tools **ohne die Änderungen davor zuspeichern** neu geladen wird. 
+Lade außerdem nach dem Ausführen des Tools den Editor **ohne zu speichern** neu. Wenn du die Beatmap im Editor speicherst, werden die Änderungen des Tools rückgängig gemacht, da beim Speichern die alte Version der Beatmap in die `.osu`-Datei geschrieben wird. Mit `Ctrl+L` und anschließend `Enter` kannst du die Beatmap im Editor schnell neu laden.
 
-Grund dafür ist, dass das Speichern der Beatmap im Editor die Veränderungen von Mapping-Tools rückgängig macht, da dadurch die vorherige `.osu` Beatmap-Datei ohne die Veränderungen abgespeichert wird.
+## Beim Ausführen eines Tools erscheint der Fehler „Could not find part of the path“ oder „Empty path name is not legal“.
 
-Am besten lädst du die Beatmap im Editor neu indem du erst `Ctrl+L` und dann `Enter` drückst.
+Bewege den Mauszeiger über den **Beatmap-Namen oben im Fenster**, um den vollständigen Pfad anzuzeigen. Existiert dieser Pfad? Befindet sich der Songs-Ordner am richtigen Ort? Wenn sich dein Songs-Ordner nicht am standardmäßigen AppData-Speicherort befindet, gib in den **Preferences** den richtigen Pfad zum Songs-Ordner an.
 
-## Ich erhalte den Fehler "Could not find part of the path" oder "Empty path name is not legal" wenn ein Tool ausgeführt wird.
+## Bei jeder Ausführung eines Tools auf einer bestimmten Beatmap erscheint ein Fehler, bei anderen Beatmaps aber nicht.
 
-Überprüfe zuerst, ob **die blaue Leiste am unteren Rand der Anwendung den richtigen Pfad zur zu bearbeitenden Beatmap** anzeigt.
+Die Beatmap verwendet wahrscheinlich ein altes, nicht unterstütztes Dateiformat oder ist beschädigt. Öffne sie im Editor und speichere sie. Dadurch aktualisiert osu! die Beatmap auf das neueste Dateiformat, das mit Mapping Tools kompatibel ist.
 
-Sollte dies nicht der Fall sein, musst du die Pfade in **Preferences** überprüfen und eventuell korrigieren.
+## Ein Tool hat meine Beatmap beschädigt. Was kann ich tun?
 
-## Meine Beatmap hat Fehler oder ist nicht mehr nutzbar nachdem ich ein Tool verwendet habe.
+Mapping Tools erstellt jedes Mal Backups deiner Beatmaps, wenn es eine Änderung vornimmt. Du findest diese unter **About > Open backup folder**. Über **File > Load backup** kannst du ein Backup in die **Current Map** laden. Alternativ kannst du **QuickUndo** verwenden, das du in den **Preferences** aktivieren kannst.
 
-Mapping-Tools erstellt nach jeder Änderung ein Backup der Beatmap. Den Ordner mit diesem Backup kannst du ganz einfach über das Dropdown **About > Open backup folder** öffnen. Ansonsten kannst du über das Menü **File > Load backup** oder mit dem **QuickUndo-Hotkey** (falls dieser gesetzt ist) ein Backup auch direkt wiederherstellen.
+## „Open Current Beatmap“ funktioniert nicht oder ausgewählte Hitobjects werden nicht erkannt.
 
-## Der Menüpunkt "Open Current Beatmap" funktioniert nicht oder es können keine Hitobjekte abgerufen werden.
+Diese Funktionen müssen den Arbeitsspeicher des osu!-Clients auslesen. Das kann gelegentlich nicht mehr funktionieren; in diesem Fall hilft es normalerweise, osu! oder den Computer neu zu starten. Weitere mögliche Ursachen und Lösungen:
 
-Einige Features sind abhängig davon, den Speicher der _osu!_ Anwendung auslesen zu können. 
+- Eine Firewall oder ein Antivirenprogramm blockiert Mapping Tools: Deaktiviere das Antivirenprogramm oder richte eine Ausnahme für Mapping Tools ein und versuche es erneut.
+- Du verwendest nicht die neueste Version von Mapping Tools: Manchmal ist ein Update von Mapping Tools erforderlich, um Änderungen in osu! zu unterstützen.
+- Du verwendest nicht die neueste Version von osu!: Wechsle von privaten Servern zurück zur offiziellen Version und aktualisiere osu!.
+- osu! wurde aktualisiert und hat die Speicher-Offsets erneut geändert: Gib mir Bescheid, damit ich das Problem beheben kann.
+- Du verwendest Mapping Tools unter Windows 7 oder älter: Stelle sicher, dass mindestens .NET Framework 4.5.1 installiert ist.
+- Du verwendest Mapping Tools auf einem anderen Betriebssystem als Windows: Lies die [Installationsanleitung](/docs/mapping-tools/installation).
 
-Meistens liegt der Fehler darin, dass Mapping-Tools diesen Speicher nicht finden konnte. Ein **Neustart der beiden Programme oder des Computers** beheben dies im Normalfall.
+## Wie kann ich Sliderenden stummschalten, ohne Hitsounds zu kopieren?
 
-Es ist aber außerdem möglich, dass eine **Firewall- oder Antivirensoftware** Mapping-Tools daran hindert diesen Speicher auszulesen. In diesem Fall musst du Mapping-Tools die nötigen Rechte geben oder die Software kurzzeitig deaktivieren.
+Wenn du nur die Sliderenden stummschalten möchtest, lass das Feld **Copy hitsounds from** leer und wähle im Feld **Copy hitsounds to** die Beatmap aus, deren Sliderenden stummgeschaltet werden sollen. Dadurch werden zwar keine Hitsounds kopiert, aber die Sliderenden trotzdem stummgeschaltet.
 
-## Wie kann ich Sliderends stummschalten ohne dessen Hitsounds zu kopieren?
+Wenn du beim Stummschalten der Sliderenden Hitsounds kopierst, verwendet das Tool die Objekte der Quell-Beatmap als Referenz. Deshalb werden Sliderenden an Stellen, an denen du Hitsounds hinzugefügt hast, nicht stummgeschaltet. Aus diesem Grund ist das Stummschalten von Sliderenden Teil von Hitsound Copier und kein eigenes Tool.
 
-Lasse das Feld `Copy hitsounds from` leer und füge im Feld `Copy hitsounds to` die Beatmap hinzu, deren Sliderends stummgeschaltet werden sollen. Dadurch werden keine Hitsounds kopiert, die Stummschaltung der Sliderends funktioniert aber trotzdem noch.
+## Beim Starten von Mapping Tools soll ich .NET installieren, obwohl es bereits installiert ist.
 
-Solltest du Hitsounds kopieren und gleichzeitig Sliderends stummschalten, verwendet das Tool die zu kopierenden Objekte als Referenz und schaltet Sliderends nur stumm an Stellen, an denen noch keine Hitsounds existieren.
+Aktuelle Versionen von Mapping Tools zielen auf .NET 10 ab und werden eigenständig ausgeliefert. Eine separate .NET-Installation sollte daher nicht erforderlich sein.
 
-# Beim Start von Mapping-Tools werde ich aufgefordert, .NET zu installieren, obwohl ich dies schon getan habe.
+Wenn die Aufforderung zur .NET-Installation trotzdem erscheint, stelle sicher, dass du eine aktuelle Version von Mapping Tools startest. Lade die Anwendung erneut von der Website herunter und installiere sie frisch.
 
-Aktuelle Versionen von Mapping Tools verwenden .NET 10 und werden als selbstenthaltendes Paket ausgeliefert, daher sollte keine separate .NET-Installation erforderlich sein.
+## Funktioniert Mapping Tools mit osu! lazer?
 
-Wenn trotzdem eine .NET-Aufforderung erscheint, stelle sicher, dass du eine aktuelle Mapping-Tools-Version startest, und installiere sie mit einem frischen Download von der Website neu.
+Ja, die meisten Funktionen von Mapping Tools funktionieren mit lazer. Weitere Informationen findest du im [Guide](/docs/guides/use-mt-in-lazer).
 
-## Ich habe eine Frage die hier nicht vorkommt oder ich habe einen Bug gefunden.
+## Ich habe eine Frage, die hier nicht beantwortet wird, oder einen Fehler gefunden.
 
-Du kannst auf [Discord](https://discord.gg/YfjKN2yjQV) im Kanal `#mapping-tools-techsupport` oder direkt dem Nutzer `OliBomby#3573` fragen stellen.
-
-Für Bugs solltest du am Besten eine Fehlermeldung auf [GitHub](https://github.com/OliBomby/Mapping_Tools/issues) erstellen.
+Stelle deine Frage im Discord-Kanal `mt-techsupport`, schreibe mir direkt auf Discord (`olibomby`) oder erstelle ein Issue auf [GitHub](https://github.com/OliBomby/Mapping_Tools/issues).
