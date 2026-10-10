@@ -29,14 +29,14 @@ Alle pakketten zijn zelfstandig en bevatten de .NET 10-runtime.
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable**: op Windows en Linux (Wine) wordt de huidige beatmap opgehaald via **Geheugen uitlezen**. Stel de **Songs-map** in bij Voorkeuren met het oorspronkelijke bestandssysteempad. Het uitlezen van live-editorstatus en automatisch herladen zijn alleen beschikbaar op Windows. Rechtstreeks geheugen uitlezen wordt op macOS niet ondersteund.
+- **osu! stable**: op Windows en Linux (Wine) wordt de huidige beatmap opgehaald via **Geheugen uitlezen**. Stel de **Songs-map** in bij Voorkeuren met het oorspronkelijke bestandssysteempad. Het uitlezen van live-editorstatus is beschikbaar op Windows en Linux (Wine). Automatisch herladen is alleen beschikbaar op Windows. Het ophalen van de huidige beatmap wordt op macOS niet ondersteund; ook gosumemory en tosu bieden geen officiële native macOS-ondersteuning.
 - **osu! lazer**: gebruik **Bestand > Extern bewerken** om de beatmapbestanden beschikbaar te maken. Mapping Tools detecteert de beatmap die extern wordt bewerkt automatisch; in deze tabel geldt dat als de huidige beatmap ophalen. Gebruik **Bewerken voltooien en wijzigingen importeren** in lazer om je wijzigingen toe te passen. Bekijk de [lazer-handleiding](/docs/guides/use-mt-in-lazer).
 - **Globale sneltoetsen**: op Linux is ondersteuning afhankelijk van X11 of een desktopomgeving met de portal voor globale sneltoetsen. Geef op macOS toestemming voor de toetsenbordtoegang die het systeem vraagt.
 

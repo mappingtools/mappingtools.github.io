@@ -29,14 +29,14 @@ Mapping Tools 提供 **Windows、Linux 和 macOS** 原生桌面版本。請從[�
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable**：Windows 和 Linux（Wine）透過**記憶體讀取**取得目前譜面。請在 Preferences 中將 **Songs folder** 設為作業系統本機檔案系統中的路徑。編輯器即時狀態讀取與自動重新載入僅在 Windows 上可用。macOS 不支援原生記憶體讀取。
+- **osu! stable**：Windows 和 Linux（Wine）透過**記憶體讀取**取得目前譜面。請在 Preferences 中將 **Songs folder** 設為作業系統本機檔案系統中的路徑。編輯器即時狀態讀取在 Windows 和 Linux（Wine）上可用。自動重新載入僅在 Windows 上可用。macOS 不支援取得目前譜面；gosumemory 和 tosu 也不提供官方的 macOS 原生支援。
 - **osu! lazer**：使用 **File > Edit externally** 開啟譜面檔案供外部編輯。Mapping Tools 會自動偵測外部編輯中的譜面，在此表中視同取得目前譜面。完成編輯後，請在 lazer 中使用 **Finish editing and import changes** 套用修改。詳情請參閱 [lazer 指南](/docs/guides/use-mt-in-lazer)。
 - **全域快速鍵**：Linux 上需要使用 X11，或提供全域快速鍵桌面入口服務的桌面環境。在 macOS 上，請允許系統要求的鍵盤存取權限。
 

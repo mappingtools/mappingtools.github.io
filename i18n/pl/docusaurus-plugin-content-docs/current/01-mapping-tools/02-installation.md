@@ -29,14 +29,14 @@ Wszystkie pakiety są samowystarczalne i zawierają środowisko uruchomieniowe .
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable**: pobieranie aktualnej beatmapy korzysta z **odczytu pamięci** w systemach Windows i Linux (Wine). Ustaw **Songs folder** w preferencjach na jego natywną ścieżkę w systemie plików. Odczyt bieżącego stanu edytora i automatyczne ponowne wczytywanie są dostępne tylko w systemie Windows. Natywny odczyt pamięci nie jest obsługiwany w macOS.
+- **osu! stable**: pobieranie aktualnej beatmapy korzysta z **odczytu pamięci** w systemach Windows i Linux (Wine). Ustaw **Songs folder** w preferencjach na jego natywną ścieżkę w systemie plików. Odczyt bieżącego stanu edytora jest dostępny w systemach Windows i Linux (Wine). Automatyczne ponowne wczytywanie jest dostępne tylko w systemie Windows. Pobieranie aktualnej beatmapy nie jest obsługiwane w macOS; gosumemory i tosu również nie oferują oficjalnej natywnej obsługi macOS.
 - **osu! lazer**: użyj opcji **File > Edit externally**, aby udostępnić pliki beatmapy. Mapping Tools automatycznie wykryje beatmapę edytowaną zewnętrznie, co w tej tabeli liczy się jako pobranie aktualnej beatmapy. Użyj opcji **Finish editing and import changes** w lazer, aby zastosować zmiany. Zobacz [poradnik do lazer](/docs/guides/use-mt-in-lazer).
 - **Globalne skróty klawiszowe**: w systemie Linux ich obsługa zależy od X11 lub środowiska graficznego z portalem globalnych skrótów. W systemie macOS przyznaj uprawnienia dostępu do klawiatury, o które poprosi system.
 

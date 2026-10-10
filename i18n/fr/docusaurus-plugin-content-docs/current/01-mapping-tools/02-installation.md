@@ -29,14 +29,14 @@ Tous les paquets sont autonomes et incluent l'environnement d'exécution .NET 10
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable** : la récupération de la beatmap actuelle utilise la **lecture mémoire** sous Windows et Linux (Wine). Définissez le **dossier Songs** dans les Préférences avec son chemin natif dans le système de fichiers. La lecture de l’état de l’éditeur en direct et le rechargement automatique sont disponibles uniquement sous Windows. La lecture mémoire native n’est pas prise en charge sous macOS.
+- **osu! stable** : la récupération de la beatmap actuelle utilise la **lecture mémoire** sous Windows et Linux (Wine). Définissez le **dossier Songs** dans les Préférences avec son chemin natif dans le système de fichiers. La lecture de l’état de l’éditeur en direct est disponible sous Windows et Linux (Wine). Le rechargement automatique est disponible uniquement sous Windows. La récupération de la beatmap actuelle n’est pas prise en charge sous macOS ; gosumemory et tosu ne proposent pas non plus de prise en charge native officielle de macOS.
 - **osu! lazer** : utilisez **Fichier > Modifier en externe** pour rendre les fichiers de beatmap accessibles. Mapping Tools détecte automatiquement la beatmap modifiée en externe, ce qui correspond à l'obtention de la beatmap actuelle dans ce tableau. Utilisez **Terminer la modification et importer les changements** dans lazer pour appliquer vos modifications. Consultez le [guide de lazer](/docs/guides/use-mt-in-lazer).
 - **Raccourcis clavier globaux** : sous Linux, la prise en charge dépend de X11 ou d'un environnement de bureau doté du portail de raccourcis globaux. Sous macOS, accordez les autorisations d'accès au clavier demandées par le système.
 

@@ -29,14 +29,14 @@ Mapping Tools は **Windows、Linux、macOS** 向けのネイティブデスク�
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable**: Windows と Linux（Wine）では、**メモリ読み取り**で現在の譜面を取得します。Preferences の **Songs folder** に OS 側のファイルシステムのパスを設定してください。エディター状態のリアルタイム読み取りと自動再読み込みは Windows のみ対応しています。macOS ではネイティブのメモリ読み取りに対応していません。
+- **osu! stable**: Windows と Linux（Wine）では、**メモリ読み取り**で現在の譜面を取得します。Preferences の **Songs folder** に OS 側のファイルシステムのパスを設定してください。エディター状態のリアルタイム読み取りは Windows と Linux（Wine）に対応しています。自動再読み込みは Windows のみ対応しています。macOS では現在の譜面の取得に対応していません。gosumemory と tosu も macOS のネイティブ動作を公式にはサポートしていません。
 - **osu! lazer**: **File > Edit externally** を使って譜面ファイルを公開します。Mapping Tools は外部編集用の譜面を自動検出します。これはこの表で「現在の譜面を取得」に該当します。変更を適用するには、lazer で **Finish editing and import changes** を使ってください。詳しくは[osu! lazer ガイド](/docs/guides/use-mt-in-lazer)をご覧ください。
 - **グローバルホットキー**: Linux では、X11 またはグローバルショートカットポータルを備えたデスクトップ環境で利用できます。macOS では、システムから求められたキーボードアクセス権限を許可してください。
 

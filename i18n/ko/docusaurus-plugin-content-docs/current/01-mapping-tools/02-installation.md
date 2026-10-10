@@ -30,14 +30,14 @@ Mapping Tools는 **Windows, Linux, macOS**용 네이티브 데스크톱 빌드�
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable**: Windows와 Linux(Wine)에서는 **메모리 읽기**로 현재 비트맵을 가져옵니다. Preferences의 **Songs folder**를 운영체제의 실제 파일 시스템 경로로 설정하세요. 실시간 편집기 상태 읽기와 자동 새로고침은 Windows에서만 사용할 수 있습니다. macOS에서는 네이티브 메모리 읽기가 지원되지 않습니다.
+- **osu! stable**: Windows와 Linux(Wine)에서는 **메모리 읽기**로 현재 비트맵을 가져옵니다. Preferences의 **Songs folder**를 운영체제의 실제 파일 시스템 경로로 설정하세요. 실시간 편집기 상태 읽기는 Windows와 Linux(Wine)에서 사용할 수 있습니다. 자동 새로고침은 Windows에서만 사용할 수 있습니다. macOS에서는 현재 비트맵 가져오기가 지원되지 않습니다. gosumemory와 tosu도 macOS 네이티브 실행을 공식적으로 지원하지 않습니다.
 - **osu! lazer**: **File > Edit externally**를 사용해 비트맵 파일을 외부에 노출하세요. Mapping Tools가 외부 편집 중인 비트맵을 자동으로 감지하며, 표에서는 이를 현재 비트맵 가져오기로 표시합니다. 변경 사항을 적용하려면 lazer에서 **Finish editing and import changes**를 사용하세요. [lazer 가이드](/docs/guides/use-mt-in-lazer)를 참고하세요.
 - **전역 단축키**: Linux에서는 X11 또는 전역 단축키 포털을 지원하는 데스크톱 환경이 필요합니다. macOS에서는 시스템이 요청하는 키보드 접근 권한을 허용하세요.
 

@@ -29,14 +29,14 @@ Semua paket sudah lengkap dan menyertakan runtime .NET 10.
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable**: pengambilan beatmap saat ini menggunakan **pembacaan memori** di Windows dan Linux (Wine). Atur **Songs folder** di Preferences ke jalur asli pada sistem berkas. Pembacaan status editor langsung dan muat ulang otomatis hanya tersedia di Windows. Pembacaan memori native tidak didukung di macOS.
+- **osu! stable**: pengambilan beatmap saat ini menggunakan **pembacaan memori** di Windows dan Linux (Wine). Atur **Songs folder** di Preferences ke jalur asli pada sistem berkas. Pembacaan status editor langsung tersedia di Windows dan Linux (Wine). Muat ulang otomatis hanya tersedia di Windows. Pengambilan beatmap saat ini tidak didukung di macOS; gosumemory dan tosu juga tidak memiliki dukungan native resmi untuk macOS.
 - **osu! lazer**: gunakan **File > Edit externally** agar file beatmap dapat diakses. Mapping Tools mendeteksi beatmap yang sedang diedit secara eksternal secara otomatis; ini dihitung sebagai fitur mendapatkan beatmap saat ini pada tabel. Gunakan **Finish editing and import changes** di lazer untuk menerapkan perubahan. Lihat [panduan lazer](/docs/guides/use-mt-in-lazer).
 - **Tombol pintas global**: dukungan di Linux bergantung pada X11 atau desktop dengan portal pintasan global. Di macOS, izinkan aksesibilitas papan ketik yang diminta sistem.
 

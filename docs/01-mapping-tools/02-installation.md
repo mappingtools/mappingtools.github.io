@@ -29,14 +29,14 @@ All packages are self-contained and include the .NET 10 runtime.
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Linux | stable | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| macOS | stable | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 </div>
 
-- **osu! stable**: current-beatmap fetching uses **Memory read** on Windows and Linux (Wine). Set the **Songs folder** in Preferences to its native filesystem path. Live editor state reading and auto-reload are available on Windows only. Native memory fetching is not supported on macOS.
+- **osu! stable**: current-beatmap fetching uses **Memory read** on Windows and Linux (Wine). Set the **Songs folder** in Preferences to its native filesystem path. Live editor state reading is available on Windows and Linux (Wine). Auto-reload is available on Windows only. Current-beatmap fetching is not supported on macOS; gosumemory and tosu also have no official native macOS support.
 - **osu! lazer**: use **File > Edit externally** to expose the beatmap files. Mapping Tools automatically detects the external-edit beatmap, which counts as getting the current beatmap in this matrix. Use **Finish editing and import changes** in lazer to apply your edits. See the [lazer guide](/docs/guides/use-mt-in-lazer).
 - **Global hotkeys**: on Linux, support depends on X11 or a desktop with the global-shortcut portal. On macOS, allow the keyboard access permissions requested by the system.
 
