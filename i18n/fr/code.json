@@ -8,7 +8,7 @@
     "description": "The ARIA label for the back to top button"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copiﾃｩ",
+    "message": "Copié",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
@@ -20,23 +20,23 @@
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Activer ou dﾃｩsactiver le retour ﾃ la ligne",
+    "message": "Activer ou désactiver le retour à la ligne",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Rﾃｩduire la catﾃｩgorie ﾂｫ {label} ﾂｻ de la barre latﾃｩrale",
+    "message": "Réduire la catégorie « {label} » de la barre latérale",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Dﾃｩvelopper la catﾃｩgorie ﾂｫ {label} ﾂｻ de la barre latﾃｩrale",
+    "message": "Développer la catégorie « {label} » de la barre latérale",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.ErrorPageContent.title": {
-    "message": "Cette page a rencontrﾃｩ une erreur.",
+    "message": "Cette page a rencontré une erreur.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Rﾃｩessayer",
+    "message": "Réessayer",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.IconExternalLink.ariaLabel": {
@@ -48,11 +48,11 @@
     "description": "The ARIA label for the main navigation"
   },
   "theme.NotFound.p1": {
-    "message": "Nous n'avons pas trouvﾃｩ ce que vous cherchiez.",
+    "message": "Nous n'avons pas trouvé ce que vous cherchiez.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Veuillez contacter le propriﾃｩtaire du site qui vous a fourni l'URL d'origine et l'informer que le lien ne fonctionne plus.",
+    "message": "Veuillez contacter le propriétaire du site qui vous a fourni l'URL d'origine et l'informer que le lien ne fonctionne plus.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.NotFound.title": {
@@ -96,7 +96,7 @@
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.author.noPosts": {
-    "message": "Cet auteur n'a encore ﾃｩcrit aucun article.",
+    "message": "Cet auteur n'a encore écrit aucun article.",
     "description": "The text for authors with 0 blog post"
   },
   "theme.blog.author.pageTitle": {
@@ -116,7 +116,7 @@
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Articles plus rﾃｩcents",
+    "message": "Articles plus récents",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
@@ -128,7 +128,7 @@
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Article plus rﾃｩcent",
+    "message": "Article plus récent",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
@@ -152,11 +152,11 @@
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navigation des articles rﾃｩcents du blog",
+    "message": "Navigation des articles récents du blog",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} articles avec le tag ﾂｫ {tagName} ﾂｻ",
+    "message": "{nPosts} articles avec le tag « {tagName} »",
     "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {
@@ -172,7 +172,7 @@
     "description": "The name for the light color mode"
   },
   "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "mode systﾃｨme",
+    "message": "mode système",
     "description": "The name for the system color mode"
   },
   "theme.common.editThisPage": {
@@ -188,7 +188,7 @@
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "Cette page est un brouillon. Elle n'est visible qu'en mode dﾃｩveloppement et sera exclue de la compilation de production.",
+    "message": "Cette page est un brouillon. Elle n'est visible qu'en mode développement et sera exclue de la compilation de production.",
     "description": "The draft content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
@@ -196,15 +196,15 @@
     "description": "The draft content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "Cette page n'est pas rﾃｩpertoriﾃｩe. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs ayant un lien direct peuvent y accﾃｩder.",
+    "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs ayant un lien direct peuvent y accéder.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Page non rﾃｩpertoriﾃｩe",
+    "message": "Page non répertoriée",
     "description": "The unlisted content banner title"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 ﾃｩlﾃｩment|{count} ﾃｩlﾃｩments",
+    "message": "1 élément|{count} éléments",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.breadcrumbs.home": {
@@ -224,7 +224,7 @@
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.paginator.previous": {
-    "message": "Prﾃｩcﾃｩdent",
+    "message": "Précédent",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
@@ -232,19 +232,19 @@
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Rﾃｩduire la barre latﾃｩrale",
+    "message": "Réduire la barre latérale",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Rﾃｩduire la barre latﾃｩrale",
+    "message": "Réduire la barre latérale",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Dﾃｩvelopper la barre latﾃｩrale",
+    "message": "Développer la barre latérale",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Dﾃｩvelopper la barre latﾃｩrale",
+    "message": "Développer la barre latérale",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
@@ -256,7 +256,7 @@
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} avec le tag ﾂｫ {tagName} ﾂｻ",
+    "message": "{nDocsTagged} avec le tag « {tagName} »",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
@@ -267,11 +267,11 @@
     "message": "Version : {versionLabel}"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "la derniﾃｨre version",
+    "message": "la dernière version",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Pour consulter la documentation la plus rﾃｩcente, rendez-vous sur {latestVersionLink} ({versionLabel}).",
+    "message": "Pour consulter la documentation la plus récente, rendez-vous sur {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
@@ -279,7 +279,7 @@
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Vous consultez la documentation non publiﾃｩe de {siteTitle} {versionLabel}.",
+    "message": "Vous consultez la documentation non publiée de {siteTitle} {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.lastUpdated.atDate": {
@@ -291,15 +291,15 @@
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Derniﾃｨre mise ﾃ jour{atDate}{byUser}",
+    "message": "Dernière mise à jour{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Rﾃｩduire le menu dﾃｩroulant",
+    "message": "Réduire le menu déroulant",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Dﾃｩvelopper le menu dﾃｩroulant",
+    "message": "Développer le menu déroulant",
     "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
@@ -307,7 +307,7 @@
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "竊・Retour au menu principal",
+    "message": "← Retour au menu principal",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
@@ -361,7 +361,7 @@
     "description": "Homepage button linking to the documentation"
   },
   "homepage.download": {
-    "message": "Tﾃｩlﾃｩcharger",
+    "message": "Télécharger",
     "description": "Homepage download button"
   },
   "homepage.documentationLink": {
@@ -371,13 +371,13 @@
     "message": "serveur Discord communautaire"
   },
   "homepage.feature.easy.title": {
-    "message": "Facile ﾃ utiliser"
+    "message": "Facile à utiliser"
   },
   "homepage.feature.easy.description": {
-    "message": "Avec des info-bulles, la {documentation} et le {community}, prendre en main Mapping Tools est ﾃ portﾃｩe de clic !"
+    "message": "Avec des info-bulles, la {documentation} et le {community}, prendre en main Mapping Tools est à portée de clic !"
   },
   "homepage.feature.creativity.title": {
-    "message": "Libﾃｩrez votre crﾃｩativitﾃｩ"
+    "message": "Libérez votre créativité"
   },
   "homepage.feature.creativity.description": {
     "message": "Concevez et manipulez des sliders avec une interface utilisateur simple et intuitive."
@@ -386,7 +386,7 @@
     "message": "Diversifiez vos hitsounds"
   },
   "homepage.feature.hitsounding.description": {
-    "message": "Crﾃｩez et modifiez facilement des hitsounds uniques et complexes."
+    "message": "Créez et modifiez facilement des hitsounds uniques et complexes."
   },
   "homepage.feature.cleaning.title": {
     "message": "Nettoyez et peaufinez vos beatmaps"
@@ -395,28 +395,28 @@
     "message": "Recalez tous les points de timing pertinents et supprimez les points inutiles en un clic."
   },
   "homepage.feature.color.title": {
-    "message": "Ajoutez de la couleur ﾃ vos beatmaps"
+    "message": "Ajoutez de la couleur à vos beatmaps"
   },
   "homepage.feature.color.description": {
-    "message": "Faites des colorhax sans effort, comme cela aurait toujours dﾃｻ ﾃｪtre."
+    "message": "Faites des colorhax sans effort, comme cela aurait toujours dû être."
   },
   "homepage.feature.geometry.title": {
-    "message": "Renforcez la structure gﾃｩomﾃｩtrique"
+    "message": "Renforcez la structure géométrique"
   },
   "homepage.feature.geometry.description": {
-    "message": "Crﾃｩez sans effort des motifs en ﾃｩventail parfaits, des symﾃｩtries sous des angles inhabituels, des grilles hexagonales et bien plus."
+    "message": "Créez sans effort des motifs en éventail parfaits, des symétries sous des angles inhabituels, des grilles hexagonales et bien plus."
   },
   "download.title": {
-    "message": "Tﾃｩlﾃｩcharger"
+    "message": "Télécharger"
   },
   "download.description": {
-    "message": "Tﾃｩlﾃｩchargez Mapping Tools pour Windows, macOS et Linux"
+    "message": "Téléchargez Mapping Tools pour Windows, macOS et Linux"
   },
   "download.heading": {
-    "message": "Tﾃｩlﾃｩcharger"
+    "message": "Télécharger"
   },
   "download.subtitle": {
-    "message": "Tﾃｩlﾃｩchargez Mapping Tools pour votre systﾃｨme d'exploitation"
+    "message": "Téléchargez Mapping Tools pour votre système d'exploitation"
   },
   "download.installer": {
     "message": "Installateur"
@@ -428,16 +428,16 @@
     "message": "AppImage"
   },
   "download.unavailable": {
-    "message": "Les liens de tﾃｩlﾃｩchargement ne sont pas disponibles."
+    "message": "Les liens de téléchargement ne sont pas disponibles."
   },
   "download.latestReleaseLink": {
-    "message": "Consultez la derniﾃｨre version sur GitHub."
+    "message": "Consultez la dernière version sur GitHub."
   },
   "download.osAriaLabel": {
-    "message": "Tﾃｩlﾃｩchargements {os}"
+    "message": "Téléchargements {os}"
   },
   "download.loading": {
-    "message": "{option} : chargement窶ｦ"
+    "message": "{option} : chargement…"
   },
   "download.optionUnavailable": {
     "message": "{option} indisponible"
@@ -449,22 +449,22 @@
     "message": "Journal des modifications de Mapping Tools"
   },
   "changelog.heading": {
-    "message": "Derniﾃｨres versions"
+    "message": "Dernières versions"
   },
   "changelog.loading": {
-    "message": "Chargement des versions窶ｦ"
+    "message": "Chargement des versions…"
   },
   "changelog.unavailable": {
     "message": "Les notes de version sont actuellement indisponibles."
   },
   "changelog.latestAriaLabel": {
-    "message": "Derniﾃｨres versions"
+    "message": "Dernières versions"
   },
   "changelog.byAuthor": {
     "message": "par {author}"
   },
   "announcement.join": {
-    "message": "Rejoignez la communautﾃｩ Mapping Tools sur {discord} pour obtenir de l'aide et discuter.",
+    "message": "Rejoignez la communauté Mapping Tools sur {discord} pour obtenir de l'aide et discuter.",
     "description": "Announcement bar invitation to the Mapping Tools Discord server"
   }
 }

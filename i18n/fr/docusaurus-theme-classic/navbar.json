@@ -4,7 +4,7 @@
                   "description":  "The title in the navbar"
               },
     "item.label.Download":  {
-                                "message":  "Tﾃｩlﾃｩcharger",
+                                "message":  "Télécharger",
                                 "description":  "Navbar item with label Download"
                             },
     "item.label.Documentation":  {

@@ -4,7 +4,7 @@
                             "description":  "The title of the footer links column with title=Docs in the footer"
                         },
     "link.title.Community":  {
-                                 "message":  "Communautﾃｩ",
+                                 "message":  "Communauté",
                                  "description":  "The title of the footer links column with title=Community in the footer"
                              },
     "link.title.Contribute":  {
@@ -24,7 +24,7 @@
                                           "description":  "The label of footer link with label=Documentation linking to docs"
                                       },
     "link.item.label.Download":  {
-                                     "message":  "Tﾃｩlﾃｩcharger",
+                                     "message":  "Télécharger",
                                      "description":  "The label of footer link with label=Download linking to download"
                                  },
     "link.item.label.Discord":  {
@@ -48,7 +48,7 @@
                                   "description":  "The label of footer link with label=Ko-fi linking to https://ko-fi.com/olibomby"
                               },
     "copyright":  {
-                      "message":  "Copyright ﾂｩ 2026 OliBomby et les contributeurs de la documentation Mapping Tools.",
+                      "message":  "Copyright © 2026 OliBomby et les contributeurs de la documentation Mapping Tools.",
                       "description":  "The footer copyright"
                   },
     "logo.alt":  {
