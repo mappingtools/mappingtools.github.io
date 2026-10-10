@@ -59,6 +59,12 @@ module.exports = {
           position: 'left'
         },
         {
+          href: 'https://ko-fi.com/olibomby',
+          label: 'Donate',
+          position: 'right',
+          className: 'header-kofi-link',
+        },
+        {
           href: 'https://github.com/olibomby/mapping_tools',
           position: 'right',
           className: 'header-github-link',

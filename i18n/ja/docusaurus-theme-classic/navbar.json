@@ -23,6 +23,10 @@
     "message": "ブログ",
     "description": "Navbar item with label Blog"
   },
+  "item.label.Donate": {
+    "message": "寄付する",
+    "description": "Navbar item with label Donate"
+  },
   "logo.alt": {
     "message": "Mapping Tools のロゴ",
     "description": "The alt text of navbar logo"

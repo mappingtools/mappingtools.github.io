@@ -23,6 +23,10 @@
     "message": "部落格",
     "description": "Navbar item with label Blog"
   },
+  "item.label.Donate": {
+    "message": "捐款",
+    "description": "Navbar item with label Donate"
+  },
   "logo.alt": {
     "message": "Mapping Tools 標誌",
     "description": "The alt text of navbar logo"

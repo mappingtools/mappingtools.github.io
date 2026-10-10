@@ -23,6 +23,10 @@
     "message": "블로그",
     "description": "Navbar item with label Blog"
   },
+  "item.label.Donate": {
+    "message": "후원하기",
+    "description": "Navbar item with label Donate"
+  },
   "logo.alt": {
     "message": "Mapping Tools 로고",
     "description": "The alt text of navbar logo"

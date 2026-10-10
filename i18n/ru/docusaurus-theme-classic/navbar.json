@@ -23,6 +23,10 @@
     "message": "Блог",
     "description": "Navbar item with label Blog"
   },
+  "item.label.Donate": {
+    "message": "Пожертвовать",
+    "description": "Navbar item with label Donate"
+  },
   "logo.alt": {
     "message": "Логотип Mapping Tools",
     "description": "The alt text of navbar logo"
