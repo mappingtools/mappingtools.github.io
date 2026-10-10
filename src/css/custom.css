@@ -31,6 +31,14 @@ html[data-theme='dark'] {
   --ifm-background-color: #2b3137;
 }
 
+.feature-compatibility thead th {
+  border-bottom: 3px solid var(--ifm-color-emphasis-500);
+}
+
+.feature-compatibility tbody tr:nth-child(3n + 4) td {
+  border-top: 3px solid var(--ifm-color-emphasis-500);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
