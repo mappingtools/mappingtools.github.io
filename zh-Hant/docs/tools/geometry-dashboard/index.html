@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-Hant" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-tools/geometry-dashboard" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Geometry Dashboard | Mapping Tools</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mappingtools.github.io/zh-Hant/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://mappingtools.github.io/zh-Hant/img/logo.png"><meta data-rh="true" property="og:url" content="https://mappingtools.github.io/zh-Hant/docs/tools/geometry-dashboard"><meta data-rh="true" property="og:locale" content="zh_Hant"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="id"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" property="og:locale:alternate" content="ko"><meta data-rh="true" property="og:locale:alternate" content="nl"><meta data-rh="true" property="og:locale:alternate" content="pl"><meta data-rh="true" property="og:locale:alternate" content="ru"><meta data-rh="true" property="og:locale:alternate" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hant"><meta data-rh="true" name="docsearch:language" content="zh-Hant"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Geometry Dashboard | Mapping Tools"><meta data-rh="true" name="description" content="Geometry Dashboard 會在 osu! 編輯器上疊加與幾何相關的虛擬物件，讓你將物件吸附至這些虛擬點、線與圓。如此一來，就能建立完美的幾何圖樣，否則可能很難甚至無法做到。"><meta data-rh="true" property="og:description" content="Geometry Dashboard 會在 osu! 編輯器上疊加與幾何相關的虛擬物件，讓你將物件吸附至這些虛擬點、線與圓。如此一來，就能建立完美的幾何圖樣，否則可能很難甚至無法做到。"><link data-rh="true" rel="icon" href="/zh-Hant/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://mappingtools.github.io/zh-Hant/docs/tools/geometry-dashboard"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/docs/tools/geometry-dashboard" hreflang="en"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/de/docs/tools/geometry-dashboard" hreflang="de"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/es/docs/tools/geometry-dashboard" hreflang="es"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/fr/docs/tools/geometry-dashboard" hreflang="fr"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/id/docs/tools/geometry-dashboard" hreflang="id"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/ja/docs/tools/geometry-dashboard" hreflang="ja"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/ko/docs/tools/geometry-dashboard" hreflang="ko"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/nl/docs/tools/geometry-dashboard" hreflang="nl"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/pl/docs/tools/geometry-dashboard" hreflang="pl"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/ru/docs/tools/geometry-dashboard" hreflang="ru"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/zh-Hans/docs/tools/geometry-dashboard" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/zh-Hant/docs/tools/geometry-dashboard" hreflang="zh-Hant"><link data-rh="true" rel="alternate" href="https://mappingtools.github.io/docs/tools/geometry-dashboard" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Geometry Dashboard","item":"https://mappingtools.github.io/zh-Hant/docs/tools/geometry-dashboard"}]}</script><link rel="alternate" type="application/rss+xml" href="/zh-Hant/blog/rss.xml" title="Mapping Tools RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/zh-Hant/blog/atom.xml" title="Mapping Tools Atom Feed"><link rel="stylesheet" href="/zh-Hant/assets/css/styles.43f66628.css">
+<script src="/zh-Hant/assets/js/runtime~main.2ab4bf1c.js" defer="defer"></script>
+<script src="/zh-Hant/assets/js/main.97e1c12d.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"dark"),document.documentElement.setAttribute("data-theme-choice",t||"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><div role="region" aria-label="跳至主要內容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳至主要內容</a></div><div class="theme-announcement-bar announcementBar_mb4j" role="banner"><div class="announcementBarPlaceholder_vyr4"></div><div class="announcementBarContent_xLdY">加入 Mapping Tools 社群，透過 <a href="https://discord.gg/YfjKN2yjQV">Discord</a> 取得協助並與大家交流。</div><button type="button" aria-label="關閉" class="clean-btn close closeButton_CVFx announcementBarClose_gvF7"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="主要導覽" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_m1mJ"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切換導覽列" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh-Hant/"><div class="navbar__logo"><img src="/zh-Hant/img/logo.svg" alt="Mapping Tools 標誌" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/zh-Hant/img/logo.svg" alt="Mapping Tools 標誌" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Mapping Tools</b></a><a class="navbar__item navbar__link" href="/zh-Hant/download">下載</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/zh-Hant/docs">說明文件</a><a class="navbar__item navbar__link" href="/zh-Hant/faq">FAQ</a><a class="navbar__item navbar__link" href="/zh-Hant/changelog">更新日誌</a><a class="navbar__item navbar__link" href="/zh-Hant/blog">部落格</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://ko-fi.com/olibomby" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-kofi-link">捐款<svg width="13.5" height="13.5" aria-label="（在新分頁中開啟）" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/olibomby/mapping_tools" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>繁體中文</a><ul class="dropdown__menu"><li><a href="/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/de/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/es/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/fr/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/id/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="id">Bahasa Indonesia</a></li><li><a href="/ja/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li><li><a href="/ko/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ko">한국어</a></li><li><a href="/nl/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="nl">Nederlands</a></li><li><a href="/pl/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="pl">Polski</a></li><li><a href="/ru/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ru">Русский</a></li><li><a href="/zh-Hans/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-Hans">简体中文</a></li><li><a href="/zh-Hant/docs/tools/geometry-dashboard" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh-Hant">繁體中文</a></li></ul></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="系統模式" aria-label="切換淺色與深色模式（目前：系統模式）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="捲動至頁面頂端" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd sidebarWithHideableNavbar_wUlq"><a tabindex="-1" class="sidebarLogo_isFc" href="/zh-Hant/"><img src="/zh-Hant/img/logo.svg" alt="Mapping Tools 標誌" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/zh-Hant/img/logo.svg" alt="Mapping Tools 標誌" class="themedComponent_mlkZ themedComponent--dark_xIcU"><b>Mapping Tools</b></a><nav aria-label="文件導覽列" class="menu thin-scrollbar menu_SIkG menuWithAnnouncementBar_GW3s"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/zh-Hant/docs/"><span class="categoryLinkLabel_W154">Mapping Tools</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/zh-Hant/docs/general/navigation"><span class="categoryLinkLabel_W154">一般</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/zh-Hant/docs/tools/geometry-dashboard"><span class="categoryLinkLabel_W154">工具</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/zh-Hant/docs/tools/geometry-dashboard"><span class="linkLabel_WmDU">Geometry Dashboard</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hant/docs/tools/map-cleaner"><span class="linkLabel_WmDU">Map Cleaner</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hant/docs/tools/mapset-merger"><span class="linkLabel_WmDU">Mapset Merger</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hant/docs/tools/pattern-gallery"><span class="linkLabel_WmDU">Pattern Gallery</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/zh-Hant/docs/tools/sliderator"><span class="linkLabel_WmDU">Sliderator</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/zh-Hant/docs/guides/convert-mania-to-standard-hs"><span class="categoryLinkLabel_W154">指南</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="麵包屑導覽"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="首頁" class="breadcrumbs__link" href="/zh-Hant/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">工具</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Geometry Dashboard</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本頁內容</button></div><div class="theme-doc-markdown markdown"><header><h1>Geometry Dashboard</h1></header><p>Geometry Dashboard 會在 osu! 編輯器上疊加與幾何相關的虛擬物件，讓你將物件吸附至這些虛擬點、線與圓。如此一來，就能建立完美的幾何圖樣，否則可能很難甚至無法做到。</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>平台支援</div><div class="admonitionContent_BuS1"><p>Geometry Dashboard 目前需要 Windows，因為即時編輯器覆疊功能依賴 Windows 專用整合。</p></div></div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>提示</div><div class="admonitionContent_BuS1"><p>此工具需要 Mapping Tools Preferences 中指定使用者設定檔。</p></div></div>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="核心概念">核心概念<a href="#核心概念" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h2>
+<p>Geometry Dashboard 的運作流程如下：</p>
+<ol>
+<li class=""><strong>讀取 osu! 編輯器目前的狀態。</strong> 包含目前可見的打擊物件、編輯器時間與編輯器視窗位置。</li>
+<li class=""><strong>根據這些打擊物件產生虛擬物件。</strong> 可設定多種產生器，從打擊物件建立虛擬點、線與圓。</li>
+<li class=""><strong>在 osu! 編輯器上方的覆疊畫面中顯示虛擬物件。</strong> 你可以在覆疊中檢視產生的幾何圖形，並將游標吸附到這些圖形上。</li>
+</ol>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="使用者介面">使用者介面<a href="#使用者介面" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h2>
+<p>Geometry Dashboard 視窗分為以下區域：</p>
+<ul>
+<li class=""><strong>Search</strong>：搜尋列，可篩選產生器清單，方便尋找項目。</li>
+<li class=""><strong>切換按鈕</strong>：切換不同功能。<!-- -->
+<ul>
+<li class="">Select All</li>
+<li class="">Lock All</li>
+<li class="">Usability All</li>
+</ul>
+</li>
+<li class=""><strong>Savestates 按鈕</strong>：開啟<a href="#savestates" class="">儲存狀態視窗</a>。</li>
+<li class=""><strong>Preferences 按鈕</strong>：開啟<a href="#preferences" class="">偏好設定視窗</a>。</li>
+<li class=""><strong>Generators List</strong>：顯示可用的產生器，並提供啟用、停用及設定參數的選項。</li>
+</ul>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="虛擬幾何">虛擬幾何<a href="#虛擬幾何" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h2>
+<p>虛擬幾何是此工具的核心。這些圖形不是編輯器中的真實打擊物件，而是可以讓游標懸停其上的點，供製圖時精確定位。</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="虛擬幾何狀態">虛擬幾何狀態<a href="#虛擬幾何狀態" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h3>
+<p>虛擬幾何有幾種特殊狀態，可以個別開啟或關閉：</p>
+<ul>
+<li class=""><strong>Selected</strong>：啟用此物件，讓它可用於建立新物件。你可以將游標停在虛擬物件上，再使用選取快速鍵切換其選取狀態。選取後會以不同顏色與發光邊框醒目顯示。</li>
+<li class=""><strong>Locked</strong>：鎖定物件可避免產生器或作為來源的物件消失時，該物件也跟著消失。這有助於避免不小心刪掉重要幾何。鎖定的虛擬幾何會顯示為灰色。</li>
+<li class=""><strong>Usable</strong>：啟用後，產生器可使用此虛擬幾何來建立更多幾何。停用後，產生器會忽略此物件，且不會以它為基礎產生物件。不可使用的虛擬物件會以較暗的亮度顯示。</li>
+<li class=""><strong>Relevancy</strong>：介於 0 到 1 的數值，代表此幾何的關聯程度。數值越高，顯示越不透明。</li>
+</ul>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="產生器">產生器<a href="#產生器" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h2>
+<p>產生器是 Geometry Dashboard 的核心，負責從打擊物件與其他虛擬物件建立新的虛擬物件。</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="一般產生器流程">一般產生器流程<a href="#一般產生器流程" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h3>
+<p>產生器的運作方式如下：</p>
+<ol>
+<li class="">**選取輸入物件：**每個產生器都有一組<em>相依項目</em>（所需的輸入類型）與<em>輸入條件</em>。輸入條件定義虛擬物件必須符合哪些額外規則才能供產生器使用。Geometry Dashboard 會掃描前面的圖層，尋找符合相依項目與輸入條件的物件。條件可以設定物件是否必須已選取，或是否必須具有指定的關聯程度。</li>
+<li class="">**產生幾 何：**對每一種可能的已選取輸入組合，產生器會使用其產生方法建立新的虛擬物件。產生方法會將已選取物件做為參數，並回傳一或多個新虛擬物件。</li>
+<li class="">**分層：**每一批新虛擬物件都會放在新圖層。可在 Preferences 中設定圖層數量的 <strong>Inception Level</strong>。較低圖層中的虛擬物件會影響下一個更複雜圖層中所建立的虛擬物件。</li>
+<li class="">**更新：**每當發生需要重新計算的變更時，系統會依據 <strong>Update Mode</strong> 偏好設定重新產生第一層物件，再依序更新第二層、第三層等更複雜的圖層。</li>
+</ol>
+<p>為避免產生過多不需要的物件，系統會合併同一圖層中彼此距離足夠近的物件，並加總其關聯程度。你可以在 Preferences 中設定合併物件所需的接近程度。</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="產生器清單">產生器清單<a href="#產生器清單" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h3>
+<p>以下是 Geometry Dashboard 中所有可用的產生器：</p>
+<ul>
+<li class="">**Basic Generators：**直接從打擊物件建立虛擬物件。所有產生器的時間位置都設為來源物件的平均時間。<!-- -->
+<ul>
+<li class=""><strong>Points on Circles and Slider Heads</strong>：在圓圈與滑條起點建立虛擬點。</li>
+<li class=""><strong>Points on Slider Ends</strong>：在滑條最末端建立虛擬點。</li>
+<li class=""><strong>Points on Slider Anchors</strong>：在滑條錨點（紅色與白色）建立虛擬點。</li>
+<li class=""><strong>Points on Last Anchors</strong>：在滑條曲線的最後一個點建立虛擬點。</li>
+<li class=""><strong>Lines on Linear Sliders</strong>：若滑條為線性，則從 Pos 到 Curve Point 建立虛擬線。時間與關聯程度沿用來源滑條。</li>
+<li class=""><strong>Points on Blanket Centers</strong>：在圓形滑  條中心建立虛擬點。時間與關聯程度沿用來源滑條。</li>
+<li class=""><strong>Circles on 3-Point Sliders</strong>：根據滑條錨點建立圓形，以形成 Blanket 曲線或完美曲線。時間與關聯程度沿用來源滑條。</li>
+<li class=""><strong>Points on Slider Paths</strong>：在滑條路徑上建立許多虛擬點。調整 Point Density 設定可變更點的數量。此產生器需要額外計算。</li>
+</ul>
+</li>
+<li class="">**Intermediate Generators：**需要 Basic Generators 才能運作，可用於建立形狀或參考線。<!-- -->
+<ul>
+<li class=""><strong>Tangent Circles on Circle</strong>：建立與第一個輸入圓恰好相交於一點的虛擬圓。</li>
+<li class=""><strong>Circles by Two Points</strong>：取得一對虛擬點，並以兩點為圓心建立兩個虛擬圓，半徑等於兩點間距。</li>
+<li class=""><strong>Equilateral Triangle from Two Points</strong>：取得一對虛擬點，並在兩側各建立一點，形成兩個正三角形。</li>
+<li class=""><strong>Equilateral Triangle from Two Points (Type II)</strong>：與一般三角形產生器相同，但三角形的定位方式不同。</li>
+<li class=""><strong>Square from Two Points</strong>：取得一對虛擬點，並在兩側各建立一點，形成一個正方形。</li>
+<li class=""><strong>Square from Two Points (Type II)</strong>：取得一對虛擬點，並在兩側各建立一對點，形成兩個正方形。</li>
+<li class=""><strong>Line by Two Points</strong>：取得一對虛擬點，建立連接兩點的虛擬線。</li>
+<li class=""><strong>Average of Two Points</strong>：取得兩個虛擬點，並計算兩點的平均位置以建立虛擬點。</li>
+<li class=""><strong>Average of Three Points</strong>：取得三個虛擬點，並計算三點的平均位置以建立虛擬點。</li>
+<li class=""><strong>Scale &amp; Rotate around a Fixed Point</strong>：以固定虛擬點為中心旋轉及縮放任意虛擬物件。你可以設定角度、倍率，以及選取固定 點的其他規則。</li>
+<li class=""><strong>Parallel Lines</strong>：取得一條線與一個點，建立通過該點且與原線平行的虛擬線。</li>
+<li class=""><strong>Perpendicular Lines</strong>：取得一條線與一個點，建立通過該點且與原線垂直的虛擬線。</li>
+<li class=""><strong>Bisector of Angles</strong>：取得兩條虛擬線，並在兩線交點建立其夾角的角平分線。</li>
+<li class=""><strong>Bisector of Two Points</strong>：取得一對虛擬點，建立兩點的垂直平分線。</li>
+<li class=""><strong>Tangent Lines on Circle</strong>：取得一個虛擬圓與一個點，建立通過該點並沿圓兩側延伸的虛擬切線。</li>
+</ul>
+</li>
+<li class="">**Advanced Generators：**需要更多設定的專用產生器，可用於進階遞迴圖樣。<!-- -->
+<ul>
+<li class=""><strong>Intersection Points</strong>：取得一對虛擬線或圓，並在每個交點建立虛擬點。此產生器搭配其他幾何產生方式相當實用。*注意：*計算交點的成本很高，若編輯器中同時啟用多個複雜圖形，效能可能明顯降低，使用時請留意。</li>
+<li class=""><strong>Successor of 2 Points</strong>：取得兩個虛擬點，並以相同速度計算下一個虛擬點。搭配 <strong>Points on Slider Paths</strong> 可更精確地預測曲線。</li>
+<li class=""><strong>Successor of 3 Points</strong>：取得三個虛擬點，並以相同角度與速度變化計算下一個虛擬點。</li>
+<li class=""><strong>Successor of 3 Points Reversed</strong>：取得三個虛擬點，並以相同速度變化及相反角度計算下一個虛擬點。</li>
+<li class=""><strong>Successor of 4 Points</strong>：取得四個虛擬點，並以相同角度、角度變化、速度變化及速度變化幅度計算下一個虛擬點。</li>
+<li class=""><strong>Scale &amp; Rotate around a Fixed Point</strong>：以固定虛擬點為中心旋轉及縮放任意虛擬物件。你可以設定角度、倍率，以及選取固定點的其他規 則。</li>
+<li class=""><strong>Reflection across a Line</strong>：以虛擬線為對稱軸，鏡射任意虛擬物件。</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="產生器選項">產生器選項<a href="#產生器選項" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h2>
+<p>每個產生器都有一組可設定的選項，用來控制其行為：</p>
+<ul>
+<li class=""><strong>Active</strong>：啟用或停用產生器。停用後便不會建立任何虛擬物件。</li>
+<li class=""><strong>Sequential</strong>：只將依時間順序相鄰的物件做為輸入。啟用後，只會產生時間上連續的虛擬物件組合。這能大幅減少幾何圖形數量，避免畫面雜亂。</li>
+<li class=""><strong>Deep</strong>：不只檢查上一層，也會檢查所有符合條件的較早圖層。</li>
+<li class=""><strong>Relevancy Ratio</strong>：此產生器建立虛擬物件的基本關聯程度，範圍為 0 到 1。實際關聯程度可能受其他輸入物件的 Relevancy Ratio 影響。</li>
+<li class=""><strong>Generates Inheritable</strong>：啟用時，產生的物件可供其他產生器使用；停用時，其他產生器無法使用這些物件。</li>
+<li class=""><strong>Input Selection Collection</strong>：設定此產生器可使用哪些虛擬物件做為輸入。詳情請參閱<a href="#input-selection-in-detail" class="">輸入選取設定</a>。</li>
+</ul>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="特殊產生器設定">特殊產生器設定<a href="#特殊產生器設定" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h3>
+<p>部分進階產生器提供特殊選項：</p>
+<ul>
+<li class=""><strong>Circle from Single Point</strong>：<!-- -->
+<ul>
+<li class=""><em>Radius</em>：圓的縮放倍率。</li>
+</ul>
+</li>
+<li class=""><strong>Points on Slider Paths</strong>：<!-- -->
+<ul>
+<li class=""><em>Points Density</em>：每 osu! 像素滑條路徑會產生多少個點。</li>
+</ul>
+</li>
+<li class=""><strong>Scale &amp; Rotate around a Fixed Point</strong>：<!-- -->
+<ul>
+<li class=""><em>Angle</em>：旋轉角度（度）。</li>
+<li class=""><em>Scalar</em>：等比例縮放倍率。</li>
+<li class=""><em>Origin Input Selection</em>：設定虛擬物件需符合哪些額外條件，才能做為旋轉原點。</li>
+<li class=""><em>Other Input Selection</em>：設定要以原點為中心鏡射的物件需符合哪些額外條件。</li>
+</ul>
+</li>
+<li class=""><strong>Reflection across a Line</strong>：<!-- -->
+<ul>
+<li class=""><em>Axis Input Selection</em>：設定虛擬物件需符合哪些額外條件，才能做為此產生器的對稱軸。</li>
+<li class=""><em>Other Input Selection</em>：設定要以軸線為中心鏡射的物件需符合哪些額外條件。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="input-selection-in-detail">輸入選取設定詳解<a href="#input-selection-in-detail" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h3>
+<p>輸入選取是控制產生器會將哪些虛擬物件納入計算的主要機制。每個產生器都會指定所需的輸入類型（例如點或線），你可以使用輸入條件，依照物件的屬性進一步篩選。若未妥善設定輸入選取，產生器可能會建立太多不相關的虛擬物件，或無法建立必要物件。</p>
+<p>一組選取條件由多個選取述詞組成。只要符合其中一個選取述詞，虛擬物件就能做為輸入。</p>
+<p>將游標移至 Input Selection 上方，再按加號即可新增選取述詞。接著會顯示更多設定，以進一步篩選可產生幾何圖形的物件：</p>
+<ul>
+<li class=""><strong>Need Selected</strong>：啟用後，產生器只會使用已選取的虛擬物件做為輸入。已選取物件也會優先供游標懸停選取，讓你精確控制建立結果。</li>
+<li class=""><strong>Need Locked</strong>：啟用後，產生器只會使用已鎖定的物件來建立幾何。如果物件未鎖定，產生器就完全不會辨識它。當你想使用某些產生器，同時鎖定其他物件時，這項設定很實用。</li>
+<li class=""><strong>Need Generated By This</strong>：只使用由此產生器建立的虛擬物件。設定正確時，可將幾何產生範圍縮小至所需的圖形。</li>
+<li class=""><strong>Need Generated Not By This</strong>：與上一個篩選條件相反，只使用不是由此產生器建立的虛擬物件。</li>
+<li class=""><strong>Min Relevancy</strong>：要求做為輸入的物件至少具有指定關聯程度。關聯程度介於 0 到 1；設為 0 即停用此條件。</li>
+</ul>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="preferences">偏好設定<a href="#preferences" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h2>
+<p>Geometry Dashboard Preferences 視窗可自訂工具的行為與外觀：</p>
+<ul>
+<li class=""><strong>Hotkeys</strong>：<!-- -->
+<ul>
+<li class=""><strong>Snap Key</strong>：按住此按鍵即可將游標吸附至虛擬物件。</li>
+<li class=""><strong>Select Key</strong>：按住此按鍵即可選取虛擬物件。</li>
+<li class=""><strong>Lock Key</strong>：按住此按鍵即可鎖定虛擬物件。</li>
+<li class=""><strong>Usability Key</strong>：按住此按鍵即可切換虛擬物件的可用狀態。</li>
+<li class=""><strong>Refresh Key</strong>：立即更新根圖層打擊物件清單的按鍵。</li>
+</ul>
+</li>
+<li class=""><strong>Offset</strong>：相對於編輯器畫面偏移所有虛擬物件，可用於修正縮放或位置問題。<!-- -->
+<ul>
+<li class=""><strong>Left</strong>：編輯器左邊緣的偏移量。</li>
+<li class=""><strong>Top</strong>：編輯器上邊緣的偏移量。</li>
+<li class=""><strong>Right</strong>：編輯器右邊緣的偏移量。</li>
+<li class=""><strong>Bottom</strong>：編輯 器下邊緣的偏移量。</li>
+</ul>
+</li>
+<li class=""><strong>Complexity</strong>：遞迴產生的圖層數量，可用於降低效能負擔。<!-- -->
+<ul>
+<li class=""><strong>Inception Level</strong>：根據基礎打擊物件產生的圖層數量。</li>
+</ul>
+</li>
+<li class=""><strong>Downkey</strong>：切換要顯示的虛擬物件。<!-- -->
+<ul>
+<li class=""><strong>Everything</strong>：顯示所有虛擬物件，包括打擊物件、子物件與父物件。</li>
+<li class=""><strong>Parents and parents of parents</strong>：顯示吸附目標的所有祖先物件。</li>
+<li class=""><strong>Direct parents</strong>：只顯示吸附目標的直接父物件。</li>
+<li class=""><strong>Children and children of children</strong>：顯示吸附目標的所有後代物件。</li>
+<li class=""><strong>Direct children</strong>：只顯示吸附目標的直接子物件。</li>
+</ul>
+</li>
+<li class=""><strong>Upkey</strong>：未按下 Snap Key 時，切換要顯示的虛擬物件。<!-- -->
+<ul>
+<li class=""><strong>All visible</strong>：依據 Selection 設定顯示所有打擊物件。</li>
+<li class=""><strong>Nothing</strong>：未按下 Snap Key 時隱藏所有物件。</li>
+</ul>
+</li>
+<li class=""><strong>Selection</strong>：設定哪些打擊物件會用來產生虛擬物件。<!-- -->
+<ul>
+<li class=""><strong>All visible</strong>：包含所有可用的打擊物件。</li>
+<li class=""><strong>Visible or selected</strong>：若沒有選取的打擊物件，使用所有可見物件；否則只使用所有已選取物件。</li>
+<li class=""><strong>Selected only</strong>：只使用編輯器中已選取的打擊物件。</li>
+</ul>
+</li>
+<li class=""><strong>Updating</strong>：設定何時更新虛擬物件。<!-- -->
+<ul>
+<li class=""><strong>Any change</strong>：任何變更發生時都更新。</li>
+<li class=""><strong>Time change</strong>：編輯器計時器變更時更新。較省效能，但回應速度較慢。</li>
+<li class=""><strong>osu! activated</strong>：目前的 osu! 視窗取得焦點時更新。</li>
+<li class=""><strong>Hotkey down</strong>：按下更新快速鍵時更新。</li>
+</ul>
+</li>
+<li class=""><strong>Behavior</strong>：Geometry Dashboard 的其他行為。<!-- -->
+<ul>
+<li class=""><strong>Minimal diff</strong>：虛擬物件彼此要多接近才會合併。</li>
+<li class=""><strong>Keep running</strong>：開啟其他工具時仍保持 Geometry Dashboard 執行。</li>
+<li class=""><strong>See playfield</strong>：在編輯器上疊加顯示遊戲區邊界。</li>
+<li class=""><strong>Debug</strong>：在編輯器上疊加顯示編輯器邊界。如果即使啟用此選項仍看不到編輯器，表示它超出可偵測範圍。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="虛擬幾何選項">虛擬幾何選項<a href="#虛擬幾何選項" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h3>
+<p>你可以自訂編輯器中各類虛擬物件的顏色、不透明度、粗細與虛線樣式，提升辨識度。</p>
+<ul>
+<li class=""><strong>Color</strong>：邊框顏色。也可以從色彩選擇器複製（按一下 HEX 值即可複製）。</li>
+<li class=""><strong>Opacity</strong>：物件的透明度。</li>
+<li class=""><strong>Thickness</strong>：構成物件外框的線條粗細。</li>
+<li class=""><strong>Dash</strong>：設定外框使用虛線或實線。</li>
+</ul>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="savestates">儲存狀態<a href="#savestates" class="hash-link" aria-label="此標題的直接連結" title="此標題的直接連結" translate="no">​</a></h2>
+<p>儲存狀態的運作方式類似快速鍵設定檔。你可以快速切換設定檔，不必逐一手動變更每個產生器與偏好設定。也可以將快速鍵指定給儲存狀態，更迅速地切換。</p>
+<p>按一下加號圖示即可建立新的儲存狀態，接著為它命名並指定快速鍵。使用儲存或載入按鈕即可儲存或修改目前設定 。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/mappingtools/mappingtools.github.io/tree/main/docs/03-tools/Geometry Dashboard.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>編輯此頁</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">最後更新於<!-- -->，日期：<b><time datetime="2026-10-10T11:08:18.000Z" itemprop="dateModified">2026年10月10日</time></b>，作者：<b>Olivier Schipper</b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件分頁導覽"><a class="pagination-nav__link pagination-nav__link--prev" href="/zh-Hant/docs/general/backups"><div class="pagination-nav__sublabel">上一頁</div><div class="pagination-nav__label">備份</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/zh-Hant/docs/tools/map-cleaner"><div class="pagination-nav__sublabel">下一頁</div><div class="pagination-nav__label">Map Cleaner</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#核心概念" class="table-of-contents__link toc-highlight">核心概念</a></li><li><a href="#使用者介面" class="table-of-contents__link toc-highlight">使用者介面</a></li><li><a href="#虛擬幾何" class="table-of-contents__link toc-highlight">虛擬幾何</a><ul><li><a href="#虛擬幾何狀態" class="table-of-contents__link toc-highlight">虛擬幾何狀態</a></li></ul></li><li><a href="#產生器" class="table-of-contents__link toc-highlight">產生器</a><ul><li><a href="#一般產生器流程" class="table-of-contents__link toc-highlight">一般產生器流程</a></li><li><a href="#產生器清單" class="table-of-contents__link toc-highlight">產生器清單</a></li></ul></li><li><a href="#產生器選項" class="table-of-contents__link toc-highlight">產生器選項</a><ul><li><a href="#特殊產生器設定" class="table-of-contents__link toc-highlight">特殊產生器設定</a></li><li><a href="#input-selection-in-detail" class="table-of-contents__link toc-highlight">輸入選取設定詳解</a></li></ul></li><li><a href="#preferences" class="table-of-contents__link toc-highlight">偏好設定</a><ul><li><a href="#虛擬幾何選項" class="table-of-contents__link toc-highlight">虛擬幾何選項</a></li></ul></li><li><a href="#savestates" class="table-of-contents__link toc-highlight">儲存狀態</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文件</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hant/docs">簡介</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hant/docs">說明文件</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hant/download">下載</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社群</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/YfjKN2yjQV" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="（在新分頁中開啟）" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">參與貢獻</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hant/docs/mapping-tools/contribute">總覽</a></li><li class="footer__item"><a href="https://github.com/OliBomby/Mapping_Tools" target="_blank" rel="noopener noreferrer" class="footer__link-item">原始碼<svg width="13.5" height="13.5" aria-label="（在新分頁中開啟）" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mappingtools/mappingtools.github.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">網站原始碼<svg width="13.5" height="13.5" aria-label="（在新分頁中開啟）" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">支持我們</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://ko-fi.com/olibomby" target="_blank" rel="noopener noreferrer" class="footer__link-item">Ko-fi</a></li></ul></div></div><div class="footer__bottom text--center"><div class="margin-bottom--sm"><img src="/zh-Hant/img/logo.svg" alt="Mapping Tools 標誌" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width="72" height="72"><img src="/zh-Hant/img/logo.svg" alt="Mapping Tools 標誌" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width="72" height="72"></div><div class="footer__copyright">Copyright © 2026 OliBomby 與 Mapping Tools 說明文件貢獻者。</div></div></div></footer></div>
+</body>
+</html>

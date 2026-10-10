@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[6580],{7134(t){t.exports=JSON.parse('{"metadata":{"permalink":"/zh-Hant/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Mapping Tools \u90e8\u843d\u683c","blogTitle":"\u90e8\u843d\u683c"}}')}}]);

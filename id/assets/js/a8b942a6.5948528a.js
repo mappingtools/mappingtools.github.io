@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[972],{6284(t){t.exports=JSON.parse('{"metadata":{"permalink":"/id/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog Mapping Tools","blogTitle":"Blog"}}')}}]);

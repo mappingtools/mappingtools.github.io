@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[3984],{1335(o){o.exports=JSON.parse('{"tags":[{"label":"ko-fi","permalink":"/ko/blog/tags/ko-fi","count":1},{"label":"donations","permalink":"/ko/blog/tags/donations","count":1},{"label":"discord","permalink":"/ko/blog/tags/discord","count":1}]}')}}]);

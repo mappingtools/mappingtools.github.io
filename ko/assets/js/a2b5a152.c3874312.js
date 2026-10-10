@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[5958],{2824(t){t.exports=JSON.parse('{"metadata":{"permalink":"/ko/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Mapping Tools \ube14\ub85c\uadf8","blogTitle":"\ube14\ub85c\uadf8"}}')}}]);

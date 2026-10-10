@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[1903],{1912(t){t.exports=JSON.parse('{"blogBasePath":"/zh-Hant/blog","blogTitle":"\u90e8\u843d\u683c","authorsListPath":"/zh-Hant/blog/authors"}')}}]);

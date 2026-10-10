@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[7472],{5513(t){t.exports=JSON.parse('{"title":"\u6700\u65b0\u6587\u7ae0","items":[{"title":"Ko-fi donations","permalink":"/zh-Hant/blog/1","unlisted":false,"date":"2023-01-09T00:00:00.000Z"},{"title":"Mapping Tools Discord","permalink":"/zh-Hant/blog/0","unlisted":false,"date":"2020-03-16T00:00:00.000Z"}]}')}}]);

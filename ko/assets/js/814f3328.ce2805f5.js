@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[7472],{5513(e){e.exports=JSON.parse('{"title":"\ucd5c\uadfc \uae00","items":[{"title":"Ko-fi donations","permalink":"/ko/blog/1","unlisted":false,"date":"2023-01-09T00:00:00.000Z"},{"title":"Mapping Tools Discord","permalink":"/ko/blog/0","unlisted":false,"date":"2020-03-16T00:00:00.000Z"}]}')}}]);

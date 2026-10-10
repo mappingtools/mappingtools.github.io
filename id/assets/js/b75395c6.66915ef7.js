@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[3223],{6050(t){t.exports=JSON.parse('{"tag":{"label":"discord","permalink":"/id/blog/tags/discord","allTagsPath":"/id/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/id/blog/tags/discord","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

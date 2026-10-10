@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[8562],{4516(l){l.exports=JSON.parse('{"tag":{"label":"ko-fi","permalink":"/nl/blog/tags/ko-fi","allTagsPath":"/nl/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/nl/blog/tags/ko-fi","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

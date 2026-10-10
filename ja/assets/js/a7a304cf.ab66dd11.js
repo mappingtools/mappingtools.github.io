@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmt_website||=[]).push([[7484],{8650(t){t.exports=JSON.parse('{"authors":[{"name":"OliBomby","title":"Mapping Tools Lead Developer","url":"https://github.com/OliBomby","imageURL":"https://avatars.githubusercontent.com/u/17460441","key":"OliBomby","page":null,"count":2}]}')}}]);
