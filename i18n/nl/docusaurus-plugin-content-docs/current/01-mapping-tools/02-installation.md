@@ -29,19 +29,15 @@ Alle pakketten zijn zelfstandig en bevatten de .NET 10-runtime.
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 </div>
 
 - **osu! stable**: op Windows en Linux (Wine) wordt de huidige beatmap opgehaald via **Geheugen uitlezen**. Stel de **Songs-map** in bij Voorkeuren met het oorspronkelijke bestandssysteempad. Het uitlezen van live-editorstatus en automatisch herladen zijn alleen beschikbaar op Windows. Rechtstreeks geheugen uitlezen wordt op macOS niet ondersteund.
 - **osu! lazer**: gebruik **Bestand > Extern bewerken** om de beatmapbestanden beschikbaar te maken. Mapping Tools detecteert de beatmap die extern wordt bewerkt automatisch; in deze tabel geldt dat als de huidige beatmap ophalen. Gebruik **Bewerken voltooien en wijzigingen importeren** in lazer om je wijzigingen toe te passen. Bekijk de [lazer-handleiding](/docs/guides/use-mt-in-lazer).
-- **osu! unstable**: kies **MTIPC** in Voorkeuren om de huidige beatmap op te halen, live-editorstatus uit te lezen en de editor opnieuw te laden. Deze functies vereisen de MTIPC-server van de client. Het uitlezen van live-editorstatus en het opnieuw laden van de editor zijn op Linux en macOS standaard uitgeschakeld.
 - **Globale sneltoetsen**: op Linux is ondersteuning afhankelijk van X11 of een desktopomgeving met de portal voor globale sneltoetsen. Geef op macOS toestemming voor de toetsenbordtoegang die het systeem vraagt.
 
 Je kunt altijd zelf een beatmap selecteren via **Bestand > Beatmap openen**.

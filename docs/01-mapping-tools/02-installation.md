@@ -29,19 +29,15 @@ All packages are self-contained and include the .NET 10 runtime.
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 </div>
 
 - **osu! stable**: current-beatmap fetching uses **Memory read** on Windows and Linux (Wine). Set the **Songs folder** in Preferences to its native filesystem path. Live editor state reading and auto-reload are available on Windows only. Native memory fetching is not supported on macOS.
 - **osu! lazer**: use **File > Edit externally** to expose the beatmap files. Mapping Tools automatically detects the external-edit beatmap, which counts as getting the current beatmap in this matrix. Use **Finish editing and import changes** in lazer to apply your edits. See the [lazer guide](/docs/guides/use-mt-in-lazer).
-- **osu! unstable**: select **MTIPC** in Preferences for current-beatmap fetching, live editor state reading, and editor reload. These features require the client's MTIPC server. Live editor state reading and editor reload are disabled by default on Linux and macOS.
 - **Global hotkeys**: on Linux, support depends on X11 or a desktop with the global-shortcut portal. On macOS, allow the keyboard access permissions requested by the system.
 
 You can always select a beatmap directly with **File > Open beatmap**.

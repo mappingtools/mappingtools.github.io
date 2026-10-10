@@ -29,19 +29,15 @@ Tous les paquets sont autonomes et incluent l'environnement d'exécution .NET 10
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 </div>
 
 - **osu! stable** : la récupération de la beatmap actuelle utilise la **lecture mémoire** sous Windows et Linux (Wine). Définissez le **dossier Songs** dans les Préférences avec son chemin natif dans le système de fichiers. La lecture de l’état de l’éditeur en direct et le rechargement automatique sont disponibles uniquement sous Windows. La lecture mémoire native n’est pas prise en charge sous macOS.
 - **osu! lazer** : utilisez **Fichier > Modifier en externe** pour rendre les fichiers de beatmap accessibles. Mapping Tools détecte automatiquement la beatmap modifiée en externe, ce qui correspond à l'obtention de la beatmap actuelle dans ce tableau. Utilisez **Terminer la modification et importer les changements** dans lazer pour appliquer vos modifications. Consultez le [guide de lazer](/docs/guides/use-mt-in-lazer).
-- **osu! unstable** : sélectionnez **MTIPC** dans les Préférences pour récupérer la beatmap actuelle, lire l'état de l'éditeur en direct et recharger l'éditeur. Ces fonctionnalités nécessitent le serveur MTIPC du client. La lecture de l'état de l'éditeur en direct et son rechargement sont désactivés par défaut sous Linux et macOS.
 - **Raccourcis clavier globaux** : sous Linux, la prise en charge dépend de X11 ou d'un environnement de bureau doté du portail de raccourcis globaux. Sous macOS, accordez les autorisations d'accès au clavier demandées par le système.
 
 Vous pouvez toujours sélectionner directement une beatmap avec **Fichier > Ouvrir une beatmap**.

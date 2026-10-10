@@ -29,19 +29,15 @@ Alle Pakete sind eigenständig und enthalten die .NET-10-Laufzeit.
 | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Windows | stable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Windows | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Windows | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Linux | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | Linux | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Linux | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | macOS | stable | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | macOS | lazer | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| macOS | unstable | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 </div>
 
 - **osu! stable**: Die aktuelle Beatmap wird unter Windows und Linux (Wine) über **Speicher auslesen** abgerufen. Lege den **Songs folder** in den Preferences mit seinem nativen Dateisystempfad fest. Live-Editorstatus und automatisches Neuladen sind nur unter Windows verfügbar. Unter macOS wird der native Speicherzugriff nicht unterstützt.
 - **osu! lazer**: Verwende **File > Edit externally**, um die Beatmap-Dateien bereitzustellen. Mapping Tools erkennt die extern bearbeitete Beatmap automatisch; in dieser Tabelle zählt das als Abruf der aktuellen Beatmap. Über **Finish editing and import changes** in lazer übernimmst du deine Änderungen. Siehe den [lazer-Guide](/docs/guides/use-mt-in-lazer).
-- **osu! unstable**: Wähle in den Preferences **MTIPC** für das Abrufen der aktuellen Beatmap, das Auslesen des Live-Editorstatus und das Neuladen des Editors. Diese Funktionen benötigen den MTIPC-Server des Clients. Unter Linux und macOS sind das Auslesen des Live-Editorstatus und das Neuladen des Editors standardmäßig deaktiviert.
 - **Globale Tastenkürzel**: Unter Linux hängt die Unterstützung von X11 oder einem Desktop mit dem Portal für globale Tastenkürzel ab. Unter macOS musst du den vom System angeforderten Zugriff auf die Tastatur erlauben.
 
 Du kannst eine Beatmap jederzeit direkt über **File > Open beatmap** auswählen.
