@@ -1,0 +1,22 @@
+{
+    "version.label":  {
+                          "message":  "Version actuelle",
+                          "description":  "The label for version current"
+                      },
+    "sidebar.docsSidebar.category.Mapping Tools":  {
+                                                       "message":  "Mapping Tools",
+                                                       "description":  "The label for category \u0027Mapping Tools\u0027 in sidebar \u0027docsSidebar\u0027"
+                                                   },
+    "sidebar.docsSidebar.category.General":  {
+                                                 "message":  "Gﾃｩnﾃｩral",
+                                                 "description":  "The label for category \u0027General\u0027 in sidebar \u0027docsSidebar\u0027"
+                                             },
+    "sidebar.docsSidebar.category.Tools":  {
+                                               "message":  "Outils",
+                                               "description":  "The label for category \u0027Tools\u0027 in sidebar \u0027docsSidebar\u0027"
+                                           },
+    "sidebar.docsSidebar.category.Guides":  {
+                                                "message":  "Guides",
+                                                "description":  "The label for category \u0027Guides\u0027 in sidebar \u0027docsSidebar\u0027"
+                                            }
+}

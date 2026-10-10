@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
+import { translate } from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
@@ -26,8 +27,8 @@ const downloadColumns = [
         icon: faWindows,
         rid: 'win-x64',
         options: [
-          { label: 'Installer', suffix: '-Setup.exe', icon: faDownload },
-          { label: 'Portable', suffix: '-Portable.zip', icon: faFileZipper },
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '-Setup.exe', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
         ],
       },
       {
@@ -35,8 +36,8 @@ const downloadColumns = [
         icon: faWindows,
         rid: 'win-x86',
         options: [
-          { label: 'Installer', suffix: '-Setup.exe', icon: faDownload },
-          { label: 'Portable', suffix: '-Portable.zip', icon: faFileZipper },
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '-Setup.exe', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
         ],
       },
     ],
@@ -50,7 +51,7 @@ const downloadColumns = [
         icon: faLinux,
         rid: 'linux-x64',
         options: [
-          { label: 'AppImage', suffix: '.appimage', icon: faDownload },
+          { label: translate({ id: 'download.appImage', message: 'AppImage' }), suffix: '.appimage', icon: faDownload },
         ],
       },
       {
@@ -58,7 +59,7 @@ const downloadColumns = [
         icon: faLinux,
         rid: 'linux-arm64',
         options: [
-          { label: 'AppImage', suffix: '.appimage', icon: faDownload },
+          { label: translate({ id: 'download.appImage', message: 'AppImage' }), suffix: '.appimage', icon: faDownload },
         ],
       },
     ],
@@ -72,8 +73,8 @@ const downloadColumns = [
         icon: faApple,
         rid: 'osx-arm64',
         options: [
-          { label: 'Installer', suffix: '.pkg', icon: faDownload },
-          { label: 'Portable', suffix: '-Portable.zip', icon: faFileZipper },
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '.pkg', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
         ],
       },
       {
@@ -81,8 +82,8 @@ const downloadColumns = [
         icon: faApple,
         rid: 'osx-x64',
         options: [
-          { label: 'Installer', suffix: '.pkg', icon: faDownload },
-          { label: 'Portable', suffix: '-Portable.zip', icon: faFileZipper },
+          { label: translate({ id: 'download.installer', message: 'Installer' }), suffix: '.pkg', icon: faDownload },
+          { label: translate({ id: 'download.portable', message: 'Portable' }), suffix: '-Portable.zip', icon: faFileZipper },
         ],
       },
     ],
@@ -123,20 +124,22 @@ const Download: React.FC = () => {
   }, []);
 
   return (
-    <Layout title="Download" description="Download Mapping Tools for Windows, macOS, and Linux">
+    <Layout
+      title={translate({ id: 'download.title', message: 'Download' })}
+      description={translate({ id: 'download.description', message: 'Download Mapping Tools for Windows, macOS, and Linux' })}>
       <div className={clsx('container padding-vert--lg', styles.content)}>
-        <h1>Download</h1>
-        <h4 className={styles.subtitle}>Download Mapping Tools for your operating system</h4>
+        <h1>{translate({ id: 'download.heading', message: 'Download' })}</h1>
+        <h4 className={styles.subtitle}>{translate({ id: 'download.subtitle', message: 'Download Mapping Tools for your operating system' })}</h4>
 
         {releaseAssets?.length === 0 && (
           <p className={styles.releaseFallback}>
-            Download links are unavailable. <a href={LATEST_RELEASE_URL}>Browse the latest release on GitHub.</a>
+            {translate({ id: 'download.unavailable', message: 'Download links are unavailable.' })} <a href={LATEST_RELEASE_URL}>{translate({ id: 'download.latestReleaseLink', message: 'Browse the latest release on GitHub.' })}</a>
           </p>
         )}
 
         <div className={styles.downloadGrid}>
           {downloadColumns.map(({ id, label, cards }) => (
-            <section key={id} className={styles.osColumn} aria-label={`${label} downloads`}>
+            <section key={id} className={styles.osColumn} aria-label={translate({ id: 'download.osAriaLabel', message: '{os} downloads' }, { os: label })}>
               {cards.map(({ label: cardLabel, icon, rid, options }) => (
                 <article
                   key={rid}
@@ -167,7 +170,9 @@ const Download: React.FC = () => {
                           className={styles.downloadUnavailable}>
                           <FontAwesomeIcon icon={option.icon} />
                           <span className={styles.itemText}>
-                            {`${option.label} ${releaseAssets === null ? 'loading…' : 'unavailable'}`}
+                            {releaseAssets === null
+                              ? translate({ id: 'download.loading', message: '{option} loading…' }, { option: option.label })
+                              : translate({ id: 'download.optionUnavailable', message: '{option} unavailable' }, { option: option.label })}
                           </span>
                         </div>
                       );

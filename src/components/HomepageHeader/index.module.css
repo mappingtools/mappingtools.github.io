@@ -3,9 +3,8 @@
 }
 
 .heroBanner {
-  height: calc(100vh - var(--ifm-navbar-height));
+  min-height: calc(100vh - var(--ifm-navbar-height));
   padding: 0 20px;
-  overflow: hidden;
   text-align: center;
   background-color: var(--ifm-background-color);
   color: var(--ifm-heading-color);
@@ -17,16 +16,17 @@
   justify-content: center;
 }
 
-.introButton {
-  font-size: 1.7rem;
-  padding: 15px;
-  width: 222px;
+.buttons {
+  max-width: 100%;
 }
-  
+
+.introButton,
 .downloadButton {
   font-size: 1.7rem;
-  padding: 15px;
-  width: 222px;
+  padding: 15px 30px;
+  min-width: min(222px, 100%);
+  max-width: 100%;
+  text-align: center;
 }
 
 .logo {

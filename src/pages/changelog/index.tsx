@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '@theme/Layout';
+import { translate } from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import styles from './index.module.css';
 
@@ -14,6 +16,7 @@ type Release = {
 };
 
 const Changelog: React.FC = () => {
+  const { i18n } = useDocusaurusContext();
   const [releases, setReleases] = useState<Release[] | null>(null);
   const [expandedReleases, setExpandedReleases] = useState<Set<string>>(new Set());
 
@@ -30,7 +33,7 @@ const Changelog: React.FC = () => {
 
         const latestReleases = items.map((release) => ({
           tag: release.tag_name,
-          date: new Date(release.published_at).toLocaleDateString(),
+          date: new Date(release.published_at).toLocaleDateString(i18n.currentLocale),
           author: release.author.login,
           description: release.body.replace(/\r/g, '').split(/\n/).join('<br>'),
         }));
@@ -48,15 +51,17 @@ const Changelog: React.FC = () => {
   }, []);
 
   return (
-    <Layout title="Changelog" description="Mapping Tools changelog">
+    <Layout
+      title={translate({ id: 'changelog.title', message: 'Changelog' })}
+      description={translate({ id: 'changelog.description', message: 'Mapping Tools changelog' })}>
       <div className={`container padding-vert--lg ${styles.content}`}>
-        <h1>Latest Releases</h1>
+        <h1>{translate({ id: 'changelog.heading', message: 'Latest Releases' })}</h1>
         {releases === null ? (
-          <p>Loading releases…</p>
+          <p>{translate({ id: 'changelog.loading', message: 'Loading releases…' })}</p>
         ) : releases.length === 0 ? (
-          <p>Release notes are currently unavailable.</p>
+          <p>{translate({ id: 'changelog.unavailable', message: 'Release notes are currently unavailable.' })}</p>
         ) : (
-          <section className={styles.releaseList} aria-label="Latest releases">
+          <section className={styles.releaseList} aria-label={translate({ id: 'changelog.latestAriaLabel', message: 'Latest releases' })}>
             {releases.map(({ tag, date, author, description }, index) => {
               const isExpanded = expandedReleases.has(tag);
               const detailsId = `release-details-${index}`;
@@ -83,7 +88,7 @@ const Changelog: React.FC = () => {
                   <div id={detailsId} className={styles.releaseDetails} hidden={!isExpanded}>
                     <div className={styles.releaseBody} dangerouslySetInnerHTML={{ __html: description }} />
                     <hr className={styles.hr} />
-                    <span>by {author}</span>
+                    <span>{translate({ id: 'changelog.byAuthor', message: 'by {author}' }, { author })}</span>
                   </div>
                 </article>
               );

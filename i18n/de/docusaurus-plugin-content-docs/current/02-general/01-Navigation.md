@@ -1,29 +1,33 @@
 ---
 title: "Navigation"
-author: "Julaaaan"
+author: "aehrea"
 id: navigation
 ---
 
-Mapping Tools öffnet standardmäßig die Ansicht **Get Started** mit einer Einführung, dem Änderungsprotokoll und zuletzt verwendeten Beatmaps. Über die Navigation kannst du jederzeit zurückkehren.
+Mapping Tools öffnet standardmäßig den Bildschirm „Erste Schritte“. Dort findest du das Änderungsprotokoll der Anwendung sowie eine Liste der zuletzt mit Mapping Tools verwendeten Beatmaps. Du kannst diesen Bildschirm auch über das Navigationsmenü öffnen.
 
-Der Anwendungsheader enthält die Navigation, Datei- und Anwendungsmenüs sowie die ausgewählte **Current beatmap**.
+Oben im Fenster befindet sich eine blaue Leiste mit der Schaltfläche zum Öffnen der Navigation, den Menüs und der Anzeige der _Selected beatmap_. Die meisten Mapping-Tools bearbeiten diese Beatmap.
 
-Öffne die Navigation über den Button im Header oder mit `Ctrl+K`. Suche nach dem Namen einer Seite und drücke `Enter`, um den ersten Treffer zu öffnen.
+Über die Schaltfläche für die Navigation öffnest du links ein Menü, über das du alle Seiten in Mapping Tools erreichst. Mit der Suchleiste kannst du nach einer Seite suchen. Drücke `Enter`, um das erste Ergebnis zu öffnen. Das Navigationsmenü lässt sich jederzeit mit `Ctrl+K` öffnen.
 
 ### File {#file}
 
-Im **File**-Menü findest du Aktionen für Beatmaps und Backups:
+Das Menü **File** enthält Schaltflächen zum Auswählen, Laden und Speichern von Beatmap-Dateien.
 
-- **Open beatmap** wählt eine oder mehrere Beatmap-Dateien aus.
-- **Open current beatmap** wählt die Beatmap aus, die über die konfigurierte Editor-Anbindung gemeldet wird.
+- **Open beatmap** öffnet einen Dateiauswahldialog, in dem du eine oder mehrere Beatmaps als ausgewählte Beatmap festlegen kannst.
+- **Open current beatmap** legt die Beatmap, die im _osu!_-Client ausgewählt ist, als ausgewählte Beatmap fest.
 - **Generate backup** erstellt ein Backup der ausgewählten Beatmap.
-- **Load backup** stellt ein Backup für die ausgewählte Beatmap wieder her.
-- **BetterSave current beatmap** speichert die im osu!-Editor geöffnete Beatmap mit gerundeten Koordinaten statt abgeschnittenen Werten.
+- **Load backup** öffnet einen Dateiauswahldialog, in dem du ein Backup zum Laden in die ausgewählte Beatmap auswählen kannst.
+- **QuickUndo** lädt das neueste nicht-periodische Backup in die ausgewählte Beatmap.
+- **BetterSave™ current beatmap** speichert die aktuell im _osu!_-Editor geöffnete Beatmap und rundet Koordinaten, statt sie abzuschneiden.
 
 ### About {#about}
 
-Im **About**-Menü kannst du mit **Open backups folder** den Backup-Ordner und mit **Open Mapping Tools folder** den Anwendungsdatenordner öffnen.
+Das Menü **About** enthält weitere Informationen und nützliche Links zu Mapping Tools.
+
+- **Open backups folder** öffnet den Ordner mit allen von Mapping Tools erstellten Backups.
+- **Open Mapping Tools folder** öffnet den Ordner mit allen von Mapping Tools erzeugten Dateien, zum Beispiel Einstellungen, Backups und Exporte.
 
 ### Project {#project}
 
-Tool-spezifische Projektaktionen erscheinen bei Tools, die Projekteinstellungen unterstützen. Dort kannst du die Konfiguration des Tools speichern oder laden.
+Das Menü **Project** ist nur auf dem Bildschirm eines Mapping-Tools sichtbar. Es enthält Schaltflächen zum Speichern und Laden der toolspezifischen Einstellungen.

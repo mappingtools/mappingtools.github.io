@@ -1,0 +1,58 @@
+{
+  "link.title.Docs": {
+    "message": "文件",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "社群",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.Contribute": {
+    "message": "參與貢獻",
+    "description": "The title of the footer links column with title=Contribute in the footer"
+  },
+  "link.title.Support us": {
+    "message": "支持我們",
+    "description": "The title of the footer links column with title=Support us in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "簡介",
+    "description": "The label of footer link with label=Introduction linking to docs"
+  },
+  "link.item.label.Documentation": {
+    "message": "說明文件",
+    "description": "The label of footer link with label=Documentation linking to docs"
+  },
+  "link.item.label.Download": {
+    "message": "下載",
+    "description": "The label of footer link with label=Download linking to download"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/YfjKN2yjQV"
+  },
+  "link.item.label.Overview": {
+    "message": "總覽",
+    "description": "The label of footer link with label=Overview linking to docs/mapping-tools/contribute"
+  },
+  "link.item.label.Source code": {
+    "message": "原始碼",
+    "description": "The label of footer link with label=Source code linking to https://github.com/OliBomby/Mapping_Tools"
+  },
+  "link.item.label.Website source": {
+    "message": "網站原始碼",
+    "description": "The label of footer link with label=Website source linking to https://github.com/mappingtools/mappingtools.github.io"
+  },
+  "link.item.label.Ko-fi": {
+    "message": "Ko-fi",
+    "description": "The label of footer link with label=Ko-fi linking to https://ko-fi.com/olibomby"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 OliBomby 與 Mapping Tools 說明文件貢獻者。",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "Mapping Tools 標誌",
+    "description": "The alt text of footer logo"
+  }
+}

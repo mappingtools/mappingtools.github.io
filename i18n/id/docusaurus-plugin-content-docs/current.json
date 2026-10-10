@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Saat ini",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Tools": {
+    "message": "Alat",
+    "description": "The label for category 'Tools' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mapping Tools": {
+    "message": "Mapping Tools",
+    "description": "The label for category 'Mapping Tools' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.General": {
+    "message": "Umum",
+    "description": "The label for category 'General' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Panduan",
+    "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
+  }
+}

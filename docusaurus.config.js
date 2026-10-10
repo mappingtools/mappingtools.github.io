@@ -166,21 +166,55 @@ module.exports = {
     defaultLocale: 'en',
     locales: [
       'en',
-      "de"
+      'de',
+      'es',
+      'fr',
+      'id',
+      'ja',
+      'ko',
+      'nl',
+      'pl',
+      'ru',
+      'zh-Hans',
+      'zh-Hant',
     ],
     localeConfigs: {
-      'en': {
+      en: {
         label: 'English',
       },
-      'zh-Hans': {
-        label: '中文',
+      de: {
+        label: 'Deutsch',
       },
-      'ru': {
+      es: {
+        label: 'Español',
+      },
+      fr: {
+        label: 'Français',
+      },
+      id: {
+        label: 'Bahasa Indonesia',
+      },
+      ja: {
+        label: '日本語',
+      },
+      ko: {
+        label: '한국어',
+      },
+      nl: {
+        label: 'Nederlands',
+      },
+      pl: {
+        label: 'Polski',
+      },
+      ru: {
         label: 'Русский',
       },
-      "de": {
-        label: "Deutsch"
-      }
+      'zh-Hans': {
+        label: '简体中文',
+      },
+      'zh-Hant': {
+        label: '繁體中文',
+      },
     }
   },
 };

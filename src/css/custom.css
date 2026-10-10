@@ -38,6 +38,16 @@ html[data-theme='dark'] {
   padding: 0 var(--ifm-pre-padding);
 }
 
+.button {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.button:not(.button--block) {
+  width: fit-content;
+}
+
 /* announcement bar stuff */
 button[class^='announcementBarClose'] {
   color: var(--ifm-font-color-base);

@@ -1,0 +1,58 @@
+{
+  "link.title.Docs": {
+    "message": "Documentación",
+    "description": "Footer links section title for documentation"
+  },
+  "link.title.Community": {
+    "message": "Comunidad",
+    "description": "Footer links section title for community"
+  },
+  "link.title.Contribute": {
+    "message": "Contribuir",
+    "description": "Footer links section title for contributions"
+  },
+  "link.title.Support us": {
+    "message": "Apóyanos",
+    "description": "Footer links section title for support"
+  },
+  "link.item.label.Introduction": {
+    "message": "Introducción",
+    "description": "Footer link to the introduction documentation"
+  },
+  "link.item.label.Documentation": {
+    "message": "Documentación",
+    "description": "Footer link to the documentation"
+  },
+  "link.item.label.Download": {
+    "message": "Descargar",
+    "description": "Footer link to the download page"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "Footer link to the community"
+  },
+  "link.item.label.Overview": {
+    "message": "Resumen",
+    "description": "Footer link to the contribution overview"
+  },
+  "link.item.label.Source code": {
+    "message": "Código fuente",
+    "description": "Footer link to the Mapping Tools source code"
+  },
+  "link.item.label.Website source": {
+    "message": "Código fuente del sitio web",
+    "description": "Footer link to the website source code"
+  },
+  "link.item.label.Ko-fi": {
+    "message": "Ko-fi",
+    "description": "Footer link to Ko-fi support"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 OliBomby y quienes contribuyen a la documentación de Mapping Tools.",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "Logotipo de Mapping Tools",
+    "description": "The alt text of footer logo"
+  }
+}

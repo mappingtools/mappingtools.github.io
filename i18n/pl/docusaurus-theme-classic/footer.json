@@ -1,0 +1,58 @@
+{
+  "link.title.Docs": {
+    "message": "Dokumentacja",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "Społeczność",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.Contribute": {
+    "message": "Współtworzenie projektu",
+    "description": "The title of the footer links column with title=Contribute in the footer"
+  },
+  "link.title.Support us": {
+    "message": "Wesprzyj nas",
+    "description": "The title of the footer links column with title=Support us in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "Wprowadzenie",
+    "description": "The label of footer link with label=Introduction linking to docs"
+  },
+  "link.item.label.Documentation": {
+    "message": "Dokumentacja",
+    "description": "The label of footer link with label=Documentation linking to docs"
+  },
+  "link.item.label.Download": {
+    "message": "Pobieranie",
+    "description": "The label of footer link with label=Download linking to download"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/YfjKN2yjQV"
+  },
+  "link.item.label.Overview": {
+    "message": "Przegląd",
+    "description": "The label of footer link with label=Overview linking to docs/mapping-tools/contribute"
+  },
+  "link.item.label.Source code": {
+    "message": "Kod źródłowy",
+    "description": "The label of footer link with label=Source code linking to https://github.com/OliBomby/Mapping_Tools"
+  },
+  "link.item.label.Website source": {
+    "message": "Kod źródłowy strony",
+    "description": "The label of footer link with label=Website source linking to https://github.com/mappingtools/mappingtools.github.io"
+  },
+  "link.item.label.Ko-fi": {
+    "message": "Ko-fi",
+    "description": "The label of footer link with label=Ko-fi linking to https://ko-fi.com/olibomby"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 OliBomby i współtwórcy dokumentacji Mapping Tools.",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "Logo Mapping Tools",
+    "description": "The alt text of footer logo"
+  }
+}

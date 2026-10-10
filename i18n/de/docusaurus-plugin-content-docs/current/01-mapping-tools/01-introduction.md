@@ -2,45 +2,86 @@
 title: "Einführung"
 author: "OliBomby"
 id: introduction
-description: Mapping Tools bündelt Werkzeuge für osu!-Mapping in einer Desktop-Anwendung.
+description: Mapping Tools vereint Werkzeuge für das Mapping in osu! in einer Anwendung.
 keywords:
   - docs
   - mapping tools
+  - Einführung
 slug: /
 ---
-Mapping Tools bündelt Werkzeuge für osu!-Mapping in **einer Desktop-Anwendung**. Damit kannst du Beatmaps schneller bearbeiten und gemeinsame Funktionen wie Backups und Editor-Anbindung nutzen.
-
-Die Desktop-App gibt es für **Windows, Linux und macOS**. Welche Editor-Funktionen verfügbar sind, hängt vom Betriebssystem ab. Details findest du in der [Installationsanleitung](02-installation.md).
+Mapping Tools vereint Werkzeuge für das Mapping in osu! in **einer Anwendung**.
+Damit kannst du deine Beatmap schnell auf eine Weise bearbeiten, für die du von Hand normalerweise Stunden bräuchtest.
+Die Anwendung bietet **praktische Funktionen** wie Backups und das Auslesen des Arbeitsspeichers. Diese stehen allen Tools zur Verfügung und sorgen dafür, dass sie schnell und zuverlässig arbeiten.
 
 ![Mapping Tools Logo](/img/mt_banner.png)
 
 ## Erste Schritte {#get-started}
 
+Lerne Mapping Tools schnell kennen: Folge einem der **Guides** oder sieh dir die [**Video-Tutorials**](https://www.youtube.com/playlist?list=PLuijZnrwVA86pO7zIP9oVu-7YAQ5qEe2Y) an.
+
 1. [**Installiere**](02-installation.md) Mapping Tools und starte die Anwendung.
-2. Richte die benötigten Pfade in den **Preferences** ein.
-3. Wähle eine Beatmap mit **File > Open beatmap** aus oder verwende **File > Open current beatmap**, wenn die Editor-Anbindung eingerichtet ist.
-4. Öffne die Navigation mit `Ctrl+K` und wähle ein Tool.
-5. Konfiguriere das Tool und klicke auf **Run**.
-6. Lade den osu!-stable-Editor nach einer externen Änderung neu, ohne vorher zu speichern. QuickRun kann den Editor automatisch neu laden.
+2. [**Richte**](02-installation.md#setup) Mapping Tools ein.
+3. Wähle deine Beatmap über **File > Open (current) beatmap** aus.
+4. Öffne ein Tool über das Navigationsmenü: `Ctrl+K`.
+5. Richte das Tool ein und starte es mit der Schaltfläche unten rechts.
+6. Lade deine Beatmap neu, ohne sie zu speichern: `Ctrl+L`, dann `Enter`.
 
 ## Funktionen {#features}
 
-- **Map Cleaner**: Entfernt unnötige Timing-Punkte und Samples und richtet Timing-Punkte, Objekte und Lesezeichen am Raster aus.
-- **Metadata Manager**: Bearbeitet Metadaten mehrerer Schwierigkeiten eines Mapsets und entfernt doppelte Tags.
-- **Property Transformer**: Verschiebt oder skaliert Timing und Hitobjekteigenschaften.
-- **Slider Merger**: Verbindet Slider und Circles zu einem Slider mit kombinierter Form.
-- **Slider Completionator**: Passt Dauer und Länge von Slidern an.
-- **Timing Copier**: Kopiert Timing zwischen Beatmaps und kann Objekte an das neue Timing anpassen.
-- **Timing Helper**: Hilft beim Erstellen komplexer Timings.
-- **Hitsound Copier**: Kopiert Hitsounds und kann passende Slider-Ticks und Sliderenden bearbeiten.
-- **Hitsound Studio**: Kombiniert und exportiert benutzerdefinierte Samples und konvertiert Hitsounds.
-- **Hitsound Preview Helper**: Platziert Hitsounds anhand der Objektposition.
-- **Rhythm Guide**: Extrahiert Rhythmen aus Beatmaps als Hilfe beim Hitsounden.
-- **Geometry Dashboard**: Zeigt Live-Geometrie als Overlay im osu!-Editor an; benötigt Windows.
-- **Combo Colour Studio**: Erstellt und kopiert Combo-Colour-Hax.
-- **Sliderator**: Ändert die Slider-Geschwindigkeit mitten im Slider und erstellt beschleunigende oder verlangsamende Streams.
-- **Auto-fail Detector**: Erkennt und behebt Auto-fails in 2B-Beatmaps.
-- **Pattern Gallery**: Verwaltet, teilt und platziert Mapping-Muster.
-- **Mapset Merger**: Führt mehrere Mapsets zusammen.
-- **Tumour Generator**: Fügt Formen entlang von Slidern hinzu.
-- **Slider Picturator**: Verformt einen Slider passend zu einem Bild und fügt ihn in eine Beatmap ein.
+Mapping Tools ist auf Freiheit ausgelegt und holt aus einfachen Tools das Maximum heraus.
+
+- **Map Cleaner**
+  - Überflüssige Greenlines entfernen
+  - Greenlines, Hitobjects und Lesezeichen neu snappen
+  - Nicht verwendete Hitsound-Samples entfernen
+- **Metadata Manager**
+  - Metadaten eines ganzen Mapsets auf einmal bearbeiten
+  - Doppelte Tags entfernen
+- **Property Transformer**
+  - Timing aller Timingpunkte oder Hitobjects verschieben oder skalieren
+  - Lautstärke, Sample-Index oder Slider Velocity mehrerer Greenlines auf einmal ändern
+- **Slider Merger**
+  - Mehrere Slider und Kreise zu einem großen Slider mit kombinierter Form verbinden
+- **Slider Completionator**
+  - Dauer oder Länge von Slidern festlegen
+  - Slider Velocity über 4x erreichen
+- **Timing Copier**
+  - Timing zwischen Beatmaps kopieren
+  - Objekte automatisch neu snappen und an das neue Timing anpassen
+- **Timing Helper**
+  - Komplexes Timing schneller erstellen
+- **Hitsound Copier**
+  - Hitsounds zwischen Beatmaps kopieren
+  - Storyboard-Samples als Ersatz für fehlende Hitsounds kopieren
+  - Hitsounds auf Slider-Ticks und Slider Slide Sounds kopieren
+  - Sliderenden automatisch stummschalten
+- **Hitsound Studio**
+  - [osu!mania-Hitsounds in osu!standard-Hitsounds umwandeln](../04-guides/hs-studio-convert-mania-to-standard.md)
+  - Eigene Hitsounds aus mehreren Mapsets in einem Mapset zusammenführen
+  - MIDI-Dateien in Keysounds umwandeln
+- **Hitsound Preview Helper**
+  - Hitsounds anhand ihrer Position auf Objekten platzieren
+  - Einfach Hitsound-Maps erstellen, die mit Hitsound Studio kompatibel sind
+- **Rhythm Guide**
+  - Rhythmus aus Beatmaps extrahieren und beim Setzen von Hitsounds als Orientierung verwenden
+- **Geometry Dashboard**
+  - Live-Geometrie im Editor einblenden und beim Mappen verwenden
+- **Combo Colour Studio**
+  - Colourhax einfach erstellen
+  - Colourhax zwischen Beatmaps kopieren
+- **Sliderator**
+  - Slider Velocity mitten im Slider ändern
+  - Beschleunigende oder abbremsende Streams erstellen
+- **Auto-fail Detector**
+  - Auto-fail in Beatmaps im 2B-Stil erkennen
+  - Auto-fail automatisch beheben
+- **Pattern Gallery**
+  - Sammlungen von Mapping-Patterns erstellen und teilen
+  - Patterns zwischen Beatmaps kopieren
+- **Mapset Merger**
+  - Mehrere Mapsets zu einem großen Mapset zusammenführen
+- **Tumour Generator**
+  - Verschiedene Formen entlang der Seiten deiner Slider hinzufügen
+  - Slider auf neue Weise vollständig gestalten
+- **Slider Picturator**
+  - Ein Bild in einen Slider umwandeln und in einer Beatmap platzieren
